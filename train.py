@@ -20,6 +20,7 @@ TEXTURE_WEIGHT = 0.1
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train RCA-GAN denoising model")
     parser.add_argument("--data-root", type=str, default="datasets/train", help="Path to train dataset directory")
+    parser.add_argument("--output-dir", type=str, default="checkpoints", help="Directory to store checkpoints")
     parser.add_argument("--batch-size", type=int, default=2)
     parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--lr", type=float, default=2e-4)
@@ -30,6 +31,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     data_root = Path(args.data_root)
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
     transform = transforms.Compose([transforms.ToTensor()])
     dataset = ImagePairDataset(
         noisy_dir=data_root / "noisy_images",
@@ -49,6 +52,8 @@ def main() -> None:
     d_optimizer = torch.optim.Adam(discriminator.parameters(), lr=args.lr, betas=(0.5, 0.999))
 
     for epoch in range(args.epochs):
+        last_d_loss = torch.tensor(0.0, device=args.device)
+        last_g_loss = torch.tensor(0.0, device=args.device)
         for noisy, clean in dataloader:
             noisy = noisy.to(args.device)
             clean = clean.to(args.device)
@@ -64,6 +69,7 @@ def main() -> None:
             d_loss = d_loss + GP_WEIGHT * gradient_penalty(discriminator, clean, fake.detach())
             d_loss.backward()
             d_optimizer.step()
+            last_d_loss = d_loss.detach()
 
             g_optimizer.zero_grad()
             fake_logits = discriminator(fake)
@@ -74,6 +80,19 @@ def main() -> None:
             g_loss = g_adv + g_rec + PERCEPTUAL_WEIGHT * g_per + TEXTURE_WEIGHT * g_tex
             g_loss.backward()
             g_optimizer.step()
+            last_g_loss = g_loss.detach()
+
+        print(f"Epoch [{epoch + 1}/{args.epochs}] d_loss={last_d_loss.item():.4f} g_loss={last_g_loss.item():.4f}")
+        torch.save(
+            {
+                "epoch": epoch + 1,
+                "generator_state_dict": generator.state_dict(),
+                "discriminator_state_dict": discriminator.state_dict(),
+                "g_optimizer_state_dict": g_optimizer.state_dict(),
+                "d_optimizer_state_dict": d_optimizer.state_dict(),
+            },
+            output_dir / f"epoch_{epoch + 1}.pt",
+        )
 
 
 if __name__ == "__main__":
