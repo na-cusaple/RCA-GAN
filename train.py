@@ -1,0 +1,76 @@
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
+import torch
+from torch.utils.data import DataLoader
+from torchvision import transforms
+
+from models.discriminator import Discriminator
+from models.generator import Generator
+from utils.dataset import ImagePairDataset
+from utils.losses import TextureLoss, VGGLoss, gradient_penalty
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Train RCA-GAN denoising model")
+    parser.add_argument("--data-root", type=str, default="datasets/train", help="Path to train dataset directory")
+    parser.add_argument("--batch-size", type=int, default=2)
+    parser.add_argument("--epochs", type=int, default=1)
+    parser.add_argument("--lr", type=float, default=2e-4)
+    parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    data_root = Path(args.data_root)
+    transform = transforms.Compose([transforms.ToTensor()])
+    dataset = ImagePairDataset(
+        noisy_dir=data_root / "noisy_images",
+        clean_dir=data_root / "clean_images",
+        transform=transform,
+    )
+    dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True)
+
+    generator = Generator().to(args.device)
+    discriminator = Discriminator().to(args.device)
+    adv_criterion = torch.nn.BCEWithLogitsLoss()
+    rec_criterion = torch.nn.L1Loss()
+    perceptual_criterion = VGGLoss().to(args.device)
+    texture_criterion = TextureLoss().to(args.device)
+
+    g_optimizer = torch.optim.Adam(generator.parameters(), lr=args.lr, betas=(0.5, 0.999))
+    d_optimizer = torch.optim.Adam(discriminator.parameters(), lr=args.lr, betas=(0.5, 0.999))
+
+    for _ in range(args.epochs):
+        for noisy, clean in dataloader:
+            noisy = noisy.to(args.device)
+            clean = clean.to(args.device)
+
+            fake = generator(noisy)
+
+            d_optimizer.zero_grad()
+            real_logits = discriminator(clean)
+            fake_logits = discriminator(fake.detach())
+            real_targets = torch.ones_like(real_logits)
+            fake_targets = torch.zeros_like(fake_logits)
+            d_loss = adv_criterion(real_logits, real_targets) + adv_criterion(fake_logits, fake_targets)
+            d_loss = d_loss + 10.0 * gradient_penalty(discriminator, clean, fake.detach())
+            d_loss.backward()
+            d_optimizer.step()
+
+            g_optimizer.zero_grad()
+            fake_logits = discriminator(fake)
+            g_adv = adv_criterion(fake_logits, torch.ones_like(fake_logits))
+            g_rec = rec_criterion(fake, clean)
+            g_per = perceptual_criterion(fake, clean)
+            g_tex = texture_criterion(fake, clean)
+            g_loss = g_adv + g_rec + 0.1 * g_per + 0.1 * g_tex
+            g_loss.backward()
+            g_optimizer.step()
+
+
+if __name__ == "__main__":
+    main()
