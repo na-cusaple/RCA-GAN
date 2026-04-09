@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import copy
 import threading
 
 import torch
@@ -20,7 +21,7 @@ class VGGLoss(nn.Module):
                 for param in features.parameters():
                     param.requires_grad = False
                 VGGLoss._cached_features = features
-        self.features = VGGLoss._cached_features
+        self.features = copy.deepcopy(VGGLoss._cached_features)
         self.criterion = nn.L1Loss()
 
     def forward(self, pred: torch.Tensor, target: torch.Tensor) -> torch.Tensor:

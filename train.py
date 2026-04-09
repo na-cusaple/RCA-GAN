@@ -39,6 +39,8 @@ def main() -> None:
         clean_dir=data_root / "clean_images",
         transform=transform,
     )
+    if len(dataset) == 0:
+        raise ValueError("Dataset is empty. Add paired images to noisy_images and clean_images before training.")
     dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True)
 
     generator = Generator().to(args.device)
