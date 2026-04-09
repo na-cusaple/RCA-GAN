@@ -37,9 +37,9 @@ class TextureLoss(nn.Module):
         return self.criterion(_gram_matrix(pred), _gram_matrix(target))
 
 
-def _gram_matrix(x: torch.Tensor) -> torch.Tensor:
-    b, c, h, w = x.shape
-    features = x.view(b, c, h * w)
+def _gram_matrix(feature_maps: torch.Tensor) -> torch.Tensor:
+    b, c, h, w = feature_maps.shape
+    features = feature_maps.view(b, c, h * w)
     gram = torch.bmm(features, features.transpose(1, 2))
     return gram / (c * h * w)
 
