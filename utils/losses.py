@@ -7,12 +7,16 @@ from torchvision import models
 
 
 class VGGLoss(nn.Module):
+    _cached_features: nn.Module | None = None
+
     def __init__(self) -> None:
         super().__init__()
-        features = models.vgg16(weights=models.VGG16_Weights.DEFAULT).features[:16].eval()
-        for param in features.parameters():
-            param.requires_grad = False
-        self.features = features
+        if VGGLoss._cached_features is None:
+            features = models.vgg16(weights=models.VGG16_Weights.DEFAULT).features[:16].eval()
+            for param in features.parameters():
+                param.requires_grad = False
+            VGGLoss._cached_features = features
+        self.features = VGGLoss._cached_features
         self.criterion = nn.L1Loss()
 
     def forward(self, pred: torch.Tensor, target: torch.Tensor) -> torch.Tensor:

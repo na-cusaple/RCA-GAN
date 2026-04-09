@@ -12,6 +12,10 @@ from models.generator import Generator
 from utils.dataset import ImagePairDataset
 from utils.losses import TextureLoss, VGGLoss, gradient_penalty
 
+GP_WEIGHT = 10.0
+PERCEPTUAL_WEIGHT = 0.1
+TEXTURE_WEIGHT = 0.1
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train RCA-GAN denoising model")
@@ -44,7 +48,7 @@ def main() -> None:
     g_optimizer = torch.optim.Adam(generator.parameters(), lr=args.lr, betas=(0.5, 0.999))
     d_optimizer = torch.optim.Adam(discriminator.parameters(), lr=args.lr, betas=(0.5, 0.999))
 
-    for _ in range(args.epochs):
+    for epoch in range(args.epochs):
         for noisy, clean in dataloader:
             noisy = noisy.to(args.device)
             clean = clean.to(args.device)
@@ -57,7 +61,7 @@ def main() -> None:
             real_targets = torch.ones_like(real_logits)
             fake_targets = torch.zeros_like(fake_logits)
             d_loss = adv_criterion(real_logits, real_targets) + adv_criterion(fake_logits, fake_targets)
-            d_loss = d_loss + 10.0 * gradient_penalty(discriminator, clean, fake.detach())
+            d_loss = d_loss + GP_WEIGHT * gradient_penalty(discriminator, clean, fake.detach())
             d_loss.backward()
             d_optimizer.step()
 
@@ -67,7 +71,7 @@ def main() -> None:
             g_rec = rec_criterion(fake, clean)
             g_per = perceptual_criterion(fake, clean)
             g_tex = texture_criterion(fake, clean)
-            g_loss = g_adv + g_rec + 0.1 * g_per + 0.1 * g_tex
+            g_loss = g_adv + g_rec + PERCEPTUAL_WEIGHT * g_per + TEXTURE_WEIGHT * g_tex
             g_loss.backward()
             g_optimizer.step()
 

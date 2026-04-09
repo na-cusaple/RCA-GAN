@@ -15,7 +15,10 @@ class ImagePairDataset(Dataset):
         self.noisy_images = sorted([p for p in self.noisy_dir.iterdir() if p.is_file()])
         self.clean_images = sorted([p for p in self.clean_dir.iterdir() if p.is_file()])
         if len(self.noisy_images) != len(self.clean_images):
-            raise ValueError("noisy_images and clean_images must contain the same number of files.")
+            raise ValueError(
+                "noisy_images and clean_images must contain the same number of files. "
+                f"Found {len(self.noisy_images)} noisy and {len(self.clean_images)} clean images."
+            )
 
     def __len__(self) -> int:
         return len(self.noisy_images)
