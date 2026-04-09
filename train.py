@@ -33,7 +33,12 @@ def main() -> None:
     data_root = Path(args.data_root)
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    transform = transforms.Compose([transforms.ToTensor()])
+    transform = transforms.Compose(
+        [
+            transforms.ToTensor(),
+            transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+        ]
+    )
     dataset = ImagePairDataset(
         noisy_dir=data_root / "noisy_images",
         clean_dir=data_root / "clean_images",
@@ -86,7 +91,7 @@ def main() -> None:
             total_g_loss += g_loss.item()
             num_batches += 1
 
-        loss_divisor = max(num_batches, 1)
+        loss_divisor = num_batches
         mean_d_loss = total_d_loss / loss_divisor
         mean_g_loss = total_g_loss / loss_divisor
         print(f"Epoch [{epoch + 1}/{args.epochs}] d_loss={mean_d_loss:.4f} g_loss={mean_g_loss:.4f}")
