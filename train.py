@@ -27,9 +27,11 @@ import os
 from pathlib import Path
 from typing import Optional
 
+import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
+from PIL import Image
 from torchvision.utils import save_image
 
 from models import Generator, Discriminator
@@ -78,6 +80,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--num_workers", type=int, default=4)
     parser.add_argument("--device", type=str, default="",
                         help="Force device (cuda/cpu). Auto-detect when empty.")
+    parser.add_argument("--auto_generate_noisy", action="store_true",
+                        help="Automatically create noisy train images from clean images when pairs are missing")
+    parser.add_argument("--auto_generate_val_noisy", action="store_true",
+                        help="Automatically create noisy validation images from val clean images")
+    parser.add_argument("--noise_sigma", type=float, default=25.0,
+                        help="Std-dev of Gaussian noise in pixel value space [0..255]")
+    parser.add_argument("--val_noise_sigma", type=float, default=-1.0,
+                        help="Std-dev for validation noisy generation; if < 0, reuse --noise_sigma")
+    parser.add_argument("--overwrite_noisy", action="store_true",
+                        help="Overwrite existing noisy images when auto generating")
+    parser.add_argument("--noise_seed", type=int, default=42,
+                        help="Random seed used for auto noisy-image generation")
     # Generator / discriminator hyper-params
     parser.add_argument("--base_channels", type=int, default=64)
     parser.add_argument("--num_res_blocks", type=int, default=9)
@@ -102,6 +116,60 @@ def weights_init(module: nn.Module) -> None:
             nn.init.constant_(module.bias.data, 0)
 
 
+_IMG_EXTENSIONS = {".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff", ".webp"}
+
+
+def _is_image_file(path: Path) -> bool:
+    return path.suffix.lower() in _IMG_EXTENSIONS
+
+
+def generate_noisy_from_clean(
+    clean_dir: str,
+    noisy_dir: str,
+    sigma: float = 25.0,
+    overwrite: bool = False,
+    seed: int = 42,
+) -> int:
+    """
+    Create noisy images from clean images using additive Gaussian noise.
+
+    The generated noisy image keeps the same filename as the clean image,
+    which is required by ``PairedImageDataset``.
+
+    Returns:
+        Number of noisy images generated.
+    """
+    clean_root = Path(clean_dir)
+    noisy_root = Path(noisy_dir)
+    noisy_root.mkdir(parents=True, exist_ok=True)
+
+    if not clean_root.is_dir():
+        raise FileNotFoundError(f"Clean directory not found: {clean_root}")
+
+    rng = np.random.default_rng(seed)
+    generated = 0
+    noise_scale = sigma / 255.0
+
+    for clean_path in sorted(clean_root.iterdir()):
+        if not clean_path.is_file() or not _is_image_file(clean_path):
+            continue
+
+        noisy_path = noisy_root / clean_path.name
+        if noisy_path.exists() and not overwrite:
+            continue
+
+        img = Image.open(clean_path).convert("RGB")
+        arr = np.asarray(img).astype(np.float32) / 255.0
+
+        noise = rng.normal(loc=0.0, scale=noise_scale, size=arr.shape).astype(np.float32)
+        noisy_arr = np.clip(arr + noise, 0.0, 1.0)
+        noisy_img = Image.fromarray((noisy_arr * 255.0).astype(np.uint8))
+        noisy_img.save(noisy_path)
+        generated += 1
+
+    return generated
+
+
 # ---------------------------------------------------------------------------
 # Training
 # ---------------------------------------------------------------------------
@@ -124,6 +192,20 @@ def train(args: argparse.Namespace) -> None:
     # ---- Data --------------------------------------------------------------
     train_noisy = os.path.join(args.data_root, "train", "noisy_images")
     train_clean = os.path.join(args.data_root, "train", "clean_images")
+
+    if args.auto_generate_noisy:
+        generated = generate_noisy_from_clean(
+            clean_dir=train_clean,
+            noisy_dir=train_noisy,
+            sigma=args.noise_sigma,
+            overwrite=args.overwrite_noisy,
+            seed=args.noise_seed,
+        )
+        print(
+            f"[RCA-GAN] Auto noisy generation: created {generated} image(s) "
+            f"in {train_noisy}"
+        )
+
     train_loader: DataLoader = build_dataloader(
         noisy_dir=train_noisy,
         clean_dir=train_clean,
@@ -136,6 +218,21 @@ def train(args: argparse.Namespace) -> None:
     # Validation loader (optional; skip if val images are absent)
     val_noisy = os.path.join(args.data_root, "val", "noisy_images")
     val_clean = os.path.join(args.data_root, "val", "clean_images")
+
+    if args.auto_generate_val_noisy:
+        val_sigma = args.noise_sigma if args.val_noise_sigma < 0 else args.val_noise_sigma
+        generated_val = generate_noisy_from_clean(
+            clean_dir=val_clean,
+            noisy_dir=val_noisy,
+            sigma=val_sigma,
+            overwrite=args.overwrite_noisy,
+            seed=args.noise_seed,
+        )
+        print(
+            f"[RCA-GAN] Auto val noisy generation: created {generated_val} image(s) "
+            f"in {val_noisy}"
+        )
+
     val_loader: Optional[DataLoader] = None
     try:
         val_loader = build_dataloader(
