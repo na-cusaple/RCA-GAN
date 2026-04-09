@@ -84,8 +84,9 @@ def main() -> None:
             total_g_loss += g_loss.item()
             num_batches += 1
 
-        mean_d_loss = total_d_loss / max(num_batches, 1)
-        mean_g_loss = total_g_loss / max(num_batches, 1)
+        safe_num_batches = max(num_batches, 1)
+        mean_d_loss = total_d_loss / safe_num_batches
+        mean_g_loss = total_g_loss / safe_num_batches
         print(f"Epoch [{epoch + 1}/{args.epochs}] d_loss={mean_d_loss:.4f} g_loss={mean_g_loss:.4f}")
         torch.save(
             {

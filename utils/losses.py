@@ -14,13 +14,12 @@ class VGGLoss(nn.Module):
 
     def __init__(self) -> None:
         super().__init__()
-        if VGGLoss._cached_features is None:
-            with VGGLoss._cache_lock:
-                if VGGLoss._cached_features is None:
-                    features = models.vgg16(weights=models.VGG16_Weights.DEFAULT).features[:16].eval()
-                    for param in features.parameters():
-                        param.requires_grad = False
-                    VGGLoss._cached_features = features
+        with VGGLoss._cache_lock:
+            if VGGLoss._cached_features is None:
+                features = models.vgg16(weights=models.VGG16_Weights.DEFAULT).features[:16].eval()
+                for param in features.parameters():
+                    param.requires_grad = False
+                VGGLoss._cached_features = features
         self.features = VGGLoss._cached_features
         self.criterion = nn.L1Loss()
 
