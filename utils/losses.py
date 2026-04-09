@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import copy
 import threading
 
 import torch
@@ -10,18 +9,19 @@ from torchvision import models
 
 
 class VGGLoss(nn.Module):
-    _cached_features: nn.Module | None = None
+    _cached_features_by_device: dict[str, nn.Module] = {}
     _cache_lock = threading.Lock()
 
-    def __init__(self) -> None:
+    def __init__(self, device: str | torch.device = "cpu") -> None:
         super().__init__()
+        device_key = str(device)
         with VGGLoss._cache_lock:
-            if VGGLoss._cached_features is None:
+            if device_key not in VGGLoss._cached_features_by_device:
                 features = models.vgg16(weights=models.VGG16_Weights.DEFAULT).features[:16].eval()
                 for param in features.parameters():
                     param.requires_grad = False
-                VGGLoss._cached_features = features
-        self.features = copy.deepcopy(VGGLoss._cached_features)
+                VGGLoss._cached_features_by_device[device_key] = features.to(device)
+        self.features = VGGLoss._cached_features_by_device[device_key]
         self.criterion = nn.L1Loss()
 
     def forward(self, pred: torch.Tensor, target: torch.Tensor) -> torch.Tensor:
