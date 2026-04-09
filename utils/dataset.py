@@ -12,12 +12,19 @@ class ImagePairDataset(Dataset):
         self.noisy_dir = Path(noisy_dir)
         self.clean_dir = Path(clean_dir)
         self.transform = transform
-        self.noisy_images = sorted([p for p in self.noisy_dir.iterdir() if p.is_file()])
-        self.clean_images = sorted([p for p in self.clean_dir.iterdir() if p.is_file()])
+        self.noisy_images = sorted([p for p in self.noisy_dir.iterdir() if p.is_file()], key=lambda p: p.name)
+        self.clean_images = sorted([p for p in self.clean_dir.iterdir() if p.is_file()], key=lambda p: p.name)
         if len(self.noisy_images) != len(self.clean_images):
             raise ValueError(
                 "noisy_images and clean_images must contain the same number of files. "
                 f"Found {len(self.noisy_images)} noisy and {len(self.clean_images)} clean images."
+            )
+        noisy_names = [p.name for p in self.noisy_images]
+        clean_names = [p.name for p in self.clean_images]
+        if noisy_names != clean_names:
+            raise ValueError(
+                "noisy_images and clean_images must contain matching filenames for pairing. "
+                f"Found mismatched names: noisy={noisy_names}, clean={clean_names}."
             )
 
     def __len__(self) -> int:

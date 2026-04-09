@@ -52,8 +52,9 @@ def main() -> None:
     d_optimizer = torch.optim.Adam(discriminator.parameters(), lr=args.lr, betas=(0.5, 0.999))
 
     for epoch in range(args.epochs):
-        last_d_loss = torch.tensor(0.0, device=args.device)
-        last_g_loss = torch.tensor(0.0, device=args.device)
+        total_d_loss = 0.0
+        total_g_loss = 0.0
+        num_batches = 0
         for noisy, clean in dataloader:
             noisy = noisy.to(args.device)
             clean = clean.to(args.device)
@@ -69,7 +70,7 @@ def main() -> None:
             d_loss = d_loss + GP_WEIGHT * gradient_penalty(discriminator, clean, fake.detach())
             d_loss.backward()
             d_optimizer.step()
-            last_d_loss = d_loss.detach()
+            total_d_loss += d_loss.item()
 
             g_optimizer.zero_grad()
             fake_logits = discriminator(fake)
@@ -80,9 +81,12 @@ def main() -> None:
             g_loss = g_adv + g_rec + PERCEPTUAL_WEIGHT * g_per + TEXTURE_WEIGHT * g_tex
             g_loss.backward()
             g_optimizer.step()
-            last_g_loss = g_loss.detach()
+            total_g_loss += g_loss.item()
+            num_batches += 1
 
-        print(f"Epoch [{epoch + 1}/{args.epochs}] d_loss={last_d_loss.item():.4f} g_loss={last_g_loss.item():.4f}")
+        mean_d_loss = total_d_loss / max(num_batches, 1)
+        mean_g_loss = total_g_loss / max(num_batches, 1)
+        print(f"Epoch [{epoch + 1}/{args.epochs}] d_loss={mean_d_loss:.4f} g_loss={mean_g_loss:.4f}")
         torch.save(
             {
                 "epoch": epoch + 1,

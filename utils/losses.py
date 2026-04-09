@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import threading
+
 import torch
 import torch.nn as nn
 from torch import autograd
@@ -8,14 +10,17 @@ from torchvision import models
 
 class VGGLoss(nn.Module):
     _cached_features: nn.Module | None = None
+    _cache_lock = threading.Lock()
 
     def __init__(self) -> None:
         super().__init__()
         if VGGLoss._cached_features is None:
-            features = models.vgg16(weights=models.VGG16_Weights.DEFAULT).features[:16].eval()
-            for param in features.parameters():
-                param.requires_grad = False
-            VGGLoss._cached_features = features
+            with VGGLoss._cache_lock:
+                if VGGLoss._cached_features is None:
+                    features = models.vgg16(weights=models.VGG16_Weights.DEFAULT).features[:16].eval()
+                    for param in features.parameters():
+                        param.requires_grad = False
+                    VGGLoss._cached_features = features
         self.features = VGGLoss._cached_features
         self.criterion = nn.L1Loss()
 
