@@ -1,0 +1,1703 @@
+[RCA-GAN] Using device: mps
+[RCA-GAN] Validation set: 100 pairs
+[RCA-GAN] Training set : 200 pairs
+/Users/cusaple/Library/Python/3.9/lib/python/site-packages/torch/utils/data/dataloader.py:684: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+[Epoch    1/100] [Step    20] D: 83.8952  G: 46.1944  adv: 0.0378  pixel: 35.1008  perc: 11.0551  tex: 0.0007
+[Epoch    1/100] [Step    40] D: 144.5007  G: 29.2222  adv: -0.0004  pixel: 20.3425  perc: 8.8798  tex: 0.0003
+[Epoch    1/100] [Step    60] D: 278.9962  G: 35.7892  adv: 0.0133  pixel: 25.8265  perc: 9.9483  tex: 0.0011
+[Epoch    1/100] [Step    80] D: 6.9598  G: 63.3098  adv: 0.0108  pixel: 53.1255  perc: 10.1725  tex: 0.0009
+[Epoch    1/100] [Step   100] D: 31.8348  G: 44.1728  adv: 0.0038  pixel: 34.7697  perc: 9.3986  tex: 0.0007
+[Epoch    1/100] [Step   120] D: 34.8650  G: 26.0627  adv: 0.0022  pixel: 18.8099  perc: 7.2504  tex: 0.0001
+[Epoch    1/100] [Step   140] D: 48.1805  G: 40.2149  adv: -0.0084  pixel: 31.1761  perc: 9.0468  tex: 0.0003
+[Epoch    1/100] [Step   160] D: 4.2809  G: 40.6100  adv: -0.0108  pixel: 32.3116  perc: 8.3089  tex: 0.0002
+[Epoch    1/100] [Step   180] D: 2.2280  G: 32.3031  adv: 0.0049  pixel: 23.7885  perc: 8.5094  tex: 0.0002
+[Epoch    1/100] [Step   200] D: 13.9183  G: 43.0816  adv: 0.0222  pixel: 34.0453  perc: 9.0137  tex: 0.0004
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0001.png
+[Epoch    2/100] [Step    20] D: 21.7698  G: 29.6968  adv: 0.0032  pixel: 20.5781  perc: 9.1151  tex: 0.0004
+[Epoch    2/100] [Step    40] D: 8.5662  G: 40.1879  adv: -0.0032  pixel: 30.3321  perc: 9.8583  tex: 0.0007
+[Epoch    2/100] [Step    60] D: 1.0476  G: 26.0590  adv: 0.0021  pixel: 16.3183  perc: 9.7382  tex: 0.0004
+[Epoch    2/100] [Step    80] D: 2.3911  G: 47.7197  adv: 0.0043  pixel: 38.8036  perc: 8.9113  tex: 0.0006
+[Epoch    2/100] [Step   100] D: 22.6876  G: 43.7847  adv: 0.0195  pixel: 35.5843  perc: 8.1807  tex: 0.0003
+[Epoch    2/100] [Step   120] D: 9.8230  G: 34.8933  adv: 0.0250  pixel: 25.2742  perc: 9.5934  tex: 0.0007
+[Epoch    2/100] [Step   140] D: 30.1965  G: 47.0965  adv: 0.0229  pixel: 35.8298  perc: 11.2410  tex: 0.0028
+[Epoch    2/100] [Step   160] D: 8.4177  G: 31.6726  adv: 0.0057  pixel: 23.3650  perc: 8.3017  tex: 0.0003
+[Epoch    2/100] [Step   180] D: 4.3024  G: 28.3994  adv: 0.0250  pixel: 18.8488  perc: 9.5250  tex: 0.0006
+[Epoch    2/100] [Step   200] D: 8.2453  G: 38.6927  adv: 0.0443  pixel: 30.5213  perc: 8.1268  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0002.png
+[Epoch    3/100] [Step    20] D: 18.5836  G: 29.2462  adv: 0.0342  pixel: 23.1664  perc: 6.0455  tex: 0.0001
+[Epoch    3/100] [Step    40] D: 8.2259  G: 37.3782  adv: 0.0212  pixel: 29.0321  perc: 8.3245  tex: 0.0004
+[Epoch    3/100] [Step    60] D: 14.2795  G: 23.5224  adv: 0.0345  pixel: 14.6713  perc: 8.8160  tex: 0.0006
+[Epoch    3/100] [Step    80] D: 7.1860  G: 24.4335  adv: 0.0217  pixel: 15.6679  perc: 8.7432  tex: 0.0006
+[Epoch    3/100] [Step   100] D: 0.0437  G: 23.5351  adv: 0.0001  pixel: 16.4302  perc: 7.1046  tex: 0.0002
+[Epoch    3/100] [Step   120] D: 33.6739  G: 21.8154  adv: 0.0633  pixel: 13.0277  perc: 8.7241  tex: 0.0004
+[Epoch    3/100] [Step   140] D: 0.1871  G: 28.4961  adv: 0.0389  pixel: 21.0795  perc: 7.3776  tex: 0.0001
+[Epoch    3/100] [Step   160] D: 13.9739  G: 25.3689  adv: 0.0415  pixel: 17.5912  perc: 7.7359  tex: 0.0003
+[Epoch    3/100] [Step   180] D: 1.2024  G: 26.4431  adv: 0.0434  pixel: 18.2727  perc: 8.1267  tex: 0.0003
+[Epoch    3/100] [Step   200] D: 0.6420  G: 27.0018  adv: 0.0223  pixel: 17.0163  perc: 9.9625  tex: 0.0007
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0003.png
+[Epoch    4/100] [Step    20] D: 4.4503  G: 39.5434  adv: -0.0002  pixel: 31.4088  perc: 8.1343  tex: 0.0005
+[Epoch    4/100] [Step    40] D: 0.2019  G: 24.1453  adv: 0.0158  pixel: 15.6600  perc: 8.4691  tex: 0.0004
+[Epoch    4/100] [Step    60] D: 3.0279  G: 20.9143  adv: 0.0326  pixel: 13.9682  perc: 6.9133  tex: 0.0002
+[Epoch    4/100] [Step    80] D: 7.3675  G: 31.6073  adv: 0.0335  pixel: 24.9261  perc: 6.6477  tex: 0.0001
+[Epoch    4/100] [Step   100] D: 86.5812  G: 21.3565  adv: -0.0425  pixel: 14.7738  perc: 6.6251  tex: 0.0001
+[Epoch    4/100] [Step   120] D: 0.2716  G: 34.2599  adv: 0.0465  pixel: 24.3381  perc: 9.8743  tex: 0.0009
+[Epoch    4/100] [Step   140] D: 3.2918  G: 41.2938  adv: 0.0429  pixel: 32.1451  perc: 9.1044  tex: 0.0014
+[Epoch    4/100] [Step   160] D: 13.1920  G: 19.8281  adv: 0.0209  pixel: 13.2634  perc: 6.5436  tex: 0.0002
+[Epoch    4/100] [Step   180] D: 19.5689  G: 27.7599  adv: 0.1110  pixel: 20.7561  perc: 6.8927  tex: 0.0002
+[Epoch    4/100] [Step   200] D: 4.4189  G: 24.9240  adv: 0.0294  pixel: 19.0318  perc: 5.8628  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0004.png
+[Epoch    5/100] [Step    20] D: 4.9948  G: 40.1970  adv: 0.0052  pixel: 29.0325  perc: 11.1579  tex: 0.0015
+[Epoch    5/100] [Step    40] D: 15.7488  G: 23.0741  adv: 0.0345  pixel: 17.3718  perc: 5.6677  tex: 0.0001
+[Epoch    5/100] [Step    60] D: 9.8304  G: 17.7293  adv: -0.0082  pixel: 11.8845  perc: 5.8529  tex: 0.0001
+[Epoch    5/100] [Step    80] D: 0.4182  G: 20.7658  adv: 0.0085  pixel: 13.3424  perc: 7.4146  tex: 0.0003
+[Epoch    5/100] [Step   100] D: 0.6945  G: 21.5534  adv: 0.0269  pixel: 14.9260  perc: 6.6004  tex: 0.0001
+[Epoch    5/100] [Step   120] D: 0.2323  G: 22.1494  adv: 0.0192  pixel: 15.3422  perc: 6.7877  tex: 0.0001
+[Epoch    5/100] [Step   140] D: 0.7392  G: 29.7608  adv: -0.0419  pixel: 21.5211  perc: 8.2811  tex: 0.0005
+[Epoch    5/100] [Step   160] D: 7.3393  G: 30.5055  adv: -0.0327  pixel: 23.0114  perc: 7.5265  tex: 0.0002
+[Epoch    5/100] [Step   180] D: 0.0257  G: 27.2558  adv: 0.0092  pixel: 18.9703  perc: 8.2758  tex: 0.0005
+[Epoch    5/100] [Step   200] D: 10.3705  G: 26.4125  adv: -0.0020  pixel: 19.1226  perc: 7.2917  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0005.png
+[RCA-GAN] Checkpoints saved at epoch 5
+[Epoch    6/100] [Step    20] D: 42.1013  G: 32.9291  adv: 0.0007  pixel: 24.9116  perc: 8.0167  tex: 0.0002
+[Epoch    6/100] [Step    40] D: 0.3241  G: 20.2990  adv: -0.0398  pixel: 13.4274  perc: 6.9113  tex: 0.0002
+[Epoch    6/100] [Step    60] D: 3.5453  G: 31.2611  adv: 0.0076  pixel: 25.6388  perc: 5.6145  tex: 0.0002
+[Epoch    6/100] [Step    80] D: 0.7521  G: 33.5983  adv: 0.0275  pixel: 25.5297  perc: 8.0406  tex: 0.0005
+[Epoch    6/100] [Step   100] D: 12.7484  G: 39.8614  adv: 0.0242  pixel: 33.7962  perc: 6.0409  tex: 0.0001
+[Epoch    6/100] [Step   120] D: 3.7350  G: 37.2987  adv: 0.0336  pixel: 30.2442  perc: 7.0208  tex: 0.0002
+[Epoch    6/100] [Step   140] D: 11.3356  G: 34.3736  adv: 0.0189  pixel: 24.1590  perc: 10.1932  tex: 0.0025
+[Epoch    6/100] [Step   160] D: 15.4708  G: 32.0527  adv: 0.0516  pixel: 25.8262  perc: 6.1743  tex: 0.0005
+[Epoch    6/100] [Step   180] D: 0.0135  G: 21.9837  adv: -0.0057  pixel: 15.8543  perc: 6.1350  tex: 0.0001
+[Epoch    6/100] [Step   200] D: 8.0181  G: 32.6558  adv: 0.0069  pixel: 27.0585  perc: 5.5903  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0006.png
+[Epoch    7/100] [Step    20] D: 0.0004  G: 27.7324  adv: -0.0121  pixel: 19.6252  perc: 8.1186  tex: 0.0007
+[Epoch    7/100] [Step    40] D: 0.0675  G: 20.1934  adv: -0.0205  pixel: 12.9601  perc: 7.2536  tex: 0.0002
+[Epoch    7/100] [Step    60] D: 2.6124  G: 18.5237  adv: 0.0233  pixel: 12.7502  perc: 5.7501  tex: 0.0001
+[Epoch    7/100] [Step    80] D: 0.8105  G: 22.5060  adv: -0.0267  pixel: 15.1397  perc: 7.3928  tex: 0.0002
+[Epoch    7/100] [Step   100] D: 0.0543  G: 22.2333  adv: -0.0213  pixel: 16.1095  perc: 6.1450  tex: 0.0002
+[Epoch    7/100] [Step   120] D: 10.1787  G: 21.1771  adv: 0.0185  pixel: 13.5071  perc: 7.6510  tex: 0.0004
+[Epoch    7/100] [Step   140] D: 1.5029  G: 18.7116  adv: 0.0594  pixel: 11.9493  perc: 6.7028  tex: 0.0001
+[Epoch    7/100] [Step   160] D: 0.3178  G: 21.9254  adv: -0.0759  pixel: 14.9847  perc: 7.0164  tex: 0.0002
+[Epoch    7/100] [Step   180] D: 0.1410  G: 27.9569  adv: -0.0333  pixel: 18.7088  perc: 9.2805  tex: 0.0009
+[Epoch    7/100] [Step   200] D: 0.3331  G: 27.1810  adv: 0.0584  pixel: 19.9640  perc: 7.1584  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0007.png
+[Epoch    8/100] [Step    20] D: 12.1743  G: 40.3952  adv: 0.0175  pixel: 30.8837  perc: 9.4925  tex: 0.0015
+[Epoch    8/100] [Step    40] D: 318.3499  G: 24.5478  adv: -0.3386  pixel: 17.7208  perc: 7.1652  tex: 0.0003
+[Epoch    8/100] [Step    60] D: 18.0838  G: 20.1633  adv: 0.0552  pixel: 12.8816  perc: 7.2260  tex: 0.0005
+[Epoch    8/100] [Step    80] D: 0.0866  G: 32.0796  adv: -0.0560  pixel: 21.6371  perc: 10.4970  tex: 0.0014
+[Epoch    8/100] [Step   100] D: 0.2865  G: 29.0928  adv: -0.0699  pixel: 19.2081  perc: 9.9539  tex: 0.0008
+[Epoch    8/100] [Step   120] D: 1.2240  G: 20.9610  adv: 0.0198  pixel: 14.7986  perc: 6.1425  tex: 0.0001
+[Epoch    8/100] [Step   140] D: 0.0398  G: 31.3018  adv: 0.0202  pixel: 22.4407  perc: 8.8404  tex: 0.0005
+[Epoch    8/100] [Step   160] D: 1.8558  G: 28.0988  adv: 0.0111  pixel: 21.5644  perc: 6.5231  tex: 0.0002
+[Epoch    8/100] [Step   180] D: 1.1598  G: 18.9159  adv: -0.0058  pixel: 11.9809  perc: 6.9406  tex: 0.0003
+[Epoch    8/100] [Step   200] D: 3.6933  G: 17.1048  adv: 0.0376  pixel: 11.5985  perc: 5.4686  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0008.png
+[Epoch    9/100] [Step    20] D: 1.5070  G: 21.3286  adv: 0.0034  pixel: 14.3137  perc: 7.0112  tex: 0.0003
+[Epoch    9/100] [Step    40] D: 3.5034  G: 16.2518  adv: 0.0166  pixel: 10.4804  perc: 5.7547  tex: 0.0001
+[Epoch    9/100] [Step    60] D: 0.3697  G: 20.3658  adv: -0.0671  pixel: 13.5308  perc: 6.9019  tex: 0.0002
+[Epoch    9/100] [Step    80] D: 5.7225  G: 25.0522  adv: 0.0014  pixel: 16.9491  perc: 8.1008  tex: 0.0010
+[Epoch    9/100] [Step   100] D: 492.2997  G: 26.6830  adv: -0.2189  pixel: 20.4429  perc: 6.4587  tex: 0.0003
+[Epoch    9/100] [Step   120] D: 1.0725  G: 21.0786  adv: 0.0246  pixel: 14.7583  perc: 6.2956  tex: 0.0001
+[Epoch    9/100] [Step   140] D: 12.5041  G: 16.6368  adv: -0.0094  pixel: 10.4460  perc: 6.2001  tex: 0.0001
+[Epoch    9/100] [Step   160] D: 0.1585  G: 19.8915  adv: 0.0261  pixel: 13.5312  perc: 6.3339  tex: 0.0002
+[Epoch    9/100] [Step   180] D: 1.5464  G: 22.2719  adv: 0.0140  pixel: 16.1054  perc: 6.1523  tex: 0.0001
+[Epoch    9/100] [Step   200] D: 0.1789  G: 26.8187  adv: -0.0444  pixel: 20.4788  perc: 6.3842  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0009.png
+[Epoch   10/100] [Step    20] D: 0.6038  G: 15.2624  adv: 0.0111  pixel: 9.3963  perc: 5.8548  tex: 0.0001
+[Epoch   10/100] [Step    40] D: 0.1950  G: 23.4310  adv: 0.0416  pixel: 18.0012  perc: 5.3881  tex: 0.0001
+[Epoch   10/100] [Step    60] D: 0.5218  G: 24.1471  adv: 0.0524  pixel: 16.4429  perc: 7.6515  tex: 0.0003
+[Epoch   10/100] [Step    80] D: 0.0387  G: 25.1617  adv: 0.0045  pixel: 18.5862  perc: 6.5709  tex: 0.0001
+[Epoch   10/100] [Step   100] D: 0.0012  G: 26.0877  adv: 0.0412  pixel: 19.2617  perc: 6.7846  tex: 0.0002
+[Epoch   10/100] [Step   120] D: 3.0245  G: 18.7383  adv: -0.0734  pixel: 11.9745  perc: 6.8370  tex: 0.0002
+[Epoch   10/100] [Step   140] D: 1.5165  G: 21.3480  adv: 0.0009  pixel: 15.3659  perc: 5.9810  tex: 0.0001
+[Epoch   10/100] [Step   160] D: 1.6812  G: 26.4163  adv: 0.0214  pixel: 20.1741  perc: 6.2207  tex: 0.0001
+[Epoch   10/100] [Step   180] D: 0.4824  G: 15.2415  adv: 0.1018  pixel: 8.2420  perc: 6.8975  tex: 0.0002
+[Epoch   10/100] [Step   200] D: 0.0060  G: 26.5366  adv: 0.1232  pixel: 16.4218  perc: 9.9901  tex: 0.0015
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0010.png
+[RCA-GAN] Checkpoints saved at epoch 10
+[Epoch   11/100] [Step    20] D: 0.0379  G: 19.8240  adv: 0.0226  pixel: 14.6756  perc: 5.1258  tex: 0.0000
+[Epoch   11/100] [Step    40] D: 0.8926  G: 32.5278  adv: 0.0040  pixel: 24.0580  perc: 8.4653  tex: 0.0006
+[Epoch   11/100] [Step    60] D: 3.5333  G: 20.4303  adv: 0.0284  pixel: 12.8579  perc: 7.5437  tex: 0.0003
+[Epoch   11/100] [Step    80] D: -0.0005  G: 20.5838  adv: -0.0286  pixel: 14.0727  perc: 6.5395  tex: 0.0001
+[Epoch   11/100] [Step   100] D: 0.0422  G: 22.0226  adv: -0.0244  pixel: 14.2494  perc: 7.7966  tex: 0.0010
+[Epoch   11/100] [Step   120] D: 1.2131  G: 21.4054  adv: -0.0285  pixel: 14.0304  perc: 7.4032  tex: 0.0002
+[Epoch   11/100] [Step   140] D: 1.2307  G: 19.2314  adv: 0.0751  pixel: 13.0930  perc: 6.0631  tex: 0.0001
+[Epoch   11/100] [Step   160] D: 52.2795  G: 22.3384  adv: 0.5781  pixel: 13.8978  perc: 7.8620  tex: 0.0004
+[Epoch   11/100] [Step   180] D: 1.1630  G: 27.8869  adv: -0.0170  pixel: 20.6967  perc: 7.2068  tex: 0.0003
+[Epoch   11/100] [Step   200] D: 3.8308  G: 17.7713  adv: 0.3052  pixel: 10.9199  perc: 6.5461  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0011.png
+[Epoch   12/100] [Step    20] D: 0.3961  G: 17.8682  adv: -0.0783  pixel: 10.9895  perc: 6.9567  tex: 0.0003
+[Epoch   12/100] [Step    40] D: 7.7231  G: 21.9914  adv: 0.3753  pixel: 15.7020  perc: 5.9139  tex: 0.0001
+[Epoch   12/100] [Step    60] D: 4.9268  G: 22.6033  adv: 0.0427  pixel: 14.9176  perc: 7.6428  tex: 0.0003
+[Epoch   12/100] [Step    80] D: 0.4413  G: 23.7039  adv: -0.0143  pixel: 16.3614  perc: 7.3566  tex: 0.0003
+[Epoch   12/100] [Step   100] D: 0.1971  G: 20.6896  adv: -0.0596  pixel: 14.3004  perc: 6.4487  tex: 0.0002
+[Epoch   12/100] [Step   120] D: -0.0003  G: 15.7021  adv: 0.0675  pixel: 10.3699  perc: 5.2647  tex: 0.0001
+[Epoch   12/100] [Step   140] D: 0.2458  G: 18.3631  adv: -0.0162  pixel: 13.0127  perc: 5.3665  tex: 0.0001
+[Epoch   12/100] [Step   160] D: 1.8349  G: 19.9986  adv: 0.0472  pixel: 11.6040  perc: 8.3469  tex: 0.0004
+[Epoch   12/100] [Step   180] D: 0.0033  G: 19.3732  adv: -0.0065  pixel: 12.0800  perc: 7.2993  tex: 0.0004
+[Epoch   12/100] [Step   200] D: 3.7654  G: 21.9114  adv: 0.0317  pixel: 14.1914  perc: 7.6875  tex: 0.0008
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0012.png
+[Epoch   13/100] [Step    20] D: 0.1214  G: 32.8584  adv: 0.0001  pixel: 26.3232  perc: 6.5349  tex: 0.0003
+[Epoch   13/100] [Step    40] D: 1.3184  G: 19.7686  adv: 0.0234  pixel: 14.0479  perc: 5.6973  tex: 0.0001
+[Epoch   13/100] [Step    60] D: 0.2430  G: 20.2371  adv: -0.0726  pixel: 13.5003  perc: 6.8092  tex: 0.0002
+[Epoch   13/100] [Step    80] D: 0.2847  G: 18.5513  adv: -0.0118  pixel: 11.7066  perc: 6.8563  tex: 0.0003
+[Epoch   13/100] [Step   100] D: 0.7813  G: 29.0010  adv: -0.0011  pixel: 21.7499  perc: 7.2520  tex: 0.0002
+[Epoch   13/100] [Step   120] D: 0.1032  G: 23.3694  adv: -0.0292  pixel: 15.9729  perc: 7.4254  tex: 0.0003
+[Epoch   13/100] [Step   140] D: 0.5072  G: 16.6173  adv: -0.0288  pixel: 10.7983  perc: 5.8477  tex: 0.0001
+[Epoch   13/100] [Step   160] D: 1.9462  G: 20.2412  adv: 0.0008  pixel: 13.0024  perc: 7.2376  tex: 0.0003
+[Epoch   13/100] [Step   180] D: 1.7778  G: 22.9321  adv: 0.0557  pixel: 14.7472  perc: 8.1286  tex: 0.0005
+[Epoch   13/100] [Step   200] D: 0.2766  G: 23.3785  adv: -0.2060  pixel: 17.8904  perc: 5.6940  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0013.png
+[Epoch   14/100] [Step    20] D: 2.6674  G: 22.2141  adv: 0.0062  pixel: 15.0987  perc: 7.1087  tex: 0.0006
+[Epoch   14/100] [Step    40] D: 0.1433  G: 17.3322  adv: 0.0074  pixel: 10.9354  perc: 6.3892  tex: 0.0002
+[Epoch   14/100] [Step    60] D: 0.3061  G: 14.8536  adv: -0.0223  pixel: 9.2079  perc: 5.6679  tex: 0.0001
+[Epoch   14/100] [Step    80] D: 1.0100  G: 23.2106  adv: 0.0930  pixel: 17.0965  perc: 6.0209  tex: 0.0001
+[Epoch   14/100] [Step   100] D: 0.0611  G: 17.3366  adv: -0.0350  pixel: 10.6863  perc: 6.6851  tex: 0.0002
+[Epoch   14/100] [Step   120] D: 0.2050  G: 20.8414  adv: -0.0049  pixel: 14.8166  perc: 6.0296  tex: 0.0001
+[Epoch   14/100] [Step   140] D: 5.3014  G: 25.8127  adv: -0.2069  pixel: 18.5727  perc: 7.4462  tex: 0.0006
+[Epoch   14/100] [Step   160] D: 1.9070  G: 31.2301  adv: 0.1579  pixel: 23.5767  perc: 7.4952  tex: 0.0003
+[Epoch   14/100] [Step   180] D: 3.1212  G: 28.7729  adv: -0.4532  pixel: 21.8037  perc: 7.4219  tex: 0.0005
+[Epoch   14/100] [Step   200] D: 0.6579  G: 26.3780  adv: 0.0951  pixel: 19.5746  perc: 6.7080  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0014.png
+[Epoch   15/100] [Step    20] D: 1.3433  G: 27.7629  adv: -0.0409  pixel: 21.5442  perc: 6.2593  tex: 0.0002
+[Epoch   15/100] [Step    40] D: 18.1998  G: 16.2427  adv: 0.0320  pixel: 10.4942  perc: 5.7164  tex: 0.0001
+[Epoch   15/100] [Step    60] D: 2.9923  G: 15.6620  adv: 0.0671  pixel: 10.2937  perc: 5.3012  tex: 0.0001
+[Epoch   15/100] [Step    80] D: 0.2063  G: 20.2809  adv: 0.0816  pixel: 13.1565  perc: 7.0426  tex: 0.0002
+[Epoch   15/100] [Step   100] D: 2.3849  G: 23.7105  adv: 0.0125  pixel: 15.6945  perc: 8.0030  tex: 0.0005
+[Epoch   15/100] [Step   120] D: 1.1867  G: 13.8393  adv: 0.0226  pixel: 8.4169  perc: 5.3997  tex: 0.0001
+[Epoch   15/100] [Step   140] D: 0.3105  G: 17.3618  adv: 0.0251  pixel: 11.0633  perc: 6.2732  tex: 0.0002
+[Epoch   15/100] [Step   160] D: 0.2173  G: 15.3872  adv: -0.0588  pixel: 9.5070  perc: 5.9389  tex: 0.0001
+[Epoch   15/100] [Step   180] D: 0.3025  G: 18.2030  adv: -0.0874  pixel: 10.0792  perc: 8.2105  tex: 0.0007
+[Epoch   15/100] [Step   200] D: 0.0146  G: 15.7553  adv: -0.0370  pixel: 9.1910  perc: 6.6012  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0015.png
+[RCA-GAN] Checkpoints saved at epoch 15
+[Epoch   16/100] [Step    20] D: 0.0190  G: 15.6951  adv: 0.0206  pixel: 9.2354  perc: 6.4389  tex: 0.0002
+[Epoch   16/100] [Step    40] D: 3.6917  G: 16.7843  adv: 0.0054  pixel: 10.5144  perc: 6.2642  tex: 0.0002
+[Epoch   16/100] [Step    60] D: 1.0203  G: 19.3341  adv: -0.0287  pixel: 12.4761  perc: 6.8865  tex: 0.0003
+[Epoch   16/100] [Step    80] D: 0.8549  G: 20.7350  adv: -0.1613  pixel: 14.3844  perc: 6.5117  tex: 0.0002
+[Epoch   16/100] [Step   100] D: 3.6937  G: 12.3286  adv: -0.0672  pixel: 7.5314  perc: 4.8642  tex: 0.0001
+[Epoch   16/100] [Step   120] D: 0.0394  G: 42.8811  adv: -0.0873  pixel: 37.8440  perc: 5.1243  tex: 0.0000
+[Epoch   16/100] [Step   140] D: 1.2984  G: 19.6154  adv: 0.0191  pixel: 12.0025  perc: 7.5935  tex: 0.0004
+[Epoch   16/100] [Step   160] D: 0.0809  G: 27.7356  adv: -0.0124  pixel: 20.6786  perc: 7.0691  tex: 0.0003
+[Epoch   16/100] [Step   180] D: 0.3521  G: 24.3795  adv: 0.0357  pixel: 18.2250  perc: 6.1186  tex: 0.0002
+[Epoch   16/100] [Step   200] D: 0.0649  G: 20.0218  adv: 0.0603  pixel: 12.3113  perc: 7.6498  tex: 0.0005
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0016.png
+[Epoch   17/100] [Step    20] D: 1.2099  G: 18.0265  adv: 0.0288  pixel: 12.3885  perc: 5.6091  tex: 0.0001
+[Epoch   17/100] [Step    40] D: 0.8066  G: 15.6974  adv: 0.1350  pixel: 9.1773  perc: 6.3850  tex: 0.0001
+[Epoch   17/100] [Step    60] D: 5.1769  G: 22.9659  adv: -0.0893  pixel: 14.7591  perc: 8.2955  tex: 0.0006
+[Epoch   17/100] [Step    80] D: 16.7133  G: 16.7039  adv: -0.1258  pixel: 11.2060  perc: 5.6237  tex: 0.0001
+[Epoch   17/100] [Step   100] D: 2.8134  G: 25.8062  adv: 0.0464  pixel: 20.0681  perc: 5.6915  tex: 0.0002
+[Epoch   17/100] [Step   120] D: 0.2122  G: 27.4587  adv: -0.0490  pixel: 18.3911  perc: 9.1153  tex: 0.0014
+[Epoch   17/100] [Step   140] D: 0.1653  G: 23.1440  adv: 0.1229  pixel: 16.6528  perc: 6.3681  tex: 0.0002
+[Epoch   17/100] [Step   160] D: 0.3412  G: 16.5856  adv: -0.0231  pixel: 10.3233  perc: 6.2851  tex: 0.0002
+[Epoch   17/100] [Step   180] D: 3.9112  G: 12.5948  adv: 0.0239  pixel: 8.0460  perc: 4.5249  tex: 0.0000
+[Epoch   17/100] [Step   200] D: 0.4124  G: 23.1358  adv: -0.0006  pixel: 15.1570  perc: 7.9789  tex: 0.0005
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0017.png
+[Epoch   18/100] [Step    20] D: 8.6679  G: 23.5149  adv: -0.0322  pixel: 16.9540  perc: 6.5929  tex: 0.0003
+[Epoch   18/100] [Step    40] D: 1.0501  G: 13.4515  adv: -0.1105  pixel: 7.4005  perc: 6.1613  tex: 0.0001
+[Epoch   18/100] [Step    60] D: 0.0115  G: 18.5086  adv: 0.0095  pixel: 11.4151  perc: 7.0835  tex: 0.0004
+[Epoch   18/100] [Step    80] D: 0.7014  G: 13.9806  adv: -0.0031  pixel: 8.8196  perc: 5.1640  tex: 0.0000
+[Epoch   18/100] [Step   100] D: 0.7792  G: 18.7069  adv: 0.0205  pixel: 11.6612  perc: 7.0250  tex: 0.0002
+[Epoch   18/100] [Step   120] D: 0.3682  G: 16.9104  adv: 0.0037  pixel: 9.8832  perc: 7.0233  tex: 0.0002
+[Epoch   18/100] [Step   140] D: 0.3840  G: 23.3235  adv: 0.0157  pixel: 15.9126  perc: 7.3948  tex: 0.0004
+[Epoch   18/100] [Step   160] D: 2.2856  G: 18.9643  adv: -0.0070  pixel: 11.7536  perc: 7.2173  tex: 0.0004
+[Epoch   18/100] [Step   180] D: 0.3122  G: 20.5895  adv: 0.0534  pixel: 11.8304  perc: 8.7051  tex: 0.0006
+[Epoch   18/100] [Step   200] D: 2.1561  G: 12.9971  adv: 0.0093  pixel: 8.0168  perc: 4.9710  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0018.png
+[Epoch   19/100] [Step    20] D: 0.4844  G: 15.4969  adv: 0.0398  pixel: 9.5184  perc: 5.9385  tex: 0.0002
+[Epoch   19/100] [Step    40] D: 9.5401  G: 15.4275  adv: 0.0807  pixel: 8.6228  perc: 6.7238  tex: 0.0002
+[RCA-GAN] Using device: mps
+[RCA-GAN] Validation set: 100 pairs
+[RCA-GAN] Training set : 200 pairs
+[Epoch    1/100] [Step    20] D: 296.9590  G: 34.7480  adv: -0.0096  pixel: 26.5229  perc: 8.2345  tex: 0.0002
+[Epoch    1/100] [Step    40] D: 190.2816  G: 41.8128  adv: -0.0116  pixel: 31.6565  perc: 10.1672  tex: 0.0006
+[Epoch    1/100] [Step    60] D: 18.0132  G: 32.4983  adv: -0.0166  pixel: 22.6966  perc: 9.8177  tex: 0.0006
+[Epoch    1/100] [Step    80] D: 257.5930  G: 29.0746  adv: -0.0355  pixel: 20.9233  perc: 8.1866  tex: 0.0002
+[Epoch    1/100] [Step   100] D: 117.7336  G: 40.7527  adv: -0.0174  pixel: 33.7651  perc: 7.0047  tex: 0.0002
+[Epoch    1/100] [Step   120] D: 6.0903  G: 32.5096  adv: -0.0130  pixel: 24.3310  perc: 8.1911  tex: 0.0004
+[Epoch    1/100] [Step   140] D: 15.3864  G: 41.0704  adv: -0.0184  pixel: 32.1209  perc: 8.9674  tex: 0.0004
+[Epoch    1/100] [Step   160] D: 71.1695  G: 35.0685  adv: -0.0132  pixel: 26.0200  perc: 9.0613  tex: 0.0003
+[Epoch    1/100] [Step   180] D: 8.4063  G: 54.5721  adv: 0.0031  pixel: 46.0918  perc: 8.4767  tex: 0.0004
+[Epoch    1/100] [Step   200] D: 1.4356  G: 23.6901  adv: -0.0099  pixel: 15.5575  perc: 8.1422  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0001.png
+[Epoch    2/100] [Step    20] D: 9.4982  G: 22.7920  adv: -0.0082  pixel: 15.7892  perc: 7.0109  tex: 0.0001
+[Epoch    2/100] [Step    40] D: 11.5522  G: 38.6759  adv: 0.0107  pixel: 30.7642  perc: 7.9006  tex: 0.0003
+[Epoch    2/100] [Step    60] D: 3.1492  G: 26.9366  adv: -0.0042  pixel: 18.0330  perc: 8.9074  tex: 0.0003
+[Epoch    2/100] [Step    80] D: 3.3262  G: 30.9760  adv: -0.0058  pixel: 22.0370  perc: 8.9443  tex: 0.0005
+[Epoch    2/100] [Step   100] D: 1.8072  G: 32.9265  adv: 0.0136  pixel: 23.0745  perc: 9.8377  tex: 0.0007
+[Epoch    2/100] [Step   120] D: 12.6106  G: 37.8498  adv: 0.0089  pixel: 31.4987  perc: 6.3419  tex: 0.0002
+[Epoch    2/100] [Step   140] D: 22.6738  G: 28.4005  adv: -0.0001  pixel: 20.9728  perc: 7.4275  tex: 0.0003
+[Epoch    2/100] [Step   160] D: 0.0087  G: 33.7061  adv: -0.0054  pixel: 24.0612  perc: 9.6497  tex: 0.0007
+[Epoch    2/100] [Step   180] D: 16.7951  G: 21.9412  adv: -0.0067  pixel: 14.5788  perc: 7.3689  tex: 0.0002
+[Epoch    2/100] [Step   200] D: 7.2796  G: 20.6906  adv: 0.0099  pixel: 12.6301  perc: 8.0504  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0002.png
+[Epoch    3/100] [Step    20] D: 34.5310  G: 41.2989  adv: 0.0140  pixel: 32.3979  perc: 8.8863  tex: 0.0009
+[Epoch    3/100] [Step    40] D: 14.9853  G: 30.9396  adv: -0.0129  pixel: 22.8436  perc: 8.1087  tex: 0.0002
+[Epoch    3/100] [Step    60] D: 0.0955  G: 33.2788  adv: -0.0094  pixel: 26.5616  perc: 6.7265  tex: 0.0002
+[Epoch    3/100] [Step    80] D: 0.0197  G: 38.7664  adv: 0.0600  pixel: 29.9303  perc: 8.7757  tex: 0.0004
+[Epoch    3/100] [Step   100] D: 14.8444  G: 32.4145  adv: -0.0518  pixel: 23.5860  perc: 8.8798  tex: 0.0006
+[Epoch    3/100] [Step   120] D: 8.8239  G: 27.9715  adv: 0.0155  pixel: 19.5946  perc: 8.3609  tex: 0.0005
+[Epoch    3/100] [Step   140] D: 7.1899  G: 28.3546  adv: -0.0072  pixel: 18.3535  perc: 10.0074  tex: 0.0008
+[Epoch    3/100] [Step   160] D: 281.8539  G: 31.3933  adv: 0.0183  pixel: 23.5847  perc: 7.7900  tex: 0.0002
+[Epoch    3/100] [Step   180] D: 90.0032  G: 34.1544  adv: 0.1935  pixel: 28.7471  perc: 5.2138  tex: 0.0001
+[Epoch    3/100] [Step   200] D: 9.8778  G: 21.1284  adv: 0.0539  pixel: 14.7315  perc: 6.3428  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0003.png
+[Epoch    4/100] [Step    20] D: 4.1085  G: 30.6540  adv: 0.0541  pixel: 21.4541  perc: 9.1443  tex: 0.0016
+[Epoch    4/100] [Step    40] D: 32.7861  G: 26.4964  adv: 0.0106  pixel: 17.3165  perc: 9.1685  tex: 0.0007
+[Epoch    4/100] [Step    60] D: 78.2391  G: 20.3852  adv: -0.0124  pixel: 12.4580  perc: 7.9392  tex: 0.0003
+[Epoch    4/100] [Step    80] D: 11.7487  G: 33.3997  adv: 0.1071  pixel: 21.7647  perc: 11.5260  tex: 0.0019
+[Epoch    4/100] [Step   100] D: 0.0388  G: 22.0346  adv: 0.0077  pixel: 15.2387  perc: 6.7880  tex: 0.0001
+[Epoch    4/100] [Step   120] D: 0.4034  G: 34.4346  adv: -0.0191  pixel: 27.7306  perc: 6.7229  tex: 0.0001
+[Epoch    4/100] [Step   140] D: 1.5018  G: 40.7330  adv: 0.0371  pixel: 34.0270  perc: 6.6687  tex: 0.0002
+[Epoch    4/100] [Step   160] D: 19.9568  G: 19.0065  adv: 0.0065  pixel: 13.2121  perc: 5.7879  tex: 0.0001
+[Epoch    4/100] [Step   180] D: 0.0352  G: 22.6264  adv: 0.0611  pixel: 14.7473  perc: 7.8176  tex: 0.0004
+[Epoch    4/100] [Step   200] D: 8.9440  G: 32.3211  adv: 0.0431  pixel: 26.8234  perc: 5.4545  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0004.png
+[Epoch    5/100] [Step    20] D: 0.2159  G: 22.4118  adv: 0.0178  pixel: 16.0770  perc: 6.3169  tex: 0.0001
+[Epoch    5/100] [Step    40] D: 1.3667  G: 14.6020  adv: 0.0086  pixel: 8.8333  perc: 5.7601  tex: 0.0001
+[Epoch    5/100] [Step    60] D: 51.4771  G: 27.7786  adv: 0.1468  pixel: 20.8114  perc: 6.8203  tex: 0.0002
+[Epoch    5/100] [Step    80] D: 0.1257  G: 29.3651  adv: 0.1752  pixel: 20.9738  perc: 8.2156  tex: 0.0005
+[Epoch    5/100] [Step   100] D: 287.0492  G: 32.5947  adv: -0.3682  pixel: 25.1528  perc: 7.8097  tex: 0.0003
+[Epoch    5/100] [Step   120] D: 0.1133  G: 21.3203  adv: 0.0479  pixel: 13.0973  perc: 8.1748  tex: 0.0003
+[Epoch    5/100] [Step   140] D: 1.0946  G: 35.8591  adv: -0.0280  pixel: 27.3960  perc: 8.4907  tex: 0.0004
+[Epoch    5/100] [Step   160] D: 0.1303  G: 20.1670  adv: 0.0345  pixel: 13.3511  perc: 6.7813  tex: 0.0001
+[Epoch    5/100] [Step   180] D: 1.7666  G: 23.3847  adv: 0.0192  pixel: 16.1738  perc: 7.1914  tex: 0.0003
+[Epoch    5/100] [Step   200] D: 1.7056  G: 30.9438  adv: 0.0027  pixel: 22.9352  perc: 8.0055  tex: 0.0004
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0005.png
+[RCA-GAN] Checkpoints saved at epoch 5
+[Epoch    6/100] [Step    20] D: 2.5193  G: 23.4027  adv: 0.0255  pixel: 17.0653  perc: 6.3117  tex: 0.0001
+[Epoch    6/100] [Step    40] D: 2.5313  G: 15.1988  adv: 0.0110  pixel: 9.4516  perc: 5.7362  tex: 0.0001
+[Epoch    6/100] [Step    60] D: 0.1178  G: 29.8968  adv: 0.0482  pixel: 21.9349  perc: 7.9133  tex: 0.0003
+[Epoch    6/100] [Step    80] D: 0.7729  G: 34.0019  adv: 0.0448  pixel: 25.8663  perc: 8.0904  tex: 0.0003
+[Epoch    6/100] [Step   100] D: 2.5853  G: 20.4570  adv: 0.0463  pixel: 12.0921  perc: 8.3182  tex: 0.0005
+[Epoch    6/100] [Step   120] D: 0.5991  G: 24.0838  adv: 0.0362  pixel: 17.1848  perc: 6.8628  tex: 0.0001
+[Epoch    6/100] [Step   140] D: 109.3808  G: 39.2240  adv: -0.1014  pixel: 31.9428  perc: 7.3823  tex: 0.0002
+[Epoch    6/100] [Step   160] D: 0.0776  G: 35.3720  adv: 0.0044  pixel: 29.0389  perc: 6.3285  tex: 0.0002
+[Epoch    6/100] [Step   180] D: 0.1668  G: 39.3548  adv: 0.0135  pixel: 31.9192  perc: 7.4218  tex: 0.0003
+[Epoch    6/100] [Step   200] D: 0.4133  G: 25.8115  adv: 0.0225  pixel: 19.6891  perc: 6.0998  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0006.png
+[Epoch    7/100] [Step    20] D: 0.5718  G: 19.3167  adv: 0.0229  pixel: 12.3128  perc: 6.9808  tex: 0.0002
+[Epoch    7/100] [Step    40] D: 0.4941  G: 28.0766  adv: 0.0365  pixel: 21.4657  perc: 6.5742  tex: 0.0001
+[Epoch    7/100] [Step    60] D: 3.9504  G: 27.1468  adv: 0.0178  pixel: 19.5760  perc: 7.5527  tex: 0.0003
+[Epoch    7/100] [Step    80] D: 9.3149  G: 29.0288  adv: -0.1504  pixel: 21.9920  perc: 7.1868  tex: 0.0003
+[Epoch    7/100] [Step   100] D: 0.2613  G: 28.6478  adv: -0.0973  pixel: 21.7328  perc: 7.0121  tex: 0.0002
+[Epoch    7/100] [Step   120] D: 0.2678  G: 37.5923  adv: -0.0315  pixel: 30.3357  perc: 7.2878  tex: 0.0003
+[Epoch    7/100] [Step   140] D: 0.0417  G: 28.5846  adv: -0.0226  pixel: 21.4295  perc: 7.1775  tex: 0.0002
+[Epoch    7/100] [Step   160] D: 0.0654  G: 19.9838  adv: -0.0579  pixel: 12.9148  perc: 7.1267  tex: 0.0003
+[Epoch    7/100] [Step   180] D: 10.6120  G: 21.9518  adv: -0.0962  pixel: 16.2240  perc: 5.8239  tex: 0.0001
+[Epoch    7/100] [Step   200] D: 0.1064  G: 27.2398  adv: 0.0842  pixel: 21.0577  perc: 6.0978  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0007.png
+[Epoch    8/100] [Step    20] D: 0.2123  G: 30.1429  adv: 0.0296  pixel: 23.8815  perc: 6.2318  tex: 0.0001
+[Epoch    8/100] [Step    40] D: 2.9411  G: 17.4983  adv: 0.0265  pixel: 11.6785  perc: 5.7931  tex: 0.0001
+[Epoch    8/100] [Step    60] D: 0.2199  G: 20.7766  adv: -0.0219  pixel: 12.9996  perc: 7.7984  tex: 0.0004
+[Epoch    8/100] [Step    80] D: 0.0293  G: 23.4749  adv: 0.0873  pixel: 15.8849  perc: 7.5022  tex: 0.0006
+[Epoch    8/100] [Step   100] D: 0.0556  G: 14.9954  adv: 0.0100  pixel: 9.7722  perc: 5.2130  tex: 0.0001
+[Epoch    8/100] [Step   120] D: 1.7737  G: 18.7668  adv: -0.0073  pixel: 12.8146  perc: 5.9594  tex: 0.0002
+[Epoch    8/100] [Step   140] D: 1.0098  G: 26.3548  adv: 0.0615  pixel: 17.7839  perc: 8.5088  tex: 0.0006
+[Epoch    8/100] [Step   160] D: 118.0705  G: 25.8060  adv: 0.0818  pixel: 16.9660  perc: 8.7570  tex: 0.0013
+[Epoch    8/100] [Step   180] D: 0.9849  G: 20.4537  adv: 0.0026  pixel: 13.1848  perc: 7.2659  tex: 0.0004
+[Epoch    8/100] [Step   200] D: 0.4779  G: 22.1042  adv: 0.0476  pixel: 15.5383  perc: 6.5182  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0008.png
+[Epoch    9/100] [Step    20] D: 0.4815  G: 25.4848  adv: 0.0425  pixel: 18.4905  perc: 6.9517  tex: 0.0002
+[Epoch    9/100] [Step    40] D: 0.9235  G: 23.1014  adv: -0.0846  pixel: 16.3639  perc: 6.8219  tex: 0.0003
+[Epoch    9/100] [Step    60] D: 2.6569  G: 24.9632  adv: -0.0064  pixel: 16.6728  perc: 8.2962  tex: 0.0005
+[Epoch    9/100] [Step    80] D: 0.0049  G: 28.6618  adv: 0.0710  pixel: 19.2470  perc: 9.3423  tex: 0.0015
+[Epoch    9/100] [Step   100] D: 0.0649  G: 26.1324  adv: 0.0643  pixel: 20.0500  perc: 6.0180  tex: 0.0001
+[Epoch    9/100] [Step   120] D: 0.0425  G: 21.7882  adv: 0.0032  pixel: 13.9772  perc: 7.8071  tex: 0.0007
+[Epoch    9/100] [Step   140] D: 1.4255  G: 26.9813  adv: 0.0202  pixel: 21.0147  perc: 5.9463  tex: 0.0001
+[Epoch    9/100] [Step   160] D: 0.0001  G: 32.3433  adv: -0.0674  pixel: 23.1180  perc: 9.2915  tex: 0.0011
+[Epoch    9/100] [Step   180] D: 0.0248  G: 17.5724  adv: -0.0206  pixel: 12.2780  perc: 5.3150  tex: 0.0001
+[Epoch    9/100] [Step   200] D: 0.4145  G: 31.8159  adv: 0.0369  pixel: 25.3718  perc: 6.4071  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0009.png
+[Epoch   10/100] [Step    20] D: 1.1620  G: 23.3854  adv: 0.0491  pixel: 15.9779  perc: 7.3580  tex: 0.0004
+[Epoch   10/100] [Step    40] D: 0.4659  G: 25.5017  adv: -0.0012  pixel: 19.3372  perc: 6.1655  tex: 0.0002
+[Epoch   10/100] [Step    60] D: 3.1161  G: 19.1378  adv: 0.0004  pixel: 14.0616  perc: 5.0758  tex: 0.0000
+[Epoch   10/100] [Step    80] D: 0.1926  G: 16.1199  adv: 0.0540  pixel: 9.4330  perc: 6.6326  tex: 0.0002
+[Epoch   10/100] [Step   100] D: 0.0108  G: 21.6440  adv: 0.0806  pixel: 14.7675  perc: 6.7957  tex: 0.0002
+[Epoch   10/100] [Step   120] D: 1.1554  G: 22.9096  adv: 0.0264  pixel: 15.6368  perc: 7.2460  tex: 0.0004
+[Epoch   10/100] [Step   140] D: 0.2601  G: 16.8924  adv: 0.0125  pixel: 11.6270  perc: 5.2529  tex: 0.0000
+[Epoch   10/100] [Step   160] D: 0.0132  G: 19.1553  adv: 0.0419  pixel: 13.3548  perc: 5.7585  tex: 0.0001
+[Epoch   10/100] [Step   180] D: 0.4636  G: 21.7939  adv: -0.0172  pixel: 15.5713  perc: 6.2397  tex: 0.0001
+[Epoch   10/100] [Step   200] D: 0.1423  G: 19.5996  adv: -0.0875  pixel: 12.2117  perc: 7.4752  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0010.png
+[RCA-GAN] Checkpoints saved at epoch 10
+[Epoch   11/100] [Step    20] D: 0.2973  G: 24.2396  adv: -0.0471  pixel: 17.7811  perc: 6.5054  tex: 0.0001
+[Epoch   11/100] [Step    40] D: 12.1974  G: 25.1136  adv: 0.0117  pixel: 19.7151  perc: 5.3868  tex: 0.0001
+[Epoch   11/100] [Step    60] D: 1.2422  G: 24.2946  adv: -0.0327  pixel: 18.0755  perc: 6.2517  tex: 0.0001
+[Epoch   11/100] [Step    80] D: 0.2311  G: 16.6018  adv: -0.0339  pixel: 10.8090  perc: 5.8265  tex: 0.0001
+[Epoch   11/100] [Step   100] D: 4642.0073  G: 18.1277  adv: 0.2595  pixel: 11.6291  perc: 6.2389  tex: 0.0001
+[Epoch   11/100] [Step   120] D: 0.0627  G: 23.8654  adv: -0.0067  pixel: 16.6333  perc: 7.2384  tex: 0.0004
+[Epoch   11/100] [Step   140] D: 0.4806  G: 24.5723  adv: -0.0017  pixel: 16.2772  perc: 8.2962  tex: 0.0006
+[Epoch   11/100] [Step   160] D: 0.8383  G: 18.2035  adv: 0.0228  pixel: 11.8367  perc: 6.3439  tex: 0.0001
+[Epoch   11/100] [Step   180] D: 0.0640  G: 18.3623  adv: 0.0371  pixel: 12.4915  perc: 5.8336  tex: 0.0001
+[Epoch   11/100] [Step   200] D: 0.9238  G: 16.4781  adv: 0.0210  pixel: 10.7493  perc: 5.7076  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0011.png
+[Epoch   12/100] [Step    20] D: 0.5402  G: 19.2968  adv: 0.0020  pixel: 12.9650  perc: 6.3295  tex: 0.0003
+[Epoch   12/100] [Step    40] D: 0.0388  G: 20.7315  adv: -0.0249  pixel: 13.1965  perc: 7.5595  tex: 0.0004
+[Epoch   12/100] [Step    60] D: 17.2761  G: 27.8232  adv: 0.0082  pixel: 20.5022  perc: 7.3126  tex: 0.0002
+[Epoch   12/100] [Step    80] D: 0.9740  G: 19.0847  adv: 0.0034  pixel: 13.3817  perc: 5.6995  tex: 0.0001
+[Epoch   12/100] [Step   100] D: 2.1620  G: 26.8337  adv: 0.0178  pixel: 18.2604  perc: 8.5547  tex: 0.0008
+[Epoch   12/100] [Step   120] D: 0.6897  G: 24.4571  adv: -0.0044  pixel: 17.4069  perc: 7.0543  tex: 0.0003
+[Epoch   12/100] [Step   140] D: 0.0103  G: 18.1853  adv: 0.0192  pixel: 12.3949  perc: 5.7711  tex: 0.0001
+[Epoch   12/100] [Step   160] D: 1.8573  G: 22.1107  adv: 0.0119  pixel: 13.8547  perc: 8.2435  tex: 0.0006
+[Epoch   12/100] [Step   180] D: 2.1198  G: 38.7264  adv: 0.0173  pixel: 33.1634  perc: 5.5456  tex: 0.0001
+[Epoch   12/100] [Step   200] D: 0.6315  G: 18.3473  adv: 0.0223  pixel: 12.7105  perc: 5.6144  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0012.png
+[Epoch   13/100] [Step    20] D: 1.5615  G: 16.0861  adv: 0.0198  pixel: 10.5276  perc: 5.5385  tex: 0.0002
+[Epoch   13/100] [Step    40] D: 0.8131  G: 18.5708  adv: 0.0274  pixel: 12.1983  perc: 6.3449  tex: 0.0002
+[Epoch   13/100] [Step    60] D: 4.6350  G: 17.3207  adv: 0.0616  pixel: 10.3101  perc: 6.9487  tex: 0.0003
+[Epoch   13/100] [Step    80] D: 1.4707  G: 27.5865  adv: 0.0123  pixel: 19.3047  perc: 8.2689  tex: 0.0006
+[Epoch   13/100] [Step   100] D: 0.1639  G: 21.6986  adv: 0.0382  pixel: 13.9060  perc: 7.7539  tex: 0.0005
+[Epoch   13/100] [Step   120] D: 4.8655  G: 13.7510  adv: 0.0275  pixel: 8.5304  perc: 5.1930  tex: 0.0000
+[Epoch   13/100] [Step   140] D: 0.0074  G: 17.9589  adv: 0.0132  pixel: 11.5024  perc: 6.4432  tex: 0.0002
+[Epoch   13/100] [Step   160] D: 2.7471  G: 19.9429  adv: 0.0073  pixel: 13.4443  perc: 6.4912  tex: 0.0002
+[Epoch   13/100] [Step   180] D: 0.0170  G: 20.8080  adv: -0.0169  pixel: 13.7313  perc: 7.0934  tex: 0.0002
+[Epoch   13/100] [Step   200] D: 1.3490  G: 18.1724  adv: 0.0348  pixel: 11.9407  perc: 6.1967  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0013.png
+[Epoch   14/100] [Step    20] D: 0.9749  G: 15.9972  adv: -0.0497  pixel: 10.6450  perc: 5.4019  tex: 0.0001
+[Epoch   14/100] [Step    40] D: 0.0905  G: 16.9288  adv: 0.0093  pixel: 11.2553  perc: 5.6641  tex: 0.0001
+[Epoch   14/100] [Step    60] D: 0.8326  G: 23.2252  adv: -0.0078  pixel: 17.5486  perc: 5.6842  tex: 0.0002
+[Epoch   14/100] [Step    80] D: 4.1766  G: 24.5527  adv: -0.0033  pixel: 17.3496  perc: 7.2058  tex: 0.0005
+[Epoch   14/100] [Step   100] D: 1.4471  G: 21.8304  adv: 0.0215  pixel: 14.9099  perc: 6.8983  tex: 0.0007
+[Epoch   14/100] [Step   120] D: 4.7031  G: 16.1382  adv: 0.0281  pixel: 10.4255  perc: 5.6845  tex: 0.0001
+[Epoch   14/100] [Step   140] D: 0.1156  G: 15.8400  adv: 0.0520  pixel: 10.3128  perc: 5.4749  tex: 0.0002
+[Epoch   14/100] [Step   160] D: 0.8872  G: 18.8025  adv: 0.0834  pixel: 12.0932  perc: 6.6255  tex: 0.0003
+[Epoch   14/100] [Step   180] D: 3.1800  G: 17.2306  adv: 0.0038  pixel: 11.0170  perc: 6.2097  tex: 0.0002
+[Epoch   14/100] [Step   200] D: 0.2530  G: 20.2243  adv: 0.0679  pixel: 13.5218  perc: 6.6344  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0014.png
+[Epoch   19/100] [Step    60] D: 1.0634  G: 14.3579  adv: 0.0382  pixel: 9.6722  perc: 4.6476  tex: 0.0000
+[Epoch   19/100] [Step    80] D: 0.0365  G: 19.2572  adv: 0.1126  pixel: 11.6109  perc: 7.5332  tex: 0.0004
+[Epoch   19/100] [Step   100] D: 0.1330  G: 13.9652  adv: 0.0591  pixel: 8.3271  perc: 5.5790  tex: 0.0001
+[Epoch   19/100] [Step   120] D: 2.0535  G: 17.6348  adv: -0.0690  pixel: 11.9391  perc: 5.7646  tex: 0.0001
+[Epoch   19/100] [Step   140] D: -0.0017  G: 14.5003  adv: -0.2151  pixel: 7.8721  perc: 6.8431  tex: 0.0002
+[Epoch   19/100] [Step   160] D: 0.0148  G: 18.8611  adv: -0.0424  pixel: 13.1350  perc: 5.7685  tex: 0.0001
+[Epoch   19/100] [Step   180] D: 0.2976  G: 26.2617  adv: 0.0063  pixel: 17.8502  perc: 8.4038  tex: 0.0014
+[Epoch   19/100] [Step   200] D: 0.6991  G: 18.3617  adv: 0.0425  pixel: 11.4684  perc: 6.8507  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0019.png
+[Epoch   20/100] [Step    20] D: 28.5814  G: 18.7361  adv: 0.0827  pixel: 11.3977  perc: 7.2547  tex: 0.0009
+[Epoch   20/100] [Step    40] D: 0.0226  G: 17.4707  adv: 0.0079  pixel: 11.3665  perc: 6.0961  tex: 0.0002
+[Epoch   20/100] [Step    60] D: 0.3366  G: 16.1991  adv: -0.0037  pixel: 10.0259  perc: 6.1766  tex: 0.0003
+[Epoch   20/100] [Step    80] D: 0.2133  G: 18.1191  adv: 0.1306  pixel: 10.2386  perc: 7.7492  tex: 0.0006
+[Epoch   20/100] [Step   100] D: 0.0897  G: 14.2332  adv: -0.0331  pixel: 8.9260  perc: 5.3402  tex: 0.0001
+[Epoch   20/100] [Step   120] D: 19.5791  G: 15.4373  adv: -0.1507  pixel: 9.6124  perc: 5.9754  tex: 0.0002
+[Epoch   20/100] [Step   140] D: 1.0201  G: 17.8872  adv: 0.0628  pixel: 12.3526  perc: 5.4716  tex: 0.0001
+[Epoch   20/100] [Step   160] D: 0.0134  G: 15.8519  adv: 0.0225  pixel: 9.0546  perc: 6.7746  tex: 0.0002
+[Epoch   20/100] [Step   180] D: 0.0508  G: 13.1901  adv: 0.0491  pixel: 7.7771  perc: 5.3638  tex: 0.0001
+[Epoch   20/100] [Step   200] D: 0.0556  G: 22.1122  adv: 0.1046  pixel: 15.3893  perc: 6.6182  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0020.png
+[RCA-GAN] Checkpoints saved at epoch 20
+[Epoch   21/100] [Step    20] D: 0.1212  G: 11.6826  adv: -0.0923  pixel: 6.6191  perc: 5.1558  tex: 0.0001
+[Epoch   21/100] [Step    40] D: 0.5765  G: 21.5756  adv: -0.0731  pixel: 14.7072  perc: 6.9413  tex: 0.0003
+[Epoch   21/100] [Step    60] D: 0.3020  G: 20.8511  adv: -0.1113  pixel: 13.7746  perc: 7.1876  tex: 0.0002
+[Epoch   21/100] [Step    80] D: 1.9535  G: 20.9036  adv: -0.1163  pixel: 14.4147  perc: 6.6049  tex: 0.0002
+[Epoch   21/100] [Step   100] D: 0.0409  G: 18.6777  adv: -0.0349  pixel: 12.3034  perc: 6.4091  tex: 0.0002
+[Epoch   21/100] [Step   120] D: 0.0801  G: 16.4176  adv: 0.0279  pixel: 10.4939  perc: 5.8955  tex: 0.0002
+[Epoch   21/100] [Step   140] D: 56.5271  G: 20.5342  adv: 0.0383  pixel: 13.5184  perc: 6.9771  tex: 0.0003
+[Epoch   21/100] [Step   160] D: 0.1910  G: 15.3861  adv: -0.0124  pixel: 9.4364  perc: 5.9617  tex: 0.0003
+[Epoch   21/100] [Step   180] D: 1.9833  G: 19.5184  adv: 0.0158  pixel: 12.9124  perc: 6.5899  tex: 0.0002
+[Epoch   21/100] [Step   200] D: 0.0673  G: 19.4442  adv: 0.0105  pixel: 13.2390  perc: 6.1943  tex: 0.0004
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0021.png
+[Epoch   22/100] [Step    20] D: 0.0477  G: 24.9408  adv: -0.0111  pixel: 17.2502  perc: 7.7011  tex: 0.0005
+[Epoch   22/100] [Step    40] D: 1.8575  G: 26.5381  adv: -0.2735  pixel: 18.3004  perc: 8.5107  tex: 0.0005
+[Epoch   22/100] [Step    60] D: 0.2558  G: 13.3309  adv: -0.0009  pixel: 8.4889  perc: 4.8428  tex: 0.0001
+[Epoch   22/100] [Step    80] D: 15.2065  G: 16.3338  adv: 0.0403  pixel: 10.3879  perc: 5.9055  tex: 0.0001
+[Epoch   22/100] [Step   100] D: 0.3959  G: 11.5623  adv: 0.0743  pixel: 6.4993  perc: 4.9886  tex: 0.0000
+[Epoch   22/100] [Step   120] D: 1.1976  G: 15.5362  adv: -0.0386  pixel: 9.0070  perc: 6.5677  tex: 0.0002
+[Epoch   22/100] [Step   140] D: 0.0869  G: 19.6089  adv: -0.0434  pixel: 12.7943  perc: 6.8576  tex: 0.0004
+[Epoch   22/100] [Step   160] D: 36.9297  G: 16.2996  adv: 0.3338  pixel: 9.6213  perc: 6.3443  tex: 0.0002
+[Epoch   22/100] [Step   180] D: 5.3589  G: 22.4746  adv: 0.1186  pixel: 16.8049  perc: 5.5510  tex: 0.0001
+[Epoch   22/100] [Step   200] D: 26.7026  G: 12.3927  adv: 0.1270  pixel: 7.4223  perc: 4.8434  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0022.png
+[Epoch   23/100] [Step    20] D: 0.9725  G: 15.9009  adv: -0.0436  pixel: 9.4213  perc: 6.5228  tex: 0.0003
+[Epoch   23/100] [Step    40] D: 0.2821  G: 22.2278  adv: 0.0651  pixel: 12.7045  perc: 9.4569  tex: 0.0013
+[Epoch   23/100] [Step    60] D: 0.5117  G: 19.0374  adv: 0.0575  pixel: 12.5609  perc: 6.4187  tex: 0.0002
+[Epoch   23/100] [Step    80] D: 0.3554  G: 15.9075  adv: 0.0392  pixel: 10.0227  perc: 5.8455  tex: 0.0001
+[Epoch   23/100] [Step   100] D: 7.3988  G: 13.8969  adv: -0.0230  pixel: 9.5515  perc: 4.3684  tex: 0.0000
+[Epoch   23/100] [Step   120] D: 1.0413  G: 17.9683  adv: 0.0801  pixel: 11.0441  perc: 6.8438  tex: 0.0002
+[Epoch   23/100] [Step   140] D: 10.7375  G: 15.0126  adv: 0.0647  pixel: 8.5975  perc: 6.3502  tex: 0.0002
+[Epoch   23/100] [Step   160] D: 5.0229  G: 13.3751  adv: 0.0262  pixel: 8.9621  perc: 4.3868  tex: 0.0000
+[Epoch   23/100] [Step   180] D: 0.1693  G: 19.0250  adv: 0.0580  pixel: 11.5748  perc: 7.3918  tex: 0.0004
+[Epoch   23/100] [Step   200] D: 1.5892  G: 16.5225  adv: -0.1354  pixel: 11.0260  perc: 5.6317  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0023.png
+[Epoch   24/100] [Step    20] D: 1.8127  G: 21.6534  adv: -0.0040  pixel: 14.0675  perc: 7.5895  tex: 0.0004
+[Epoch   24/100] [Step    40] D: 0.0500  G: 20.2899  adv: 0.0116  pixel: 12.1593  perc: 8.1184  tex: 0.0007
+[Epoch   24/100] [Step    60] D: 0.7449  G: 13.8702  adv: 0.0073  pixel: 8.2116  perc: 5.6512  tex: 0.0001
+[Epoch   24/100] [Step    80] D: 78.4829  G: 13.6351  adv: -0.1179  pixel: 8.4135  perc: 5.3392  tex: 0.0002
+[Epoch   24/100] [Step   100] D: 5.5541  G: 18.4842  adv: 0.0984  pixel: 11.6895  perc: 6.6960  tex: 0.0004
+[Epoch   24/100] [Step   120] D: 0.3917  G: 18.2160  adv: 0.0945  pixel: 11.1680  perc: 6.9532  tex: 0.0003
+[Epoch   24/100] [Step   140] D: 0.5140  G: 18.8512  adv: -0.0622  pixel: 12.3427  perc: 6.5704  tex: 0.0003
+[Epoch   24/100] [Step   160] D: 0.3207  G: 15.3122  adv: 0.0835  pixel: 9.1742  perc: 6.0543  tex: 0.0001
+[Epoch   24/100] [Step   180] D: 1.0122  G: 18.0511  adv: 0.0243  pixel: 11.9876  perc: 6.0391  tex: 0.0002
+[Epoch   24/100] [Step   200] D: 0.3765  G: 15.8394  adv: 0.0408  pixel: 9.8792  perc: 5.9192  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0024.png
+[Epoch   25/100] [Step    20] D: 0.3745  G: 13.5401  adv: 0.0741  pixel: 8.6497  perc: 4.8163  tex: 0.0001
+[Epoch   25/100] [Step    40] D: 0.9679  G: 20.9516  adv: -0.0194  pixel: 15.2591  perc: 5.7118  tex: 0.0001
+[Epoch   25/100] [Step    60] D: 1.7305  G: 16.4178  adv: 0.0753  pixel: 10.6880  perc: 5.6544  tex: 0.0001
+[Epoch   25/100] [Step    80] D: 0.0064  G: 15.4776  adv: 0.0386  pixel: 9.6780  perc: 5.7606  tex: 0.0003
+[Epoch   25/100] [Step   100] D: 1.1897  G: 19.3686  adv: -0.0129  pixel: 12.0534  perc: 7.3276  tex: 0.0005
+[Epoch   25/100] [Step   120] D: 11.0413  G: 19.4017  adv: 0.0430  pixel: 12.1681  perc: 7.1900  tex: 0.0005
+[Epoch   25/100] [Step   140] D: 0.9932  G: 13.7068  adv: -0.0680  pixel: 9.1408  perc: 4.6339  tex: 0.0000
+[Epoch   25/100] [Step   160] D: 3.2841  G: 13.4241  adv: 0.0234  pixel: 8.6403  perc: 4.7603  tex: 0.0000
+[Epoch   25/100] [Step   180] D: 1.1149  G: 17.0808  adv: -0.0108  pixel: 10.7546  perc: 6.3367  tex: 0.0002
+[Epoch   25/100] [Step   200] D: 0.0155  G: 18.8132  adv: -0.0060  pixel: 12.6925  perc: 6.1266  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0025.png
+[RCA-GAN] Checkpoints saved at epoch 25
+[Epoch   26/100] [Step    20] D: 3.1846  G: 13.0580  adv: 0.3945  pixel: 7.0952  perc: 5.5683  tex: 0.0001
+[Epoch   26/100] [Step    40] D: 0.2505  G: 16.1003  adv: 0.0734  pixel: 9.7469  perc: 6.2799  tex: 0.0001
+[Epoch   26/100] [Step    60] D: 58.2882  G: 16.2511  adv: -0.1089  pixel: 10.7286  perc: 5.6311  tex: 0.0002
+[Epoch   26/100] [Step    80] D: 4.0803  G: 14.4942  adv: 0.0181  pixel: 9.3560  perc: 5.1200  tex: 0.0001
+[Epoch   26/100] [Step   100] D: 2.0553  G: 12.1013  adv: -0.0190  pixel: 7.3642  perc: 4.7560  tex: 0.0001
+[Epoch   26/100] [Step   120] D: 1.7466  G: 14.8415  adv: 0.0260  pixel: 8.4386  perc: 6.3767  tex: 0.0003
+[Epoch   26/100] [Step   140] D: 3.3521  G: 15.1838  adv: 0.0730  pixel: 9.7483  perc: 5.3624  tex: 0.0001
+[Epoch   26/100] [Step   160] D: 0.0097  G: 17.5556  adv: 0.0186  pixel: 10.5612  perc: 6.9755  tex: 0.0003
+[Epoch   26/100] [Step   180] D: 0.3287  G: 19.5237  adv: 0.0317  pixel: 12.6642  perc: 6.8274  tex: 0.0004
+[Epoch   26/100] [Step   200] D: 0.9017  G: 14.5989  adv: -0.0044  pixel: 8.8607  perc: 5.7425  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0026.png
+[Epoch   27/100] [Step    20] D: 11.8722  G: 10.7629  adv: 0.0320  pixel: 5.8945  perc: 4.8364  tex: 0.0000
+[Epoch   27/100] [Step    40] D: 1.4967  G: 13.1889  adv: -0.0140  pixel: 8.1710  perc: 5.0317  tex: 0.0001
+[Epoch   27/100] [Step    60] D: 0.0212  G: 14.1977  adv: 0.0055  pixel: 8.8044  perc: 5.3876  tex: 0.0001
+[Epoch   27/100] [Step    80] D: 3.0533  G: 17.9779  adv: 0.0192  pixel: 12.6258  perc: 5.3329  tex: 0.0001
+[Epoch   27/100] [Step   100] D: 0.3673  G: 15.1375  adv: 0.0152  pixel: 9.5467  perc: 5.5754  tex: 0.0002
+[Epoch   27/100] [Step   120] D: 0.3045  G: 21.6315  adv: 0.0076  pixel: 13.4192  perc: 8.2041  tex: 0.0006
+[Epoch   27/100] [Step   140] D: 0.0938  G: 14.0669  adv: 0.0472  pixel: 8.0207  perc: 5.9990  tex: 0.0001
+[Epoch   27/100] [Step   160] D: 0.0990  G: 16.3581  adv: 0.0001  pixel: 11.0943  perc: 5.2637  tex: 0.0001
+[Epoch   27/100] [Step   180] D: 0.0560  G: 16.8082  adv: 0.0194  pixel: 10.5328  perc: 6.2559  tex: 0.0002
+[Epoch   27/100] [Step   200] D: 1.4129  G: 12.8452  adv: 0.0162  pixel: 6.9082  perc: 5.9207  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0027.png
+[Epoch   28/100] [Step    20] D: 0.1087  G: 13.5764  adv: 0.0191  pixel: 8.5803  perc: 4.9770  tex: 0.0001
+[Epoch   28/100] [Step    40] D: 1.2856  G: 14.8963  adv: 0.0125  pixel: 9.1787  perc: 5.7050  tex: 0.0002
+[Epoch   28/100] [Step    60] D: 0.5432  G: 14.8094  adv: 0.1048  pixel: 8.7687  perc: 5.9357  tex: 0.0002
+[Epoch   28/100] [Step    80] D: 2.3552  G: 16.8831  adv: 0.0098  pixel: 11.9053  perc: 4.9680  tex: 0.0001
+[Epoch   28/100] [Step   100] D: 0.4143  G: 22.9589  adv: 0.0440  pixel: 16.0875  perc: 6.8271  tex: 0.0002
+[Epoch   28/100] [Step   120] D: 2.7622  G: 15.5829  adv: -0.0478  pixel: 9.4140  perc: 6.2164  tex: 0.0002
+[Epoch   28/100] [Step   140] D: 0.9182  G: 13.7424  adv: 0.0264  pixel: 8.9852  perc: 4.7307  tex: 0.0001
+[Epoch   28/100] [Step   160] D: 2.0697  G: 16.4967  adv: -0.0065  pixel: 10.9901  perc: 5.5129  tex: 0.0002
+[Epoch   28/100] [Step   180] D: 0.9577  G: 16.9129  adv: 0.0084  pixel: 10.4654  perc: 6.4389  tex: 0.0002
+[Epoch   28/100] [Step   200] D: 0.0000  G: 14.4464  adv: 0.0189  pixel: 9.4754  perc: 4.9520  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0028.png
+[Epoch   29/100] [Step    20] D: 0.3707  G: 17.7433  adv: -0.0056  pixel: 10.3217  perc: 7.4266  tex: 0.0006
+[Epoch   29/100] [Step    40] D: 1.1679  G: 14.7969  adv: 0.0257  pixel: 10.1011  perc: 4.6700  tex: 0.0000
+[Epoch   29/100] [Step    60] D: 2.5706  G: 15.8466  adv: 0.0207  pixel: 10.8854  perc: 4.9404  tex: 0.0001
+[Epoch   29/100] [Step    80] D: 1.4385  G: 11.9797  adv: 0.0431  pixel: 6.7620  perc: 5.1747  tex: 0.0001
+[Epoch   29/100] [Step   100] D: 0.0008  G: 22.5450  adv: 0.0091  pixel: 14.6481  perc: 7.8863  tex: 0.0015
+[Epoch   29/100] [Step   120] D: 0.2654  G: 16.4652  adv: -0.0095  pixel: 10.5588  perc: 5.9158  tex: 0.0001
+[Epoch   29/100] [Step   140] D: 1.6768  G: 13.6693  adv: -0.0068  pixel: 7.7494  perc: 5.9265  tex: 0.0001
+[Epoch   29/100] [Step   160] D: 1.1736  G: 15.1258  adv: -0.0084  pixel: 8.9204  perc: 6.2137  tex: 0.0002
+[Epoch   29/100] [Step   180] D: 0.0422  G: 16.5392  adv: 0.0055  pixel: 10.4437  perc: 6.0899  tex: 0.0002
+[Epoch   29/100] [Step   200] D: 0.4415  G: 14.4544  adv: 0.0005  pixel: 8.2661  perc: 6.1876  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0029.png
+[Epoch   30/100] [Step    20] D: 0.2204  G: 16.6005  adv: 0.0308  pixel: 9.2895  perc: 7.2798  tex: 0.0004
+[Epoch   30/100] [Step    40] D: 0.1119  G: 20.8924  adv: -0.0061  pixel: 14.8067  perc: 6.0916  tex: 0.0002
+[Epoch   30/100] [Step    60] D: 0.1688  G: 13.5780  adv: -0.0718  pixel: 8.2623  perc: 5.3875  tex: 0.0001
+[Epoch   30/100] [Step    80] D: 0.0920  G: 15.6257  adv: 0.0396  pixel: 9.4589  perc: 6.1269  tex: 0.0002
+[Epoch   30/100] [Step   100] D: 0.4174  G: 17.6473  adv: 0.0257  pixel: 12.0117  perc: 5.6096  tex: 0.0003
+[Epoch   30/100] [Step   120] D: 0.0633  G: 14.1386  adv: 0.0242  pixel: 8.2825  perc: 5.8317  tex: 0.0002
+[Epoch   30/100] [Step   140] D: 0.0791  G: 14.6902  adv: -0.0140  pixel: 8.6648  perc: 6.0392  tex: 0.0002
+[Epoch   30/100] [Step   160] D: 5.6551  G: 11.9677  adv: 0.0026  pixel: 6.6897  perc: 5.2753  tex: 0.0001
+[Epoch   30/100] [Step   180] D: 0.2356  G: 17.0418  adv: 0.0049  pixel: 9.5941  perc: 7.4423  tex: 0.0005
+[Epoch   30/100] [Step   200] D: 0.0753  G: 11.6206  adv: 0.0015  pixel: 6.3997  perc: 5.2192  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0030.png
+[RCA-GAN] Checkpoints saved at epoch 30
+[Epoch   31/100] [Step    20] D: 0.6104  G: 15.3837  adv: -0.0083  pixel: 8.9847  perc: 6.4071  tex: 0.0002
+[Epoch   31/100] [Step    40] D: 0.0013  G: 13.0394  adv: -0.0020  pixel: 7.5513  perc: 5.4901  tex: 0.0001
+[Epoch   31/100] [Step    60] D: 0.0924  G: 16.9671  adv: 0.0064  pixel: 10.7998  perc: 6.1607  tex: 0.0002
+[Epoch   31/100] [Step    80] D: 0.0047  G: 19.7253  adv: -0.0061  pixel: 13.8087  perc: 5.9226  tex: 0.0001
+[Epoch   31/100] [Step   100] D: 0.4589  G: 15.9401  adv: -0.0095  pixel: 10.9258  perc: 5.0237  tex: 0.0001
+[Epoch   31/100] [Step   120] D: 0.1064  G: 13.4822  adv: -0.0079  pixel: 8.8632  perc: 4.6269  tex: 0.0000
+[Epoch   31/100] [Step   140] D: 1.1031  G: 13.4884  adv: -0.0339  pixel: 8.0396  perc: 5.4825  tex: 0.0001
+[Epoch   31/100] [Step   160] D: 1.8522  G: 12.9615  adv: 0.0003  pixel: 7.6229  perc: 5.3379  tex: 0.0003
+[Epoch   31/100] [Step   180] D: 1.5525  G: 16.1759  adv: 0.0221  pixel: 9.3781  perc: 6.7754  tex: 0.0003
+[Epoch   31/100] [Step   200] D: 0.1441  G: 12.4560  adv: -0.0004  pixel: 7.2056  perc: 5.2506  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0031.png
+[Epoch   32/100] [Step    20] D: 0.0023  G: 17.6880  adv: -0.0083  pixel: 11.5518  perc: 6.1444  tex: 0.0002
+[Epoch   32/100] [Step    40] D: 0.0928  G: 18.9313  adv: 0.0079  pixel: 13.5002  perc: 5.4230  tex: 0.0001
+[Epoch   32/100] [Step    60] D: 0.0012  G: 13.7117  adv: -0.0067  pixel: 8.7583  perc: 4.9601  tex: 0.0000
+[Epoch   32/100] [Step    80] D: 0.5313  G: 20.3744  adv: -0.0901  pixel: 14.0861  perc: 6.3782  tex: 0.0002
+[Epoch   32/100] [Step   100] D: 2.0011  G: 18.4504  adv: 0.0157  pixel: 12.7020  perc: 5.7326  tex: 0.0002
+[Epoch   32/100] [Step   120] D: 1.8772  G: 12.0226  adv: -0.0130  pixel: 6.5748  perc: 5.4606  tex: 0.0001
+[Epoch   32/100] [Step   140] D: 0.8903  G: 13.8998  adv: -0.0579  pixel: 8.0637  perc: 5.8938  tex: 0.0002
+[Epoch   32/100] [Step   160] D: 0.7940  G: 16.9972  adv: 0.0187  pixel: 12.0937  perc: 4.8847  tex: 0.0001
+[Epoch   32/100] [Step   180] D: 0.6652  G: 14.3370  adv: 0.0010  pixel: 8.0065  perc: 6.3293  tex: 0.0002
+[Epoch   32/100] [Step   200] D: 0.3257  G: 18.1820  adv: 0.0542  pixel: 11.7794  perc: 6.3482  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0032.png
+[Epoch   33/100] [Step    20] D: 0.4379  G: 13.7745  adv: 0.0296  pixel: 8.4247  perc: 5.3201  tex: 0.0001
+[Epoch   33/100] [Step    40] D: 1.2606  G: 12.3918  adv: -0.0172  pixel: 6.6135  perc: 5.7952  tex: 0.0002
+[Epoch   33/100] [Step    60] D: 0.4487  G: 11.7576  adv: 0.0197  pixel: 7.5170  perc: 4.2208  tex: 0.0000
+[Epoch   33/100] [Step    80] D: 10.2281  G: 12.4392  adv: 0.0655  pixel: 6.9607  perc: 5.4129  tex: 0.0001
+[Epoch   33/100] [Step   100] D: 0.2487  G: 13.9275  adv: 0.0589  pixel: 8.6989  perc: 5.1696  tex: 0.0001
+[Epoch   15/100] [Step    20] D: 2.4909  G: 21.2032  adv: 0.0125  pixel: 13.8962  perc: 7.2937  tex: 0.0008
+[Epoch   15/100] [Step    40] D: 0.7399  G: 17.7738  adv: -0.0328  pixel: 11.2663  perc: 6.5401  tex: 0.0002
+[Epoch   15/100] [Step    60] D: 0.4851  G: 13.5978  adv: 0.0088  pixel: 7.7696  perc: 5.8193  tex: 0.0001
+[Epoch   15/100] [Step    80] D: 0.1231  G: 16.2895  adv: 0.0294  pixel: 10.4106  perc: 5.8494  tex: 0.0002
+[Epoch   15/100] [Step   100] D: 0.5762  G: 17.8644  adv: 0.0234  pixel: 11.1163  perc: 6.7246  tex: 0.0002
+[Epoch   15/100] [Step   120] D: 2.2446  G: 15.5362  adv: 0.0165  pixel: 8.8624  perc: 6.6571  tex: 0.0002
+[Epoch   15/100] [Step   140] D: 2.6725  G: 16.9491  adv: 0.0707  pixel: 11.1949  perc: 5.6834  tex: 0.0001
+[Epoch   15/100] [Step   160] D: 1.2313  G: 19.2161  adv: 0.0330  pixel: 11.2749  perc: 7.9075  tex: 0.0007
+[Epoch   15/100] [Step   180] D: 3.9568  G: 21.1428  adv: 0.0281  pixel: 16.0862  perc: 5.0285  tex: 0.0001
+[Epoch   15/100] [Step   200] D: 0.1978  G: 27.7228  adv: -0.0459  pixel: 19.2147  perc: 8.5534  tex: 0.0006
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0015.png
+[RCA-GAN] Checkpoints saved at epoch 15
+[Epoch   16/100] [Step    20] D: 0.0309  G: 16.4243  adv: -0.0039  pixel: 10.9965  perc: 5.4316  tex: 0.0001
+[Epoch   16/100] [Step    40] D: 0.0145  G: 14.6296  adv: 0.0852  pixel: 8.2019  perc: 6.3423  tex: 0.0001
+[Epoch   16/100] [Step    60] D: 0.7501  G: 17.2677  adv: 0.0476  pixel: 10.5014  perc: 6.7185  tex: 0.0003
+[Epoch   16/100] [Step    80] D: 0.1318  G: 16.8157  adv: 0.0313  pixel: 10.8042  perc: 5.9800  tex: 0.0001
+[Epoch   16/100] [Step   100] D: 1.5514  G: 17.5593  adv: 0.0164  pixel: 12.5761  perc: 4.9668  tex: 0.0001
+[Epoch   16/100] [Step   120] D: 1.3685  G: 19.9349  adv: 0.0031  pixel: 12.8735  perc: 7.0579  tex: 0.0004
+[Epoch   16/100] [Step   140] D: -0.0007  G: 16.6050  adv: 0.0512  pixel: 11.0789  perc: 5.4748  tex: 0.0001
+[Epoch   16/100] [Step   160] D: 0.0341  G: 14.8335  adv: -0.0195  pixel: 9.6159  perc: 5.2369  tex: 0.0001
+[Epoch   16/100] [Step   180] D: 0.1508  G: 16.4496  adv: 0.0337  pixel: 9.7475  perc: 6.6682  tex: 0.0002
+[Epoch   16/100] [Step   200] D: 0.0059  G: 20.2408  adv: 0.0028  pixel: 13.3250  perc: 6.9127  tex: 0.0004
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0016.png
+[Epoch   17/100] [Step    20] D: 0.7464  G: 15.4638  adv: -0.0321  pixel: 10.1265  perc: 5.3693  tex: 0.0001
+[Epoch   17/100] [Step    40] D: 1.7578  G: 16.3271  adv: 0.0448  pixel: 10.2851  perc: 5.9970  tex: 0.0001
+[Epoch   17/100] [Step    60] D: 0.0531  G: 22.3998  adv: 0.0124  pixel: 14.5155  perc: 7.8709  tex: 0.0011
+[Epoch   17/100] [Step    80] D: 0.0602  G: 15.6745  adv: 0.0575  pixel: 10.0334  perc: 5.5834  tex: 0.0002
+[Epoch   17/100] [Step   100] D: 1.3631  G: 17.6142  adv: 0.0104  pixel: 10.7270  perc: 6.8765  tex: 0.0003
+[Epoch   17/100] [Step   120] D: 0.4463  G: 13.3743  adv: 0.0133  pixel: 7.9801  perc: 5.3808  tex: 0.0000
+[Epoch   17/100] [Step   140] D: 0.0098  G: 21.2820  adv: -0.0044  pixel: 14.9805  perc: 6.3057  tex: 0.0002
+[Epoch   17/100] [Step   160] D: 0.0320  G: 22.6008  adv: 0.0437  pixel: 15.4449  perc: 7.1115  tex: 0.0007
+[Epoch   17/100] [Step   180] D: 0.1689  G: 15.7103  adv: -0.0410  pixel: 9.1675  perc: 6.5837  tex: 0.0001
+[Epoch   17/100] [Step   200] D: 0.2197  G: 25.8101  adv: 0.0236  pixel: 18.0823  perc: 7.7036  tex: 0.0005
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0017.png
+[Epoch   18/100] [Step    20] D: 67.7603  G: 20.2002  adv: -0.2287  pixel: 13.9161  perc: 6.5126  tex: 0.0003
+[Epoch   18/100] [Step    40] D: 0.0246  G: 23.1730  adv: -0.2207  pixel: 16.8265  perc: 6.5668  tex: 0.0004
+[Epoch   18/100] [Step    60] D: 0.7184  G: 15.7839  adv: -0.0197  pixel: 9.0079  perc: 6.7954  tex: 0.0003
+[Epoch   18/100] [Step    80] D: 0.1846  G: 19.7120  adv: 0.0626  pixel: 13.1015  perc: 6.5476  tex: 0.0003
+[Epoch   18/100] [Step   100] D: 2.4480  G: 17.1119  adv: 0.0042  pixel: 9.5283  perc: 7.5791  tex: 0.0003
+[Epoch   18/100] [Step   120] D: 2.0008  G: 18.1587  adv: -0.0045  pixel: 11.6874  perc: 6.4757  tex: 0.0002
+[Epoch   18/100] [Step   140] D: 1.1903  G: 44.2317  adv: 0.0760  pixel: 37.4584  perc: 6.6969  tex: 0.0004
+[Epoch   18/100] [Step   160] D: 0.0274  G: 24.0604  adv: -0.0780  pixel: 16.0369  perc: 8.1002  tex: 0.0012
+[Epoch   18/100] [Step   180] D: 1.3909  G: 19.6396  adv: -0.0519  pixel: 12.7146  perc: 6.9765  tex: 0.0004
+[Epoch   18/100] [Step   200] D: 0.4487  G: 16.2843  adv: -0.0222  pixel: 10.6249  perc: 5.6816  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0018.png
+[Epoch   19/100] [Step    20] D: 2.0052  G: 23.3930  adv: -0.0087  pixel: 18.4669  perc: 4.9347  tex: 0.0001
+[Epoch   19/100] [Step    40] D: 0.8184  G: 16.9214  adv: -0.0003  pixel: 10.4031  perc: 6.5184  tex: 0.0002
+[Epoch   19/100] [Step    60] D: 0.0045  G: 17.4465  adv: 0.0123  pixel: 10.6016  perc: 6.8323  tex: 0.0003
+[Epoch   19/100] [Step    80] D: 0.6745  G: 18.2986  adv: 0.0797  pixel: 11.6642  perc: 6.5546  tex: 0.0002
+[Epoch   19/100] [Step   100] D: 5.5995  G: 15.6196  adv: -0.1012  pixel: 9.3249  perc: 6.3956  tex: 0.0002
+[Epoch   19/100] [Step   120] D: 1.2410  G: 18.5749  adv: -0.0840  pixel: 10.9436  perc: 7.7150  tex: 0.0004
+[Epoch   19/100] [Step   140] D: 1.2554  G: 18.0632  adv: -0.0173  pixel: 11.4641  perc: 6.6161  tex: 0.0004
+[Epoch   19/100] [Step   160] D: 0.0469  G: 15.9132  adv: 0.0729  pixel: 9.7034  perc: 6.1368  tex: 0.0002
+[Epoch   19/100] [Step   180] D: 3.4858  G: 12.7680  adv: 0.0539  pixel: 7.6328  perc: 5.0813  tex: 0.0001
+[Epoch   19/100] [Step   200] D: 2.7244  G: 15.9898  adv: 0.0248  pixel: 9.3559  perc: 6.6089  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0019.png
+[Epoch   20/100] [Step    20] D: 42.1519  G: 16.0948  adv: -0.1704  pixel: 10.5156  perc: 5.7495  tex: 0.0001
+[Epoch   20/100] [Step    40] D: 0.2024  G: 13.6421  adv: -0.0544  pixel: 7.6603  perc: 6.0360  tex: 0.0001
+[Epoch   20/100] [Step    60] D: 2.0541  G: 17.9333  adv: 0.0809  pixel: 11.2872  perc: 6.5650  tex: 0.0002
+[Epoch   20/100] [Step    80] D: 0.4933  G: 16.2996  adv: -0.0444  pixel: 10.2651  perc: 6.0786  tex: 0.0002
+[Epoch   20/100] [Step   100] D: 0.3029  G: 16.9107  adv: -0.0021  pixel: 12.0275  perc: 4.8852  tex: 0.0000
+[Epoch   20/100] [Step   120] D: 0.2498  G: 18.8594  adv: 0.0102  pixel: 13.5572  perc: 5.2919  tex: 0.0001
+[Epoch   20/100] [Step   140] D: 0.3679  G: 17.0861  adv: -0.0022  pixel: 12.0130  perc: 5.0751  tex: 0.0001
+[Epoch   20/100] [Step   160] D: 0.1819  G: 12.0065  adv: 0.0264  pixel: 7.0449  perc: 4.9352  tex: 0.0001
+[Epoch   20/100] [Step   180] D: 0.2834  G: 17.6634  adv: 0.0050  pixel: 11.0401  perc: 6.6182  tex: 0.0002
+[Epoch   20/100] [Step   200] D: 0.0065  G: 14.6441  adv: -0.0112  pixel: 9.4376  perc: 5.2176  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0020.png
+[RCA-GAN] Checkpoints saved at epoch 20
+[Epoch   21/100] [Step    20] D: -0.0023  G: 12.9544  adv: 0.0155  pixel: 7.5259  perc: 5.4130  tex: 0.0000
+[Epoch   21/100] [Step    40] D: 0.6540  G: 19.3197  adv: 0.0178  pixel: 13.4223  perc: 5.8794  tex: 0.0002
+[Epoch   21/100] [Step    60] D: 1.6562  G: 15.2262  adv: 0.0027  pixel: 9.4113  perc: 5.8121  tex: 0.0002
+[Epoch   21/100] [Step    80] D: 10.9674  G: 15.5072  adv: -0.0518  pixel: 9.6068  perc: 5.9521  tex: 0.0001
+[Epoch   21/100] [Step   100] D: 0.4993  G: 19.3214  adv: 0.0105  pixel: 14.0171  perc: 5.2937  tex: 0.0001
+[Epoch   21/100] [Step   120] D: 3.4318  G: 17.4024  adv: 0.1055  pixel: 10.7718  perc: 6.5247  tex: 0.0003
+[Epoch   21/100] [Step   140] D: 0.6744  G: 18.4425  adv: 0.0468  pixel: 10.9389  perc: 7.4560  tex: 0.0008
+[Epoch   21/100] [Step   160] D: 2.8818  G: 20.2940  adv: 0.0184  pixel: 14.1075  perc: 6.1679  tex: 0.0002
+[Epoch   21/100] [Step   180] D: 1.8016  G: 12.2834  adv: 0.0052  pixel: 7.0021  perc: 5.2760  tex: 0.0001
+[Epoch   21/100] [Step   200] D: 0.0141  G: 15.4210  adv: 0.0008  pixel: 9.4998  perc: 5.9203  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0021.png
+[Epoch   22/100] [Step    20] D: 0.0014  G: 16.0794  adv: 0.0417  pixel: 11.5308  perc: 4.5068  tex: 0.0000
+[Epoch   22/100] [Step    40] D: 0.1410  G: 16.5480  adv: -0.0305  pixel: 10.7248  perc: 5.8534  tex: 0.0003
+[Epoch   22/100] [Step    60] D: 0.4883  G: 12.9246  adv: 0.0029  pixel: 7.4853  perc: 5.4363  tex: 0.0001
+[Epoch   22/100] [Step    80] D: 0.8621  G: 15.0121  adv: 0.0261  pixel: 8.7763  perc: 6.2096  tex: 0.0001
+[Epoch   22/100] [Step   100] D: 3.5170  G: 17.9619  adv: 0.0309  pixel: 11.7884  perc: 6.1425  tex: 0.0001
+[Epoch   22/100] [Step   120] D: 12.7657  G: 19.9467  adv: 0.0599  pixel: 13.7378  perc: 6.1489  tex: 0.0002
+[Epoch   22/100] [Step   140] D: 0.9948  G: 23.2238  adv: -0.0565  pixel: 14.5468  perc: 8.7326  tex: 0.0009
+[Epoch   22/100] [Step   160] D: 2.0659  G: 19.2260  adv: 0.0034  pixel: 12.0820  perc: 7.1401  tex: 0.0004
+[Epoch   22/100] [Step   180] D: 0.3510  G: 21.6566  adv: 0.0508  pixel: 14.9693  perc: 6.6362  tex: 0.0003
+[Epoch   22/100] [Step   200] D: 1.4319  G: 19.8520  adv: 0.0422  pixel: 12.5408  perc: 7.2688  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0022.png
+[Epoch   23/100] [Step    20] D: 0.8778  G: 16.5327  adv: 0.0060  pixel: 10.6438  perc: 5.8826  tex: 0.0003
+[Epoch   23/100] [Step    40] D: 0.0300  G: 13.5882  adv: -0.0013  pixel: 7.8966  perc: 5.6928  tex: 0.0001
+[Epoch   23/100] [Step    60] D: 1.0020  G: 13.0529  adv: -0.0006  pixel: 7.7319  perc: 5.3216  tex: 0.0001
+[Epoch   23/100] [Step    80] D: 0.9953  G: 14.6170  adv: -0.0345  pixel: 9.4174  perc: 5.2340  tex: 0.0001
+[Epoch   23/100] [Step   100] D: 9.7809  G: 20.4265  adv: -0.0796  pixel: 13.3637  perc: 7.1420  tex: 0.0004
+[Epoch   23/100] [Step   120] D: 2.2906  G: 22.6861  adv: -0.0135  pixel: 14.7154  perc: 7.9837  tex: 0.0005
+[Epoch   23/100] [Step   140] D: 8.6782  G: 13.0430  adv: 0.0724  pixel: 7.2896  perc: 5.6809  tex: 0.0001
+[Epoch   23/100] [Step   160] D: 2.5698  G: 24.3522  adv: 0.3057  pixel: 19.5469  perc: 4.4995  tex: 0.0000
+[Epoch   23/100] [Step   180] D: 0.9371  G: 16.3416  adv: -0.0092  pixel: 9.5017  perc: 6.8487  tex: 0.0004
+[Epoch   23/100] [Step   200] D: 1.9459  G: 13.1460  adv: 0.0720  pixel: 7.4157  perc: 5.6582  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0023.png
+[Epoch   24/100] [Step    20] D: 1.5728  G: 15.9631  adv: 0.0278  pixel: 9.1662  perc: 6.7688  tex: 0.0003
+[Epoch   24/100] [Step    40] D: 0.0999  G: 10.6951  adv: -0.0098  pixel: 5.7379  perc: 4.9669  tex: 0.0001
+[Epoch   24/100] [Step    60] D: 0.6388  G: 19.6031  adv: -0.0210  pixel: 13.1588  perc: 6.4650  tex: 0.0003
+[Epoch   24/100] [Step    80] D: 1.1465  G: 12.8000  adv: -0.0459  pixel: 6.8650  perc: 5.9807  tex: 0.0002
+[Epoch   24/100] [Step   100] D: 1095.8044  G: 24.6242  adv: 0.0180  pixel: 18.3013  perc: 6.3047  tex: 0.0001
+[Epoch   24/100] [Step   120] D: 171.8067  G: 16.7785  adv: -0.3779  pixel: 12.1185  perc: 5.0378  tex: 0.0001
+[Epoch   24/100] [Step   140] D: 2.7582  G: 15.9234  adv: -0.0114  pixel: 10.8862  perc: 5.0485  tex: 0.0001
+[Epoch   24/100] [Step   160] D: 2.1697  G: 14.6802  adv: -0.0397  pixel: 9.9601  perc: 4.7597  tex: 0.0000
+[Epoch   24/100] [Step   180] D: 0.0385  G: 13.0499  adv: -0.0133  pixel: 7.1441  perc: 5.9189  tex: 0.0001
+[Epoch   24/100] [Step   200] D: 1.6504  G: 15.2817  adv: 0.0008  pixel: 9.3051  perc: 5.9757  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0024.png
+[Epoch   25/100] [Step    20] D: 1.3952  G: 13.0137  adv: 0.0983  pixel: 7.1117  perc: 5.8035  tex: 0.0001
+[Epoch   25/100] [Step    40] D: 1.1031  G: 16.4917  adv: -0.0707  pixel: 9.5297  perc: 7.0320  tex: 0.0007
+[Epoch   25/100] [Step    60] D: 2.3167  G: 14.1144  adv: 0.0848  pixel: 8.8115  perc: 5.2180  tex: 0.0001
+[Epoch   25/100] [Step    80] D: 0.9121  G: 14.2265  adv: -0.0366  pixel: 9.3346  perc: 4.9285  tex: 0.0001
+[Epoch   25/100] [Step   100] D: 0.1732  G: 12.7234  adv: 0.0009  pixel: 7.6518  perc: 5.0706  tex: 0.0001
+[Epoch   25/100] [Step   120] D: 0.1100  G: 16.0020  adv: 0.0270  pixel: 9.1224  perc: 6.8520  tex: 0.0006
+[Epoch   25/100] [Step   140] D: 1.4156  G: 14.6017  adv: 0.0339  pixel: 9.6831  perc: 4.8847  tex: 0.0001
+[Epoch   25/100] [Step   160] D: 0.7795  G: 19.8008  adv: 0.0943  pixel: 14.5775  perc: 5.1289  tex: 0.0001
+[Epoch   25/100] [Step   180] D: 0.0644  G: 14.3177  adv: -0.0673  pixel: 8.7815  perc: 5.6033  tex: 0.0002
+[Epoch   25/100] [Step   200] D: 16.6688  G: 21.0859  adv: -0.2203  pixel: 13.9833  perc: 7.3219  tex: 0.0011
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0025.png
+[RCA-GAN] Checkpoints saved at epoch 25
+[Epoch   26/100] [Step    20] D: 0.9077  G: 13.0096  adv: -0.0437  pixel: 8.0486  perc: 5.0046  tex: 0.0001
+[Epoch   26/100] [Step    40] D: 2.6877  G: 15.0495  adv: -0.0156  pixel: 9.2408  perc: 5.8240  tex: 0.0002
+[Epoch   26/100] [Step    60] D: 2.4840  G: 13.7664  adv: 0.0363  pixel: 8.4493  perc: 5.2806  tex: 0.0002
+[Epoch   26/100] [Step    80] D: 0.1228  G: 15.5141  adv: 0.0906  pixel: 9.3575  perc: 6.0658  tex: 0.0002
+[Epoch   26/100] [Step   100] D: 5960.7681  G: 21.4425  adv: 1.5844  pixel: 15.0246  perc: 4.8335  tex: 0.0000
+[Epoch   26/100] [Step   120] D: 0.0437  G: 16.6810  adv: 0.0257  pixel: 9.6183  perc: 7.0365  tex: 0.0005
+[Epoch   26/100] [Step   140] D: 0.0078  G: 13.6060  adv: 0.0051  pixel: 8.7453  perc: 4.8555  tex: 0.0000
+[Epoch   26/100] [Step   160] D: 0.6218  G: 18.6490  adv: -0.0008  pixel: 11.8404  perc: 6.8089  tex: 0.0005
+[Epoch   26/100] [Step   180] D: 2.2612  G: 16.3632  adv: 0.0079  pixel: 11.3491  perc: 5.0062  tex: 0.0001
+[Epoch   26/100] [Step   200] D: 0.3448  G: 13.0079  adv: 0.0079  pixel: 7.4513  perc: 5.5486  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0026.png
+[Epoch   27/100] [Step    20] D: 0.5006  G: 14.7939  adv: -0.0146  pixel: 9.2778  perc: 5.5306  tex: 0.0001
+[Epoch   27/100] [Step    40] D: 11.1527  G: 13.6985  adv: -0.0172  pixel: 9.4124  perc: 4.3033  tex: 0.0000
+[Epoch   27/100] [Step    60] D: 0.5485  G: 15.9786  adv: 0.0042  pixel: 10.6067  perc: 5.3676  tex: 0.0002
+[Epoch   27/100] [Step    80] D: 1.6499  G: 16.7463  adv: 0.0016  pixel: 10.2836  perc: 6.4608  tex: 0.0002
+[Epoch   27/100] [Step   100] D: 0.0010  G: 11.6916  adv: -0.0236  pixel: 6.6850  perc: 5.0301  tex: 0.0001
+[Epoch   27/100] [Step   120] D: 0.0685  G: 12.0049  adv: -0.0725  pixel: 7.8233  perc: 4.2540  tex: 0.0001
+[Epoch   27/100] [Step   140] D: 1.6232  G: 10.9368  adv: 0.0192  pixel: 6.3015  perc: 4.6160  tex: 0.0001
+[Epoch   27/100] [Step   160] D: 0.3044  G: 19.9373  adv: 0.1154  pixel: 12.3554  perc: 7.4661  tex: 0.0004
+[Epoch   27/100] [Step   180] D: 0.3627  G: 15.8057  adv: 0.0222  pixel: 10.2003  perc: 5.5831  tex: 0.0001
+[Epoch   27/100] [Step   200] D: 5.0298  G: 16.1026  adv: 0.0194  pixel: 11.1423  perc: 4.9408  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0027.png
+[Epoch   28/100] [Step    20] D: 0.6640  G: 16.4818  adv: -0.0148  pixel: 10.6533  perc: 5.8430  tex: 0.0002
+[Epoch   28/100] [Step    40] D: 11.1220  G: 13.5049  adv: -0.0141  pixel: 7.7512  perc: 5.7677  tex: 0.0001
+[Epoch   28/100] [Step    60] D: 1.6772  G: 18.7578  adv: 0.0025  pixel: 12.8012  perc: 5.9539  tex: 0.0002
+[Epoch   28/100] [Step    80] D: 1.2426  G: 14.7926  adv: -0.0054  pixel: 10.2443  perc: 4.5536  tex: 0.0000
+[Epoch   28/100] [Step   100] D: 0.1629  G: 15.8658  adv: -0.0210  pixel: 10.1844  perc: 5.7023  tex: 0.0001
+[Epoch   28/100] [Step   120] D: 0.0012  G: 19.8869  adv: -0.0254  pixel: 15.4907  perc: 4.4216  tex: 0.0000
+[Epoch   28/100] [Step   140] D: 0.1372  G: 27.1619  adv: -0.0006  pixel: 20.4611  perc: 6.7004  tex: 0.0010
+[Epoch   28/100] [Step   160] D: 1.3833  G: 11.2560  adv: -0.0129  pixel: 6.6512  perc: 4.6177  tex: 0.0000
+[Epoch   28/100] [Step   180] D: 0.5440  G: 19.8633  adv: -0.0324  pixel: 12.8627  perc: 7.0322  tex: 0.0008
+[Epoch   28/100] [Step   200] D: 0.0028  G: 14.3593  adv: 0.0480  pixel: 8.6987  perc: 5.6125  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0028.png
+[Epoch   29/100] [Step    20] D: 0.1856  G: 16.1377  adv: 0.0259  pixel: 11.1465  perc: 4.9652  tex: 0.0001
+[Epoch   29/100] [Step    40] D: 0.9524  G: 19.0770  adv: -0.0212  pixel: 12.6359  perc: 6.4621  tex: 0.0002
+[Epoch   33/100] [Step   120] D: 0.0306  G: 12.8496  adv: 0.0902  pixel: 7.1747  perc: 5.5845  tex: 0.0001
+[Epoch   33/100] [Step   140] D: 1.1289  G: 13.6201  adv: -0.0479  pixel: 7.8001  perc: 5.8678  tex: 0.0001
+[Epoch   33/100] [Step   160] D: 1.1817  G: 12.0256  adv: 0.0247  pixel: 7.3594  perc: 4.6415  tex: 0.0000
+[Epoch   33/100] [Step   180] D: 0.1803  G: 17.0896  adv: -0.0162  pixel: 10.1266  perc: 6.9785  tex: 0.0006
+[Epoch   33/100] [Step   200] D: 0.0924  G: 11.0165  adv: 0.0042  pixel: 6.5648  perc: 4.4474  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0033.png
+[Epoch   34/100] [Step    20] D: 0.3143  G: 19.2027  adv: -0.0058  pixel: 12.8083  perc: 6.3997  tex: 0.0005
+[Epoch   34/100] [Step    40] D: 1.9032  G: 10.7808  adv: 0.0218  pixel: 6.4036  perc: 4.3553  tex: 0.0000
+[Epoch   34/100] [Step    60] D: 0.1863  G: 14.0240  adv: -0.0643  pixel: 7.3625  perc: 6.7256  tex: 0.0002
+[Epoch   34/100] [Step    80] D: 0.0175  G: 13.9795  adv: -0.0091  pixel: 8.8925  perc: 5.0960  tex: 0.0001
+[Epoch   34/100] [Step   100] D: 3.0752  G: 16.0898  adv: -0.0067  pixel: 11.2232  perc: 4.8732  tex: 0.0001
+[Epoch   34/100] [Step   120] D: 21.7958  G: 13.8796  adv: -0.1220  pixel: 8.3531  perc: 5.6484  tex: 0.0002
+[Epoch   34/100] [Step   140] D: 0.8342  G: 12.8166  adv: 0.1146  pixel: 7.2631  perc: 5.4388  tex: 0.0001
+[Epoch   34/100] [Step   160] D: 0.0546  G: 19.1092  adv: -0.0682  pixel: 11.9666  perc: 7.2103  tex: 0.0005
+[Epoch   34/100] [Step   180] D: 0.7214  G: 14.3174  adv: -0.0356  pixel: 8.6347  perc: 5.7182  tex: 0.0001
+[Epoch   34/100] [Step   200] D: 9.8526  G: 14.4173  adv: -0.0328  pixel: 9.6065  perc: 4.8435  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0034.png
+[Epoch   35/100] [Step    20] D: 0.1281  G: 17.5792  adv: -0.0558  pixel: 9.9116  perc: 7.7226  tex: 0.0008
+[Epoch   35/100] [Step    40] D: 0.0001  G: 12.2390  adv: -0.0085  pixel: 7.0182  perc: 5.2291  tex: 0.0001
+[Epoch   35/100] [Step    60] D: 0.4399  G: 12.3188  adv: -0.0255  pixel: 7.0138  perc: 5.3305  tex: 0.0001
+[Epoch   35/100] [Step    80] D: 0.8705  G: 11.9772  adv: 0.0010  pixel: 7.3895  perc: 4.5867  tex: 0.0001
+[Epoch   35/100] [Step   100] D: 0.0097  G: 16.2735  adv: -0.0261  pixel: 11.0533  perc: 5.2462  tex: 0.0001
+[Epoch   35/100] [Step   120] D: 0.8658  G: 14.8631  adv: -0.1120  pixel: 9.7908  perc: 5.1843  tex: 0.0001
+[Epoch   35/100] [Step   140] D: 0.8340  G: 15.5316  adv: -0.0323  pixel: 9.5418  perc: 6.0219  tex: 0.0002
+[Epoch   35/100] [Step   160] D: 1.5655  G: 10.3190  adv: -0.1187  pixel: 5.8731  perc: 4.5645  tex: 0.0001
+[Epoch   35/100] [Step   180] D: 0.9059  G: 15.5082  adv: 0.0121  pixel: 9.1875  perc: 6.3082  tex: 0.0003
+[Epoch   35/100] [Step   200] D: -0.0003  G: 13.9931  adv: -0.0446  pixel: 8.5331  perc: 5.5044  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0035.png
+[RCA-GAN] Checkpoints saved at epoch 35
+[Epoch   36/100] [Step    20] D: 15.7428  G: 16.0958  adv: 0.2466  pixel: 9.9737  perc: 5.8754  tex: 0.0001
+[Epoch   36/100] [Step    40] D: 0.0831  G: 12.5076  adv: -0.0542  pixel: 6.4775  perc: 6.0839  tex: 0.0003
+[Epoch   36/100] [Step    60] D: 2.7212  G: 16.4311  adv: -0.0151  pixel: 9.9489  perc: 6.4971  tex: 0.0002
+[Epoch   36/100] [Step    80] D: 3.1046  G: 17.2745  adv: -0.1476  pixel: 11.2894  perc: 6.1326  tex: 0.0002
+[Epoch   36/100] [Step   100] D: 6.2479  G: 16.2780  adv: -0.1940  pixel: 9.5484  perc: 6.9232  tex: 0.0005
+[Epoch   36/100] [Step   120] D: 0.2397  G: 14.8336  adv: 0.0386  pixel: 9.6067  perc: 5.1882  tex: 0.0002
+[Epoch   36/100] [Step   140] D: 1.3092  G: 16.0214  adv: -0.0947  pixel: 10.5990  perc: 5.5170  tex: 0.0001
+[Epoch   36/100] [Step   160] D: 0.0703  G: 13.9090  adv: 0.0440  pixel: 8.6991  perc: 5.1658  tex: 0.0001
+[Epoch   36/100] [Step   180] D: 0.4963  G: 15.3212  adv: -0.0640  pixel: 9.4028  perc: 5.9821  tex: 0.0002
+[Epoch   36/100] [Step   200] D: 0.0596  G: 12.7601  adv: 0.0222  pixel: 7.5847  perc: 5.1531  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0036.png
+[Epoch   37/100] [Step    20] D: 0.4640  G: 9.1360  adv: -0.0524  pixel: 4.5419  perc: 4.6466  tex: 0.0000
+[Epoch   37/100] [Step    40] D: 0.6454  G: 19.5394  adv: 0.0323  pixel: 14.2265  perc: 5.2805  tex: 0.0001
+[Epoch   37/100] [Step    60] D: 0.0375  G: 18.1031  adv: -0.0211  pixel: 11.2937  perc: 6.8300  tex: 0.0004
+[Epoch   37/100] [Step    80] D: 0.2848  G: 17.0104  adv: 0.0127  pixel: 11.4563  perc: 5.5413  tex: 0.0001
+[Epoch   37/100] [Step   100] D: 0.0090  G: 16.4769  adv: 0.0998  pixel: 9.9361  perc: 6.4408  tex: 0.0002
+[Epoch   37/100] [Step   120] D: 0.5587  G: 15.7723  adv: -0.0272  pixel: 9.5028  perc: 6.2964  tex: 0.0003
+[Epoch   37/100] [Step   140] D: 3.1413  G: 13.8256  adv: -0.1107  pixel: 8.1961  perc: 5.7400  tex: 0.0002
+[Epoch   37/100] [Step   160] D: 0.3819  G: 13.7564  adv: 0.0765  pixel: 8.6914  perc: 4.9884  tex: 0.0001
+[Epoch   37/100] [Step   180] D: 0.5347  G: 12.9133  adv: 0.0240  pixel: 8.1072  perc: 4.7821  tex: 0.0000
+[Epoch   37/100] [Step   200] D: 58.3417  G: 11.3779  adv: -0.2943  pixel: 6.6004  perc: 5.0718  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0037.png
+[Epoch   38/100] [Step    20] D: 0.0251  G: 13.5349  adv: -0.0698  pixel: 7.8456  perc: 5.7589  tex: 0.0001
+[Epoch   38/100] [Step    40] D: 1.9311  G: 13.6967  adv: -0.0275  pixel: 8.5936  perc: 5.1306  tex: 0.0001
+[Epoch   38/100] [Step    60] D: 0.0015  G: 20.1477  adv: -0.0379  pixel: 13.0543  perc: 7.1304  tex: 0.0009
+[Epoch   38/100] [Step    80] D: 0.0167  G: 17.3669  adv: 0.0124  pixel: 10.3400  perc: 7.0135  tex: 0.0010
+[Epoch   38/100] [Step   100] D: 6.2440  G: 15.0967  adv: 0.0014  pixel: 10.3320  perc: 4.7632  tex: 0.0000
+[Epoch   38/100] [Step   120] D: 1.4153  G: 10.9443  adv: -0.1776  pixel: 5.9122  perc: 5.2095  tex: 0.0001
+[Epoch   38/100] [Step   140] D: 1.6663  G: 14.4479  adv: 0.0586  pixel: 7.8201  perc: 6.5686  tex: 0.0006
+[Epoch   38/100] [Step   160] D: 1.6484  G: 14.5809  adv: -0.0765  pixel: 9.2539  perc: 5.4034  tex: 0.0001
+[Epoch   38/100] [Step   180] D: 0.4522  G: 13.5668  adv: -0.0639  pixel: 8.2808  perc: 5.3498  tex: 0.0001
+[Epoch   38/100] [Step   200] D: 0.0005  G: 12.0603  adv: 0.0671  pixel: 6.7187  perc: 5.2745  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0038.png
+[Epoch   39/100] [Step    20] D: 0.2807  G: 13.0560  adv: 0.0079  pixel: 8.7326  perc: 4.3155  tex: 0.0000
+[Epoch   39/100] [Step    40] D: 0.3194  G: 15.5422  adv: 0.0045  pixel: 9.1453  perc: 6.3922  tex: 0.0002
+[Epoch   39/100] [Step    60] D: 5.6333  G: 16.7209  adv: -0.0264  pixel: 10.8938  perc: 5.8535  tex: 0.0001
+[Epoch   39/100] [Step    80] D: 0.2942  G: 12.0812  adv: 0.1155  pixel: 7.2186  perc: 4.7470  tex: 0.0001
+[Epoch   39/100] [Step   100] D: 0.0439  G: 19.2161  adv: 0.0479  pixel: 11.6989  perc: 7.4686  tex: 0.0007
+[Epoch   39/100] [Step   120] D: 0.9001  G: 12.6214  adv: -0.0030  pixel: 8.0671  perc: 4.5572  tex: 0.0000
+[Epoch   39/100] [Step   140] D: 1.3162  G: 24.0154  adv: -0.0151  pixel: 18.6922  perc: 5.3383  tex: 0.0001
+[Epoch   39/100] [Step   160] D: 0.0182  G: 12.9822  adv: -0.1477  pixel: 7.7598  perc: 5.3699  tex: 0.0002
+[Epoch   39/100] [Step   180] D: 0.6443  G: 12.0725  adv: -0.0251  pixel: 7.8846  perc: 4.2129  tex: 0.0000
+[Epoch   39/100] [Step   200] D: 0.0803  G: 11.5385  adv: -0.0844  pixel: 6.6745  perc: 4.9484  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0039.png
+[Epoch   40/100] [Step    20] D: 3.4277  G: 14.4899  adv: 0.0363  pixel: 9.3226  perc: 5.1309  tex: 0.0001
+[Epoch   40/100] [Step    40] D: 1.2809  G: 12.0983  adv: 0.0314  pixel: 7.0073  perc: 5.0595  tex: 0.0000
+[Epoch   40/100] [Step    60] D: 19.8752  G: 17.3933  adv: 0.0545  pixel: 11.1367  perc: 6.2020  tex: 0.0001
+[Epoch   40/100] [Step    80] D: 0.8388  G: 16.8182  adv: -0.2181  pixel: 9.3719  perc: 7.6636  tex: 0.0008
+[Epoch   40/100] [Step   100] D: 0.1716  G: 16.2884  adv: -0.0663  pixel: 9.5297  perc: 6.8247  tex: 0.0003
+[Epoch   40/100] [Step   120] D: 0.6371  G: 13.4522  adv: 0.0056  pixel: 7.9016  perc: 5.5449  tex: 0.0001
+[Epoch   40/100] [Step   140] D: 0.5258  G: 11.8063  adv: -0.0289  pixel: 7.1602  perc: 4.6749  tex: 0.0001
+[Epoch   40/100] [Step   160] D: 0.1739  G: 15.1828  adv: -0.0395  pixel: 10.0110  perc: 5.2113  tex: 0.0001
+[Epoch   40/100] [Step   180] D: 3.4505  G: 13.5379  adv: 0.0316  pixel: 8.7739  perc: 4.7322  tex: 0.0001
+[Epoch   40/100] [Step   200] D: 1.9881  G: 15.9211  adv: 0.0743  pixel: 8.9090  perc: 6.9373  tex: 0.0005
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0040.png
+[RCA-GAN] Checkpoints saved at epoch 40
+[Epoch   41/100] [Step    20] D: 2.2405  G: 12.6551  adv: -0.0068  pixel: 6.9557  perc: 5.7061  tex: 0.0002
+[Epoch   41/100] [Step    40] D: 0.8323  G: 13.1896  adv: -0.0529  pixel: 6.6411  perc: 6.6011  tex: 0.0003
+[Epoch   41/100] [Step    60] D: 0.0050  G: 15.9860  adv: -0.0232  pixel: 10.4288  perc: 5.5802  tex: 0.0002
+[Epoch   41/100] [Step    80] D: 6.1964  G: 11.8380  adv: -0.0014  pixel: 7.2043  perc: 4.6350  tex: 0.0000
+[Epoch   41/100] [Step   100] D: 237.9123  G: 13.9684  adv: -0.3096  pixel: 9.0119  perc: 5.2660  tex: 0.0002
+[Epoch   41/100] [Step   120] D: 1.6413  G: 10.8948  adv: 0.0329  pixel: 6.3239  perc: 4.5380  tex: 0.0001
+[Epoch   41/100] [Step   140] D: 21.2037  G: 13.2937  adv: -0.3396  pixel: 7.8990  perc: 5.7342  tex: 0.0001
+[Epoch   41/100] [Step   160] D: 0.1336  G: 20.5152  adv: -0.0381  pixel: 12.9757  perc: 7.5767  tex: 0.0009
+[Epoch   41/100] [Step   180] D: 0.0218  G: 13.0872  adv: 0.0523  pixel: 8.5465  perc: 4.4884  tex: 0.0001
+[Epoch   41/100] [Step   200] D: 26.0619  G: 17.1824  adv: 0.1777  pixel: 10.4879  perc: 6.5166  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0041.png
+[Epoch   42/100] [Step    20] D: 0.9025  G: 13.0719  adv: 0.1186  pixel: 7.7433  perc: 5.2098  tex: 0.0001
+[Epoch   42/100] [Step    40] D: 1.1459  G: 11.0091  adv: -0.0029  pixel: 6.4971  perc: 4.5149  tex: 0.0000
+[Epoch   42/100] [Step    60] D: 0.1108  G: 12.1336  adv: -0.0291  pixel: 6.7650  perc: 5.3977  tex: 0.0001
+[Epoch   42/100] [Step    80] D: 109.2826  G: 15.9809  adv: 0.3010  pixel: 10.0356  perc: 5.6439  tex: 0.0004
+[Epoch   42/100] [Step   100] D: 4.2719  G: 12.8944  adv: -0.0706  pixel: 7.3204  perc: 5.6446  tex: 0.0001
+[Epoch   42/100] [Step   120] D: 0.5817  G: 12.1072  adv: 0.0875  pixel: 7.0943  perc: 4.9253  tex: 0.0001
+[Epoch   42/100] [Step   140] D: 0.9012  G: 17.3483  adv: 0.0337  pixel: 10.9921  perc: 6.3217  tex: 0.0008
+[Epoch   42/100] [Step   160] D: 0.9952  G: 19.5315  adv: -0.0692  pixel: 14.4296  perc: 5.1709  tex: 0.0002
+[Epoch   42/100] [Step   180] D: 3.0280  G: 16.2724  adv: -0.0549  pixel: 9.8444  perc: 6.4824  tex: 0.0004
+[Epoch   42/100] [Step   200] D: 0.2150  G: 11.9699  adv: -0.1426  pixel: 7.0428  perc: 5.0696  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0042.png
+[Epoch   43/100] [Step    20] D: 1.1547  G: 15.7177  adv: -0.0286  pixel: 10.5539  perc: 5.1922  tex: 0.0002
+[Epoch   43/100] [Step    40] D: 2.9791  G: 15.4049  adv: -0.0345  pixel: 10.5982  perc: 4.8408  tex: 0.0004
+[Epoch   43/100] [Step    60] D: 2.2973  G: 12.1897  adv: 0.0965  pixel: 7.0406  perc: 5.0525  tex: 0.0001
+[Epoch   43/100] [Step    80] D: 11.0307  G: 14.4004  adv: -0.0238  pixel: 9.4153  perc: 5.0088  tex: 0.0002
+[Epoch   43/100] [Step   100] D: 0.2519  G: 14.5529  adv: 0.0457  pixel: 8.8423  perc: 5.6648  tex: 0.0001
+[Epoch   43/100] [Step   120] D: 0.8273  G: 13.3676  adv: -0.0582  pixel: 8.4305  perc: 4.9952  tex: 0.0001
+[Epoch   43/100] [Step   140] D: 0.0629  G: 15.3552  adv: -0.0658  pixel: 9.4899  perc: 5.9309  tex: 0.0002
+[Epoch   43/100] [Step   160] D: 0.7739  G: 13.6531  adv: -0.0054  pixel: 8.1649  perc: 5.4935  tex: 0.0002
+[Epoch   43/100] [Step   180] D: 0.5778  G: 14.7151  adv: 0.0342  pixel: 8.1334  perc: 6.5471  tex: 0.0004
+[Epoch   43/100] [Step   200] D: 0.1593  G: 19.3417  adv: 0.0830  pixel: 12.3985  perc: 6.8596  tex: 0.0006
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0043.png
+[Epoch   44/100] [Step    20] D: 0.3820  G: 10.5174  adv: -0.1172  pixel: 5.8574  perc: 4.7772  tex: 0.0000
+[Epoch   44/100] [Step    40] D: 1.4924  G: 13.3173  adv: 0.0049  pixel: 8.2383  perc: 5.0740  tex: 0.0001
+[Epoch   44/100] [Step    60] D: 1.6453  G: 12.5242  adv: -0.0126  pixel: 7.5167  perc: 5.0200  tex: 0.0002
+[Epoch   44/100] [Step    80] D: 0.1226  G: 14.1736  adv: -0.1083  pixel: 7.8716  perc: 6.4098  tex: 0.0004
+[Epoch   44/100] [Step   100] D: 0.0728  G: 12.5851  adv: -0.0441  pixel: 7.5648  perc: 5.0643  tex: 0.0001
+[Epoch   44/100] [Step   120] D: 0.0927  G: 14.0881  adv: 0.1067  pixel: 9.1642  perc: 4.8172  tex: 0.0000
+[Epoch   44/100] [Step   140] D: 4.5788  G: 11.4188  adv: -0.0021  pixel: 6.7900  perc: 4.6309  tex: 0.0000
+[Epoch   44/100] [Step   160] D: 0.0401  G: 14.7004  adv: 0.0544  pixel: 8.7364  perc: 5.9094  tex: 0.0002
+[Epoch   44/100] [Step   180] D: -0.0003  G: 15.3626  adv: -0.0307  pixel: 10.1707  perc: 5.2224  tex: 0.0001
+[Epoch   44/100] [Step   200] D: 0.7260  G: 21.1763  adv: -0.0215  pixel: 12.5613  perc: 8.6354  tex: 0.0011
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0044.png
+[Epoch   45/100] [Step    20] D: 0.1583  G: 12.0396  adv: 0.0208  pixel: 6.8672  perc: 5.1516  tex: 0.0001
+[Epoch   45/100] [Step    40] D: 0.6233  G: 9.2299  adv: 0.0094  pixel: 5.1741  perc: 4.0464  tex: 0.0000
+[Epoch   45/100] [Step    60] D: 0.0082  G: 12.3202  adv: 0.0165  pixel: 7.7639  perc: 4.5397  tex: 0.0001
+[Epoch   45/100] [Step    80] D: 0.1657  G: 10.7752  adv: -0.0123  pixel: 5.9054  perc: 4.8820  tex: 0.0001
+[Epoch   45/100] [Step   100] D: 0.4099  G: 11.6025  adv: 0.0096  pixel: 6.0647  perc: 5.5281  tex: 0.0001
+[Epoch   45/100] [Step   120] D: 0.4822  G: 10.6114  adv: 0.0366  pixel: 5.9657  perc: 4.6091  tex: 0.0000
+[Epoch   45/100] [Step   140] D: 0.2633  G: 16.0804  adv: 0.0030  pixel: 10.0600  perc: 6.0170  tex: 0.0003
+[Epoch   45/100] [Step   160] D: 4.6461  G: 13.1460  adv: -0.0182  pixel: 7.6684  perc: 5.4957  tex: 0.0002
+[Epoch   45/100] [Step   180] D: 438.3600  G: 15.9386  adv: 1.0525  pixel: 8.2559  perc: 6.6300  tex: 0.0002
+[Epoch   45/100] [Step   200] D: 0.0079  G: 14.0506  adv: -0.0877  pixel: 7.8838  perc: 6.2545  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0045.png
+[RCA-GAN] Checkpoints saved at epoch 45
+[Epoch   46/100] [Step    20] D: 0.0202  G: 14.3025  adv: 0.0428  pixel: 9.2391  perc: 5.0205  tex: 0.0001
+[Epoch   46/100] [Step    40] D: 0.5133  G: 14.2716  adv: 0.0263  pixel: 9.0415  perc: 5.2037  tex: 0.0001
+[Epoch   46/100] [Step    60] D: 0.2482  G: 14.7164  adv: -0.0201  pixel: 8.7395  perc: 5.9966  tex: 0.0003
+[Epoch   46/100] [Step    80] D: 0.2492  G: 18.4825  adv: -0.0196  pixel: 11.9117  perc: 6.5899  tex: 0.0006
+[Epoch   46/100] [Step   100] D: 0.8055  G: 11.4058  adv: 0.0003  pixel: 6.7255  perc: 4.6799  tex: 0.0001
+[Epoch   46/100] [Step   120] D: 3.0694  G: 11.7830  adv: 0.0370  pixel: 6.6873  perc: 5.0586  tex: 0.0001
+[Epoch   46/100] [Step   140] D: 0.1561  G: 12.7970  adv: -0.0065  pixel: 7.1707  perc: 5.6327  tex: 0.0001
+[Epoch   46/100] [Step   160] D: 0.0042  G: 13.2955  adv: 0.0312  pixel: 8.7288  perc: 4.5355  tex: 0.0001
+[Epoch   46/100] [Step   180] D: 0.7552  G: 17.6759  adv: 0.0497  pixel: 13.4506  perc: 4.1756  tex: 0.0000
+[Epoch   46/100] [Step   200] D: 0.1078  G: 16.6293  adv: 0.0356  pixel: 9.8450  perc: 6.7478  tex: 0.0008
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0046.png
+[Epoch   47/100] [Step    20] D: 2.0240  G: 10.9923  adv: 0.0069  pixel: 6.0668  perc: 4.9186  tex: 0.0001
+[Epoch   47/100] [Step    40] D: 6.0717  G: 17.2719  adv: -0.0058  pixel: 11.3383  perc: 5.9389  tex: 0.0004
+[Epoch   47/100] [Step    60] D: 2.5618  G: 8.5957  adv: 0.0252  pixel: 4.2118  perc: 4.3587  tex: 0.0000
+[Epoch   47/100] [Step    80] D: 1.8355  G: 14.7434  adv: 0.0322  pixel: 9.8682  perc: 4.8429  tex: 0.0001
+[Epoch   47/100] [Step   100] D: 1.0847  G: 14.8386  adv: 0.0142  pixel: 8.5130  perc: 6.3113  tex: 0.0002
+[Epoch   47/100] [Step   120] D: 0.1647  G: 13.3227  adv: 0.0198  pixel: 7.8569  perc: 5.4458  tex: 0.0002
+[Epoch   47/100] [Step   140] D: 1.2297  G: 14.0157  adv: 0.0020  pixel: 8.3696  perc: 5.6440  tex: 0.0001
+[Epoch   29/100] [Step    60] D: 2.1187  G: 14.4259  adv: 0.0193  pixel: 8.1633  perc: 6.2431  tex: 0.0002
+[Epoch   29/100] [Step    80] D: 2.1057  G: 14.9466  adv: -0.0278  pixel: 9.9169  perc: 5.0574  tex: 0.0001
+[Epoch   29/100] [Step   100] D: 0.2852  G: 23.5476  adv: 0.0223  pixel: 15.5925  perc: 7.9318  tex: 0.0010
+[Epoch   29/100] [Step   120] D: 0.3668  G: 20.0110  adv: 0.0383  pixel: 12.8864  perc: 7.0855  tex: 0.0007
+[Epoch   29/100] [Step   140] D: 0.5678  G: 14.7981  adv: 0.0119  pixel: 9.4062  perc: 5.3799  tex: 0.0002
+[Epoch   29/100] [Step   160] D: 0.2161  G: 11.7946  adv: -0.0202  pixel: 7.1950  perc: 4.6199  tex: 0.0000
+[Epoch   29/100] [Step   180] D: 2.0406  G: 13.3323  adv: -0.0303  pixel: 8.5500  perc: 4.8126  tex: 0.0001
+[Epoch   29/100] [Step   200] D: 3.1049  G: 18.4100  adv: 0.0144  pixel: 13.3076  perc: 5.0878  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0029.png
+[Epoch   30/100] [Step    20] D: 0.9874  G: 13.7439  adv: 0.0075  pixel: 8.6987  perc: 5.0375  tex: 0.0000
+[Epoch   30/100] [Step    40] D: 2.0139  G: 13.3164  adv: 0.0238  pixel: 7.9115  perc: 5.3809  tex: 0.0002
+[Epoch   30/100] [Step    60] D: 0.0792  G: 12.7572  adv: 0.0008  pixel: 7.9870  perc: 4.7693  tex: 0.0001
+[Epoch   30/100] [Step    80] D: 0.7127  G: 11.4849  adv: -0.0355  pixel: 6.0424  perc: 5.4779  tex: 0.0002
+[Epoch   30/100] [Step   100] D: 0.0151  G: 18.2424  adv: -0.0173  pixel: 11.6020  perc: 6.6574  tex: 0.0004
+[Epoch   30/100] [Step   120] D: 0.3015  G: 11.9735  adv: -0.0436  pixel: 7.1063  perc: 4.9108  tex: 0.0000
+[Epoch   30/100] [Step   140] D: 2.8438  G: 10.7254  adv: 0.0512  pixel: 5.9372  perc: 4.7370  tex: 0.0000
+[Epoch   30/100] [Step   160] D: 2.9620  G: 14.4994  adv: -0.0311  pixel: 8.6628  perc: 5.8675  tex: 0.0002
+[Epoch   30/100] [Step   180] D: 0.2470  G: 13.3170  adv: 0.0022  pixel: 7.2481  perc: 6.0664  tex: 0.0003
+[Epoch   30/100] [Step   200] D: 0.3549  G: 12.2367  adv: -0.0186  pixel: 7.5067  perc: 4.7486  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0030.png
+[RCA-GAN] Checkpoints saved at epoch 30
+[Epoch   31/100] [Step    20] D: 0.5405  G: 14.1739  adv: -0.0220  pixel: 8.4858  perc: 5.7101  tex: 0.0002
+[Epoch   31/100] [Step    40] D: 0.0889  G: 12.1850  adv: 0.0798  pixel: 6.8617  perc: 5.2435  tex: 0.0000
+[Epoch   31/100] [Step    60] D: 1.8086  G: 17.2452  adv: 0.0268  pixel: 11.1458  perc: 6.0724  tex: 0.0002
+[Epoch   31/100] [Step    80] D: 0.0136  G: 12.3955  adv: 0.0808  pixel: 7.2431  perc: 5.0716  tex: 0.0001
+[Epoch   31/100] [Step   100] D: 1.0653  G: 11.9446  adv: 0.0463  pixel: 6.7258  perc: 5.1725  tex: 0.0000
+[Epoch   31/100] [Step   120] D: 1.4428  G: 13.8840  adv: -0.0521  pixel: 8.2480  perc: 5.6879  tex: 0.0001
+[Epoch   31/100] [Step   140] D: 1.6465  G: 16.7469  adv: 0.0558  pixel: 10.7629  perc: 5.9281  tex: 0.0001
+[Epoch   31/100] [Step   160] D: 12.5851  G: 11.3396  adv: 0.0107  pixel: 6.7719  perc: 4.5570  tex: 0.0000
+[Epoch   31/100] [Step   180] D: 12.7193  G: 16.7693  adv: -0.0702  pixel: 11.4909  perc: 5.3482  tex: 0.0005
+[Epoch   31/100] [Step   200] D: 5.8655  G: 13.4819  adv: 0.0093  pixel: 8.2258  perc: 5.2468  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0031.png
+[Epoch   32/100] [Step    20] D: 0.8386  G: 15.1268  adv: -0.0158  pixel: 9.3913  perc: 5.7511  tex: 0.0002
+[Epoch   32/100] [Step    40] D: 1.1533  G: 18.3502  adv: 0.0333  pixel: 12.1197  perc: 6.1970  tex: 0.0002
+[Epoch   32/100] [Step    60] D: 0.0279  G: 21.9736  adv: -0.0367  pixel: 14.2019  perc: 7.8077  tex: 0.0008
+[Epoch   32/100] [Step    80] D: 0.7907  G: 14.5011  adv: -0.0295  pixel: 9.2817  perc: 5.2488  tex: 0.0001
+[Epoch   32/100] [Step   100] D: 0.6737  G: 12.7899  adv: 0.0502  pixel: 7.9206  perc: 4.8191  tex: 0.0001
+[Epoch   32/100] [Step   120] D: 0.4339  G: 19.7414  adv: -0.1566  pixel: 14.2280  perc: 5.6699  tex: 0.0002
+[Epoch   32/100] [Step   140] D: 376.6458  G: 12.3690  adv: 0.3879  pixel: 7.3131  perc: 4.6680  tex: 0.0001
+[Epoch   32/100] [Step   160] D: 7.8916  G: 18.4486  adv: 0.0212  pixel: 12.2829  perc: 6.1442  tex: 0.0003
+[Epoch   32/100] [Step   180] D: 0.9695  G: 12.6938  adv: -0.0048  pixel: 8.2698  perc: 4.4288  tex: 0.0000
+[Epoch   32/100] [Step   200] D: 0.5044  G: 13.9132  adv: -0.0032  pixel: 8.6436  perc: 5.2726  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0032.png
+[Epoch   33/100] [Step    20] D: 1.1522  G: 14.7060  adv: -0.0296  pixel: 8.7974  perc: 5.9379  tex: 0.0003
+[Epoch   33/100] [Step    40] D: 0.0258  G: 13.1519  adv: -0.0126  pixel: 7.6429  perc: 5.5215  tex: 0.0002
+[Epoch   33/100] [Step    60] D: 0.0452  G: 15.3989  adv: 0.0332  pixel: 10.6739  perc: 4.6918  tex: 0.0000
+[Epoch   33/100] [Step    80] D: 0.2890  G: 13.5156  adv: -0.0535  pixel: 8.2025  perc: 5.3664  tex: 0.0001
+[Epoch   33/100] [Step   100] D: 0.8842  G: 17.4242  adv: -0.0574  pixel: 11.7292  perc: 5.7523  tex: 0.0002
+[Epoch   33/100] [Step   120] D: 0.4588  G: 11.4949  adv: 0.0549  pixel: 6.4240  perc: 5.0159  tex: 0.0000
+[Epoch   33/100] [Step   140] D: 1.4835  G: 14.5123  adv: -0.0149  pixel: 8.7716  perc: 5.7555  tex: 0.0001
+[Epoch   33/100] [Step   160] D: 0.0100  G: 15.2445  adv: -0.0653  pixel: 10.1776  perc: 5.1321  tex: 0.0001
+[Epoch   33/100] [Step   180] D: 0.0205  G: 14.0916  adv: 0.0868  pixel: 8.4317  perc: 5.5731  tex: 0.0001
+[Epoch   33/100] [Step   200] D: 0.2568  G: 11.8474  adv: -0.0480  pixel: 7.0184  perc: 4.8769  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0033.png
+[Epoch   34/100] [Step    20] D: 1.0911  G: 11.5311  adv: -0.0088  pixel: 6.4968  perc: 5.0430  tex: 0.0000
+[Epoch   34/100] [Step    40] D: 1.4861  G: 16.2493  adv: 0.0073  pixel: 11.0508  perc: 5.1910  tex: 0.0002
+[Epoch   34/100] [Step    60] D: 0.9709  G: 13.9515  adv: 0.0054  pixel: 8.0466  perc: 5.8991  tex: 0.0003
+[Epoch   34/100] [Step    80] D: 0.0281  G: 17.4014  adv: 0.0238  pixel: 10.9439  perc: 6.4334  tex: 0.0003
+[Epoch   34/100] [Step   100] D: 0.4910  G: 11.8348  adv: 0.0392  pixel: 7.1958  perc: 4.5997  tex: 0.0000
+[Epoch   34/100] [Step   120] D: 1.6998  G: 12.3692  adv: 0.0034  pixel: 7.4813  perc: 4.8844  tex: 0.0001
+[Epoch   34/100] [Step   140] D: 0.4265  G: 16.0828  adv: -0.0653  pixel: 10.0059  perc: 6.1420  tex: 0.0002
+[Epoch   34/100] [Step   160] D: 1.8851  G: 11.4039  adv: 0.0112  pixel: 6.9808  perc: 4.4119  tex: 0.0000
+[Epoch   34/100] [Step   180] D: 7.5403  G: 12.7634  adv: 0.0059  pixel: 7.4278  perc: 5.3296  tex: 0.0001
+[Epoch   34/100] [Step   200] D: 0.1044  G: 13.0597  adv: 0.2594  pixel: 7.5532  perc: 5.2470  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0034.png
+[Epoch   35/100] [Step    20] D: 1.8128  G: 12.0303  adv: -0.0869  pixel: 6.6448  perc: 5.4723  tex: 0.0001
+[Epoch   35/100] [Step    40] D: 1.7333  G: 13.6391  adv: -0.0022  pixel: 8.2859  perc: 5.3553  tex: 0.0001
+[Epoch   35/100] [Step    60] D: 0.8129  G: 10.1022  adv: -0.0655  pixel: 5.6341  perc: 4.5335  tex: 0.0000
+[Epoch   35/100] [Step    80] D: 0.6476  G: 12.0179  adv: -0.0334  pixel: 7.9144  perc: 4.1368  tex: 0.0001
+[Epoch   35/100] [Step   100] D: 4.2112  G: 10.9337  adv: 0.1851  pixel: 6.2375  perc: 4.5110  tex: 0.0001
+[Epoch   35/100] [Step   120] D: 1459.7184  G: 11.3710  adv: -0.6022  pixel: 7.1107  perc: 4.8624  tex: 0.0001
+[Epoch   35/100] [Step   140] D: 1.4324  G: 16.8874  adv: 0.0617  pixel: 9.6880  perc: 7.1372  tex: 0.0004
+[Epoch   35/100] [Step   160] D: 0.1561  G: 13.0480  adv: 0.0260  pixel: 7.1867  perc: 5.8352  tex: 0.0002
+[Epoch   35/100] [Step   180] D: 1.7726  G: 12.8048  adv: 0.0123  pixel: 8.1774  perc: 4.6150  tex: 0.0001
+[Epoch   35/100] [Step   200] D: 3.6019  G: 12.8761  adv: 0.0041  pixel: 7.5177  perc: 5.3542  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0035.png
+[RCA-GAN] Checkpoints saved at epoch 35
+[Epoch   36/100] [Step    20] D: 2.8316  G: 11.8099  adv: -0.0113  pixel: 6.6754  perc: 5.1458  tex: 0.0001
+[Epoch   36/100] [Step    40] D: 0.0193  G: 11.5102  adv: -0.0181  pixel: 7.4534  perc: 4.0749  tex: 0.0000
+[Epoch   36/100] [Step    60] D: 0.1981  G: 14.7429  adv: 0.0304  pixel: 9.4813  perc: 5.2310  tex: 0.0002
+[Epoch   36/100] [Step    80] D: 0.7162  G: 13.7088  adv: 0.0502  pixel: 8.7910  perc: 4.8674  tex: 0.0001
+[Epoch   36/100] [Step   100] D: 0.0955  G: 11.1830  adv: 0.0861  pixel: 6.9455  perc: 4.1514  tex: 0.0001
+[Epoch   36/100] [Step   120] D: 0.5042  G: 16.8091  adv: 0.0901  pixel: 10.4822  perc: 6.2366  tex: 0.0002
+[Epoch   36/100] [Step   140] D: 0.3151  G: 19.1605  adv: 0.0010  pixel: 13.8147  perc: 5.3447  tex: 0.0001
+[Epoch   36/100] [Step   160] D: 0.7201  G: 20.3824  adv: 0.0248  pixel: 13.2529  perc: 7.1037  tex: 0.0009
+[Epoch   36/100] [Step   180] D: 0.1965  G: 18.9244  adv: 0.0209  pixel: 12.3741  perc: 6.5287  tex: 0.0008
+[Epoch   36/100] [Step   200] D: 0.0346  G: 11.4668  adv: 0.0209  pixel: 6.5921  perc: 4.8537  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0036.png
+[Epoch   37/100] [Step    20] D: 0.0357  G: 13.1860  adv: 0.0155  pixel: 7.7513  perc: 5.4191  tex: 0.0001
+[Epoch   37/100] [Step    40] D: 0.7280  G: 18.0369  adv: -0.0049  pixel: 11.4271  perc: 6.6144  tex: 0.0003
+[Epoch   37/100] [Step    60] D: 1.6786  G: 13.3042  adv: 0.0386  pixel: 8.3925  perc: 4.8731  tex: 0.0000
+[Epoch   37/100] [Step    80] D: 0.5727  G: 15.9854  adv: 0.0634  pixel: 8.9231  perc: 6.9985  tex: 0.0004
+[Epoch   37/100] [Step   100] D: 0.5924  G: 14.3374  adv: -0.0198  pixel: 8.4423  perc: 5.9147  tex: 0.0002
+[Epoch   37/100] [Step   120] D: 0.9502  G: 12.2717  adv: 0.0564  pixel: 6.8397  perc: 5.3755  tex: 0.0001
+[Epoch   37/100] [Step   140] D: 5.5291  G: 12.9001  adv: -0.0175  pixel: 8.7100  perc: 4.2076  tex: 0.0000
+[Epoch   37/100] [Step   160] D: 2.4737  G: 11.0713  adv: -0.0608  pixel: 6.4833  perc: 4.6487  tex: 0.0000
+[Epoch   37/100] [Step   180] D: 0.0164  G: 13.6800  adv: 0.0689  pixel: 8.2477  perc: 5.3632  tex: 0.0003
+[Epoch   37/100] [Step   200] D: 0.5094  G: 14.7829  adv: -0.0527  pixel: 9.7364  perc: 5.0992  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0037.png
+[Epoch   38/100] [Step    20] D: 0.1592  G: 14.1264  adv: 0.0062  pixel: 9.3884  perc: 4.7317  tex: 0.0001
+[Epoch   38/100] [Step    40] D: 1.1193  G: 14.9922  adv: 0.0189  pixel: 9.4905  perc: 5.4828  tex: 0.0001
+[Epoch   38/100] [Step    60] D: 0.2782  G: 16.6800  adv: -0.0778  pixel: 11.0849  perc: 5.6727  tex: 0.0002
+[Epoch   38/100] [Step    80] D: 0.8544  G: 11.9746  adv: 0.0079  pixel: 7.5566  perc: 4.4101  tex: 0.0000
+[Epoch   38/100] [Step   100] D: 4.6475  G: 17.3555  adv: -0.0894  pixel: 10.3270  perc: 7.1173  tex: 0.0005
+[Epoch   38/100] [Step   120] D: 0.9676  G: 11.4055  adv: -0.0311  pixel: 6.4042  perc: 5.0324  tex: 0.0001
+[Epoch   38/100] [Step   140] D: 0.4694  G: 13.9320  adv: -0.0136  pixel: 9.2044  perc: 4.7412  tex: 0.0001
+[Epoch   38/100] [Step   160] D: 9.0920  G: 12.8428  adv: 0.0191  pixel: 8.2112  perc: 4.6124  tex: 0.0000
+[Epoch   38/100] [Step   180] D: 0.6396  G: 13.4693  adv: -0.0647  pixel: 7.5868  perc: 5.9470  tex: 0.0002
+[Epoch   38/100] [Step   200] D: 0.4206  G: 13.0850  adv: -0.1608  pixel: 7.7143  perc: 5.5312  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0038.png
+[Epoch   39/100] [Step    20] D: 2.0320  G: 14.5195  adv: 0.0237  pixel: 8.9652  perc: 5.5302  tex: 0.0004
+[Epoch   39/100] [Step    40] D: 3.2457  G: 12.0384  adv: -0.0567  pixel: 7.2208  perc: 4.8742  tex: 0.0001
+[Epoch   39/100] [Step    60] D: 1.0289  G: 15.1734  adv: 0.0637  pixel: 8.4943  perc: 6.6152  tex: 0.0003
+[Epoch   39/100] [Step    80] D: 1.3182  G: 14.5188  adv: -0.0540  pixel: 7.7433  perc: 6.8291  tex: 0.0004
+[Epoch   39/100] [Step   100] D: 0.4019  G: 12.2217  adv: -0.0299  pixel: 7.5901  perc: 4.6614  tex: 0.0000
+[Epoch   39/100] [Step   120] D: 1.8486  G: 11.2201  adv: -0.0262  pixel: 6.4597  perc: 4.7865  tex: 0.0001
+[Epoch   39/100] [Step   140] D: 29.5717  G: 17.6762  adv: 0.0662  pixel: 12.7580  perc: 4.8518  tex: 0.0002
+[Epoch   39/100] [Step   160] D: 0.2525  G: 13.1266  adv: -0.0529  pixel: 6.9547  perc: 6.2244  tex: 0.0005
+[Epoch   39/100] [Step   180] D: 3.7176  G: 15.8965  adv: 0.0094  pixel: 10.2466  perc: 5.6404  tex: 0.0001
+[Epoch   39/100] [Step   200] D: 0.2558  G: 14.4970  adv: 0.0347  pixel: 9.1541  perc: 5.3082  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0039.png
+[Epoch   40/100] [Step    20] D: 0.0019  G: 12.5927  adv: 0.1168  pixel: 7.6702  perc: 4.8056  tex: 0.0001
+[Epoch   40/100] [Step    40] D: 0.1614  G: 23.5245  adv: 0.0285  pixel: 19.5342  perc: 3.9618  tex: 0.0000
+[Epoch   40/100] [Step    60] D: 0.0260  G: 10.3014  adv: 0.0278  pixel: 5.6453  perc: 4.6282  tex: 0.0000
+[Epoch   40/100] [Step    80] D: 0.4379  G: 14.2499  adv: 0.0266  pixel: 9.2442  perc: 4.9791  tex: 0.0001
+[Epoch   40/100] [Step   100] D: 3.2695  G: 17.7979  adv: -0.0149  pixel: 11.9856  perc: 5.8271  tex: 0.0001
+[Epoch   40/100] [Step   120] D: 0.9765  G: 14.6252  adv: -0.0079  pixel: 8.1700  perc: 6.4628  tex: 0.0003
+[Epoch   40/100] [Step   140] D: 1.1221  G: 12.7893  adv: -0.0159  pixel: 7.0476  perc: 5.7575  tex: 0.0002
+[Epoch   40/100] [Step   160] D: 0.1194  G: 11.8267  adv: -0.0319  pixel: 7.3654  perc: 4.4932  tex: 0.0000
+[Epoch   40/100] [Step   180] D: 0.5423  G: 13.7533  adv: 0.0519  pixel: 8.0473  perc: 5.6539  tex: 0.0001
+[Epoch   40/100] [Step   200] D: 0.6231  G: 12.6221  adv: -0.0462  pixel: 7.9177  perc: 4.7506  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0040.png
+[RCA-GAN] Checkpoints saved at epoch 40
+[Epoch   41/100] [Step    20] D: 0.0741  G: 20.2455  adv: 0.0523  pixel: 13.8504  perc: 6.3422  tex: 0.0006
+[Epoch   41/100] [Step    40] D: 1.7118  G: 11.5362  adv: 0.0525  pixel: 6.4980  perc: 4.9855  tex: 0.0001
+[Epoch   41/100] [Step    60] D: 0.2141  G: 14.7659  adv: -0.0693  pixel: 9.0074  perc: 5.8276  tex: 0.0002
+[Epoch   41/100] [Step    80] D: 0.0005  G: 10.6019  adv: -0.0778  pixel: 5.7467  perc: 4.9329  tex: 0.0001
+[Epoch   41/100] [Step   100] D: 1.5418  G: 11.1121  adv: 0.0771  pixel: 5.9655  perc: 5.0694  tex: 0.0001
+[Epoch   41/100] [Step   120] D: 0.3432  G: 12.9772  adv: -0.0149  pixel: 8.4449  perc: 4.5471  tex: 0.0000
+[Epoch   41/100] [Step   140] D: 0.2388  G: 15.7436  adv: -0.0336  pixel: 9.7540  perc: 6.0229  tex: 0.0003
+[Epoch   41/100] [Step   160] D: 0.0535  G: 10.3107  adv: 0.0776  pixel: 5.5100  perc: 4.7231  tex: 0.0000
+[Epoch   41/100] [Step   180] D: 0.6293  G: 10.6294  adv: 0.0191  pixel: 6.0580  perc: 4.5523  tex: 0.0000
+[Epoch   41/100] [Step   200] D: 1.1978  G: 11.7347  adv: -0.0021  pixel: 6.3848  perc: 5.3519  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0041.png
+[Epoch   42/100] [Step    20] D: 0.2157  G: 13.8792  adv: -0.0101  pixel: 9.2491  perc: 4.6401  tex: 0.0002
+[Epoch   42/100] [Step    40] D: 7.2872  G: 12.2383  adv: -0.0178  pixel: 7.8241  perc: 4.4320  tex: 0.0000
+[Epoch   42/100] [Step    60] D: 2.2682  G: 11.3002  adv: -0.1081  pixel: 6.3656  perc: 5.0427  tex: 0.0001
+[Epoch   42/100] [Step    80] D: 8.9977  G: 22.5917  adv: -0.0606  pixel: 14.6103  perc: 8.0411  tex: 0.0009
+[Epoch   42/100] [Step   100] D: 0.4732  G: 18.7697  adv: -0.0302  pixel: 11.9762  perc: 6.8225  tex: 0.0012
+[Epoch   42/100] [Step   120] D: 2.7529  G: 12.3747  adv: 0.0886  pixel: 7.9038  perc: 4.3822  tex: 0.0000
+[Epoch   42/100] [Step   140] D: 0.8526  G: 12.8067  adv: -0.0405  pixel: 8.3007  perc: 4.5465  tex: 0.0001
+[Epoch   42/100] [Step   160] D: 1.5133  G: 15.9118  adv: 0.0869  pixel: 9.8062  perc: 6.0184  tex: 0.0002
+[Epoch   42/100] [Step   180] D: 2.5821  G: 11.8752  adv: -0.0016  pixel: 7.0600  perc: 4.8166  tex: 0.0001
+[Epoch   42/100] [Step   200] D: 6.4922  G: 12.6130  adv: 0.0523  pixel: 7.8258  perc: 4.7348  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0042.png
+[Epoch   43/100] [Step    20] D: 0.0662  G: 11.9691  adv: -0.0389  pixel: 7.1352  perc: 4.8726  tex: 0.0002
+[Epoch   43/100] [Step    40] D: 0.1895  G: 11.2081  adv: -0.1069  pixel: 6.7215  perc: 4.5934  tex: 0.0000
+[Epoch   43/100] [Step    60] D: 0.0909  G: 12.2337  adv: -0.0136  pixel: 7.0076  perc: 5.2396  tex: 0.0001
+[Epoch   43/100] [Step    80] D: 1.4794  G: 8.8926  adv: -0.0360  pixel: 4.7254  perc: 4.2032  tex: 0.0000
+[Epoch   47/100] [Step   160] D: 0.8387  G: 12.0773  adv: 0.0024  pixel: 7.1686  perc: 4.9061  tex: 0.0001
+[Epoch   47/100] [Step   180] D: 2.0941  G: 16.9975  adv: 0.0147  pixel: 11.3816  perc: 5.6008  tex: 0.0004
+[Epoch   47/100] [Step   200] D: 0.1200  G: 15.0605  adv: 0.0144  pixel: 10.4464  perc: 4.5996  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0047.png
+[Epoch   48/100] [Step    20] D: 0.9821  G: 10.8137  adv: 0.0152  pixel: 6.2941  perc: 4.5044  tex: 0.0001
+[Epoch   48/100] [Step    40] D: 0.1666  G: 12.5161  adv: 0.0185  pixel: 7.7614  perc: 4.7361  tex: 0.0001
+[Epoch   48/100] [Step    60] D: 0.5469  G: 10.6617  adv: 0.0086  pixel: 5.9701  perc: 4.6829  tex: 0.0000
+[Epoch   48/100] [Step    80] D: 0.0462  G: 15.7462  adv: -0.0376  pixel: 10.0308  perc: 5.7528  tex: 0.0002
+[Epoch   48/100] [Step   100] D: 2.4010  G: 8.8359  adv: 0.0260  pixel: 4.8783  perc: 3.9316  tex: 0.0000
+[Epoch   48/100] [Step   120] D: 8.6389  G: 13.6536  adv: 0.1034  pixel: 8.6762  perc: 4.8740  tex: 0.0001
+[Epoch   48/100] [Step   140] D: 0.6756  G: 12.5305  adv: 0.0149  pixel: 7.3034  perc: 5.2121  tex: 0.0001
+[Epoch   48/100] [Step   160] D: 0.1442  G: 19.9229  adv: 0.0161  pixel: 11.6622  perc: 8.2436  tex: 0.0011
+[Epoch   48/100] [Step   180] D: 1.9471  G: 9.5508  adv: 0.0186  pixel: 5.1883  perc: 4.3439  tex: 0.0000
+[Epoch   48/100] [Step   200] D: 0.6026  G: 15.2431  adv: 0.0194  pixel: 8.0821  perc: 7.1409  tex: 0.0007
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0048.png
+[Epoch   49/100] [Step    20] D: 1.1459  G: 19.0520  adv: 0.0035  pixel: 12.8079  perc: 6.2400  tex: 0.0006
+[Epoch   49/100] [Step    40] D: 0.1841  G: 10.9511  adv: -0.0029  pixel: 6.2107  perc: 4.7432  tex: 0.0001
+[Epoch   49/100] [Step    60] D: 0.2781  G: 15.1514  adv: 0.0232  pixel: 9.0404  perc: 6.0875  tex: 0.0003
+[Epoch   49/100] [Step    80] D: 9.0271  G: 13.1539  adv: -0.0121  pixel: 7.6652  perc: 5.5006  tex: 0.0002
+[Epoch   49/100] [Step   100] D: 0.2994  G: 13.0640  adv: 0.0108  pixel: 7.4921  perc: 5.5610  tex: 0.0001
+[Epoch   49/100] [Step   120] D: 1.2713  G: 12.9613  adv: 0.0232  pixel: 7.7274  perc: 5.2105  tex: 0.0002
+[Epoch   49/100] [Step   140] D: 1.1583  G: 14.7452  adv: 0.0090  pixel: 8.6342  perc: 6.1018  tex: 0.0002
+[Epoch   49/100] [Step   160] D: 0.1347  G: 16.2545  adv: 0.0271  pixel: 10.8107  perc: 5.4166  tex: 0.0001
+[Epoch   49/100] [Step   180] D: 0.0008  G: 11.2795  adv: 0.0323  pixel: 6.9043  perc: 4.3427  tex: 0.0001
+[Epoch   49/100] [Step   200] D: 0.2745  G: 14.3695  adv: -0.0313  pixel: 9.4326  perc: 4.9680  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0049.png
+[Epoch   50/100] [Step    20] D: 1.0999  G: 11.0769  adv: 0.0073  pixel: 5.7800  perc: 5.2895  tex: 0.0001
+[Epoch   50/100] [Step    40] D: 1.5656  G: 17.3268  adv: 0.0212  pixel: 11.3041  perc: 6.0010  tex: 0.0005
+[Epoch   50/100] [Step    60] D: 0.4072  G: 14.8528  adv: 0.0064  pixel: 9.3687  perc: 5.4776  tex: 0.0001
+[Epoch   50/100] [Step    80] D: 0.4564  G: 14.3705  adv: 0.0195  pixel: 9.6559  perc: 4.6950  tex: 0.0001
+[Epoch   50/100] [Step   100] D: 0.1985  G: 11.6343  adv: 0.0074  pixel: 6.2724  perc: 5.3544  tex: 0.0002
+[Epoch   50/100] [Step   120] D: 1.4369  G: 12.2808  adv: -0.0127  pixel: 6.8760  perc: 5.4173  tex: 0.0001
+[Epoch   50/100] [Step   140] D: 0.0699  G: 9.6296  adv: -0.0146  pixel: 5.1512  perc: 4.4929  tex: 0.0001
+[Epoch   50/100] [Step   160] D: 0.0210  G: 10.2953  adv: -0.0125  pixel: 6.3221  perc: 3.9857  tex: 0.0000
+[Epoch   50/100] [Step   180] D: 0.0463  G: 12.1985  adv: -0.0005  pixel: 7.3489  perc: 4.8500  tex: 0.0001
+[Epoch   50/100] [Step   200] D: 0.1555  G: 10.1463  adv: 0.0110  pixel: 5.7977  perc: 4.3376  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0050.png
+[RCA-GAN] Checkpoints saved at epoch 50
+[Epoch   51/100] [Step    20] D: 0.1136  G: 12.6118  adv: 0.0174  pixel: 7.2845  perc: 5.3097  tex: 0.0002
+[Epoch   51/100] [Step    40] D: 0.6262  G: 16.4778  adv: 0.0445  pixel: 9.9092  perc: 6.5237  tex: 0.0004
+[Epoch   51/100] [Step    60] D: 0.3330  G: 14.5864  adv: 0.0571  pixel: 8.4167  perc: 6.1122  tex: 0.0003
+[Epoch   51/100] [Step    80] D: 0.0178  G: 9.8924  adv: 0.0146  pixel: 5.4914  perc: 4.3863  tex: 0.0000
+[Epoch   51/100] [Step   100] D: 1.0989  G: 13.4809  adv: 0.0202  pixel: 9.1387  perc: 4.3219  tex: 0.0000
+[Epoch   51/100] [Step   120] D: 0.0810  G: 11.3071  adv: 0.0103  pixel: 6.8921  perc: 4.4047  tex: 0.0000
+[Epoch   51/100] [Step   140] D: 0.8206  G: 11.9002  adv: 0.0367  pixel: 6.5241  perc: 5.3393  tex: 0.0001
+[Epoch   51/100] [Step   160] D: 0.0413  G: 12.2243  adv: 0.0177  pixel: 7.5953  perc: 4.6113  tex: 0.0000
+[Epoch   51/100] [Step   180] D: 0.2323  G: 11.0366  adv: 0.0059  pixel: 6.5216  perc: 4.5090  tex: 0.0000
+[Epoch   51/100] [Step   200] D: 0.5329  G: 14.3937  adv: -0.0348  pixel: 8.2895  perc: 6.1386  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0051.png
+[Epoch   52/100] [Step    20] D: 0.5969  G: 14.4653  adv: 0.0576  pixel: 9.1428  perc: 5.2646  tex: 0.0002
+[Epoch   52/100] [Step    40] D: 0.9946  G: 12.6864  adv: -0.0263  pixel: 6.6519  perc: 6.0606  tex: 0.0002
+[Epoch   52/100] [Step    60] D: 0.0022  G: 11.1921  adv: 0.0000  pixel: 6.7554  perc: 4.4366  tex: 0.0000
+[Epoch   52/100] [Step    80] D: 0.0394  G: 15.7440  adv: -0.0335  pixel: 11.0123  perc: 4.7650  tex: 0.0002
+[Epoch   52/100] [Step   100] D: 1.4627  G: 11.2471  adv: 0.0122  pixel: 6.4007  perc: 4.8341  tex: 0.0001
+[Epoch   52/100] [Step   120] D: 0.4876  G: 14.0307  adv: -0.0129  pixel: 8.3480  perc: 5.6953  tex: 0.0002
+[Epoch   52/100] [Step   140] D: 1.6694  G: 10.1286  adv: 0.0066  pixel: 5.8522  perc: 4.2697  tex: 0.0001
+[Epoch   52/100] [Step   160] D: 2.0267  G: 13.5917  adv: 0.0077  pixel: 7.6907  perc: 5.8932  tex: 0.0002
+[Epoch   52/100] [Step   180] D: 0.1629  G: 13.4559  adv: -0.0136  pixel: 8.0328  perc: 5.4366  tex: 0.0001
+[Epoch   52/100] [Step   200] D: 0.0544  G: 15.4304  adv: 0.0967  pixel: 8.6758  perc: 6.6576  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0052.png
+[Epoch   53/100] [Step    20] D: 0.6130  G: 11.3750  adv: 0.0129  pixel: 6.9405  perc: 4.4216  tex: 0.0000
+[Epoch   53/100] [Step    40] D: 0.1116  G: 14.6546  adv: -0.0232  pixel: 8.5953  perc: 6.0823  tex: 0.0002
+[Epoch   53/100] [Step    60] D: 9.8539  G: 8.4119  adv: 0.0489  pixel: 4.5480  perc: 3.8150  tex: 0.0000
+[Epoch   53/100] [Step    80] D: 0.8453  G: 11.3297  adv: 0.0492  pixel: 6.1669  perc: 5.1135  tex: 0.0001
+[Epoch   53/100] [Step   100] D: 0.0470  G: 13.1629  adv: -0.0080  pixel: 8.3689  perc: 4.8019  tex: 0.0001
+[Epoch   53/100] [Step   120] D: 0.2847  G: 15.1183  adv: 0.0011  pixel: 10.3733  perc: 4.7438  tex: 0.0001
+[Epoch   53/100] [Step   140] D: 1.5003  G: 14.5699  adv: 0.0042  pixel: 8.7360  perc: 5.8295  tex: 0.0002
+[Epoch   53/100] [Step   160] D: 0.0062  G: 8.7870  adv: 0.0186  pixel: 4.6623  perc: 4.1061  tex: 0.0000
+[Epoch   53/100] [Step   180] D: 0.2675  G: 14.0497  adv: 0.0603  pixel: 9.5063  perc: 4.4830  tex: 0.0000
+[Epoch   53/100] [Step   200] D: 0.0527  G: 12.2522  adv: -0.0445  pixel: 6.7640  perc: 5.5326  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0053.png
+[Epoch   54/100] [Step    20] D: 0.6287  G: 12.4980  adv: 0.0145  pixel: 6.7989  perc: 5.6843  tex: 0.0002
+[Epoch   54/100] [Step    40] D: 0.2350  G: 13.3906  adv: 0.0099  pixel: 7.8889  perc: 5.4917  tex: 0.0001
+[Epoch   54/100] [Step    60] D: 0.4703  G: 17.2191  adv: 0.0175  pixel: 10.3094  perc: 6.8921  tex: 0.0002
+[Epoch   54/100] [Step    80] D: 0.1383  G: 13.5637  adv: -0.0182  pixel: 8.8873  perc: 4.6946  tex: 0.0001
+[Epoch   54/100] [Step   100] D: 0.0102  G: 14.5455  adv: 0.0100  pixel: 9.6125  perc: 4.9229  tex: 0.0000
+[Epoch   54/100] [Step   120] D: 0.3110  G: 12.8715  adv: 0.0142  pixel: 7.3664  perc: 5.4904  tex: 0.0005
+[Epoch   54/100] [Step   140] D: 0.4557  G: 13.8679  adv: -0.0147  pixel: 8.0311  perc: 5.8513  tex: 0.0001
+[Epoch   54/100] [Step   160] D: 0.7849  G: 14.0071  adv: -0.0145  pixel: 9.2536  perc: 4.7678  tex: 0.0001
+[Epoch   54/100] [Step   180] D: 1.5211  G: 13.4351  adv: 0.0348  pixel: 7.6216  perc: 5.7782  tex: 0.0006
+[Epoch   54/100] [Step   200] D: 6.4699  G: 11.7928  adv: 0.0189  pixel: 6.9996  perc: 4.7743  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0054.png
+[Epoch   55/100] [Step    20] D: 1.7390  G: 13.9922  adv: -0.0004  pixel: 9.0222  perc: 4.9703  tex: 0.0001
+[Epoch   55/100] [Step    40] D: 0.2290  G: 11.3814  adv: 0.0011  pixel: 7.2762  perc: 4.1041  tex: 0.0000
+[Epoch   55/100] [Step    60] D: 0.0894  G: 12.1397  adv: 0.0071  pixel: 6.7838  perc: 5.3487  tex: 0.0001
+[Epoch   55/100] [Step    80] D: 0.2286  G: 11.5716  adv: 0.0314  pixel: 6.9037  perc: 4.6365  tex: 0.0001
+[Epoch   55/100] [Step   100] D: 0.9180  G: 15.2300  adv: 0.0048  pixel: 9.8578  perc: 5.3673  tex: 0.0001
+[Epoch   55/100] [Step   120] D: 0.0245  G: 10.4767  adv: 0.0119  pixel: 5.8622  perc: 4.6025  tex: 0.0000
+[Epoch   55/100] [Step   140] D: 24.6216  G: 10.3158  adv: 0.0984  pixel: 6.2104  perc: 4.0070  tex: 0.0000
+[Epoch   55/100] [Step   160] D: 0.1706  G: 12.0411  adv: 0.0225  pixel: 7.1156  perc: 4.9028  tex: 0.0001
+[Epoch   55/100] [Step   180] D: 0.3413  G: 10.7810  adv: 0.0322  pixel: 6.2763  perc: 4.4724  tex: 0.0001
+[Epoch   55/100] [Step   200] D: 0.0028  G: 12.5192  adv: 0.0024  pixel: 7.0171  perc: 5.4996  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0055.png
+[RCA-GAN] Checkpoints saved at epoch 55
+[Epoch   56/100] [Step    20] D: 0.4077  G: 10.3609  adv: 0.1259  pixel: 5.1939  perc: 5.0410  tex: 0.0001
+[Epoch   56/100] [Step    40] D: 2.7796  G: 9.4978  adv: -0.1189  pixel: 5.3897  perc: 4.2269  tex: 0.0001
+[Epoch   56/100] [Step    60] D: 0.5622  G: 13.4116  adv: 0.0336  pixel: 8.0998  perc: 5.2778  tex: 0.0003
+[Epoch   56/100] [Step    80] D: 0.0259  G: 10.7881  adv: -0.0155  pixel: 6.3804  perc: 4.4232  tex: 0.0000
+[Epoch   56/100] [Step   100] D: 0.0130  G: 13.0060  adv: 0.0451  pixel: 8.4480  perc: 4.5129  tex: 0.0000
+[Epoch   56/100] [Step   120] D: 0.0873  G: 10.2234  adv: 0.0601  pixel: 5.2620  perc: 4.9013  tex: 0.0001
+[Epoch   56/100] [Step   140] D: 0.2163  G: 12.4864  adv: 0.1334  pixel: 7.1183  perc: 5.2345  tex: 0.0001
+[Epoch   56/100] [Step   160] D: 0.0160  G: 9.4249  adv: -0.0147  pixel: 4.9350  perc: 4.5046  tex: 0.0000
+[Epoch   56/100] [Step   180] D: 0.4440  G: 10.8467  adv: 0.0374  pixel: 5.9503  perc: 4.8590  tex: 0.0001
+[Epoch   56/100] [Step   200] D: 0.1273  G: 14.1682  adv: 0.0233  pixel: 8.7781  perc: 5.3667  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0056.png
+[Epoch   57/100] [Step    20] D: 0.2796  G: 14.2819  adv: -0.0100  pixel: 9.6600  perc: 4.6319  tex: 0.0000
+[Epoch   57/100] [Step    40] D: 0.2227  G: 11.5452  adv: 0.0172  pixel: 6.3304  perc: 5.1975  tex: 0.0001
+[Epoch   57/100] [Step    60] D: 0.0466  G: 11.5871  adv: 0.0458  pixel: 6.3779  perc: 5.1633  tex: 0.0002
+[Epoch   57/100] [Step    80] D: 0.0127  G: 11.8042  adv: 0.0067  pixel: 7.1045  perc: 4.6928  tex: 0.0002
+[Epoch   57/100] [Step   100] D: 0.0079  G: 9.9177  adv: 0.0145  pixel: 5.6942  perc: 4.2089  tex: 0.0000
+[Epoch   57/100] [Step   120] D: 0.2819  G: 8.9065  adv: 0.0471  pixel: 4.7267  perc: 4.1327  tex: 0.0000
+[Epoch   57/100] [Step   140] D: 2.0597  G: 12.0413  adv: -0.0005  pixel: 7.0247  perc: 5.0170  tex: 0.0001
+[Epoch   57/100] [Step   160] D: 0.4979  G: 13.0556  adv: -0.0843  pixel: 8.3701  perc: 4.7697  tex: 0.0001
+[Epoch   57/100] [Step   180] D: 1.3058  G: 10.8142  adv: -0.0065  pixel: 5.8603  perc: 4.9603  tex: 0.0001
+[Epoch   57/100] [Step   200] D: 2.3661  G: 8.6023  adv: 0.0361  pixel: 4.4091  perc: 4.1570  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0057.png
+[Epoch   58/100] [Step    20] D: 0.6901  G: 12.0070  adv: -0.0368  pixel: 7.1002  perc: 4.9434  tex: 0.0001
+[Epoch   58/100] [Step    40] D: 0.9520  G: 16.4211  adv: 0.0559  pixel: 9.9172  perc: 6.4475  tex: 0.0004
+[Epoch   58/100] [Step    60] D: 0.6438  G: 11.3516  adv: 0.0016  pixel: 6.4578  perc: 4.8921  tex: 0.0001
+[Epoch   58/100] [Step    80] D: 0.0762  G: 10.6501  adv: 0.0457  pixel: 6.0850  perc: 4.5194  tex: 0.0000
+[Epoch   58/100] [Step   100] D: 0.6511  G: 12.2122  adv: 0.0420  pixel: 7.6796  perc: 4.4906  tex: 0.0001
+[Epoch   58/100] [Step   120] D: 0.4842  G: 10.0312  adv: 0.0064  pixel: 5.7298  perc: 4.2950  tex: 0.0001
+[Epoch   58/100] [Step   140] D: 0.0007  G: 8.8892  adv: 0.0113  pixel: 4.6931  perc: 4.1848  tex: 0.0000
+[Epoch   58/100] [Step   160] D: 0.0561  G: 14.5959  adv: -0.0268  pixel: 8.8124  perc: 5.8101  tex: 0.0002
+[Epoch   58/100] [Step   180] D: 0.7114  G: 15.0866  adv: 0.0102  pixel: 9.3381  perc: 5.7377  tex: 0.0005
+[Epoch   58/100] [Step   200] D: 0.1618  G: 10.4677  adv: -0.0068  pixel: 6.4519  perc: 4.0227  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0058.png
+[Epoch   59/100] [Step    20] D: 0.2500  G: 10.7385  adv: -0.0152  pixel: 6.0533  perc: 4.7004  tex: 0.0001
+[Epoch   59/100] [Step    40] D: 0.3413  G: 9.3451  adv: 0.0456  pixel: 5.0529  perc: 4.2465  tex: 0.0000
+[Epoch   59/100] [Step    60] D: 0.0143  G: 10.8547  adv: 0.0135  pixel: 6.1161  perc: 4.7249  tex: 0.0001
+[Epoch   59/100] [Step    80] D: 3.1196  G: 11.2066  adv: 0.0161  pixel: 5.7674  perc: 5.4231  tex: 0.0001
+[Epoch   59/100] [Step   100] D: 1.4814  G: 13.1227  adv: 0.0109  pixel: 7.2698  perc: 5.8419  tex: 0.0001
+[Epoch   59/100] [Step   120] D: 0.0372  G: 13.8744  adv: 0.0015  pixel: 8.2748  perc: 5.5978  tex: 0.0002
+[Epoch   59/100] [Step   140] D: 0.1957  G: 11.8341  adv: -0.0321  pixel: 6.2673  perc: 5.5988  tex: 0.0001
+[Epoch   59/100] [Step   160] D: 0.0343  G: 9.5561  adv: -0.2238  pixel: 5.2491  perc: 4.5307  tex: 0.0001
+[Epoch   59/100] [Step   180] D: 0.3563  G: 11.8748  adv: 0.0165  pixel: 7.3992  perc: 4.4591  tex: 0.0001
+[Epoch   59/100] [Step   200] D: 0.2018  G: 13.0054  adv: 0.0565  pixel: 8.4126  perc: 4.5362  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0059.png
+[Epoch   60/100] [Step    20] D: 0.0644  G: 14.1236  adv: -0.0162  pixel: 8.3742  perc: 5.7654  tex: 0.0003
+[Epoch   60/100] [Step    40] D: 1657.9301  G: 15.0026  adv: -0.3678  pixel: 10.5208  perc: 4.8494  tex: 0.0001
+[Epoch   60/100] [Step    60] D: 0.0328  G: 13.9413  adv: 0.1476  pixel: 7.8034  perc: 5.9901  tex: 0.0003
+[Epoch   60/100] [Step    80] D: 2.4850  G: 9.4809  adv: 0.2976  pixel: 4.9852  perc: 4.1981  tex: 0.0000
+[Epoch   60/100] [Step   100] D: 2.2150  G: 8.5493  adv: -0.0951  pixel: 4.5460  perc: 4.0984  tex: 0.0000
+[Epoch   60/100] [Step   120] D: 0.0062  G: 10.4225  adv: -0.0594  pixel: 6.1471  perc: 4.3347  tex: 0.0000
+[Epoch   60/100] [Step   140] D: 0.2537  G: 16.1730  adv: -0.0296  pixel: 10.0887  perc: 6.1133  tex: 0.0006
+[Epoch   60/100] [Step   160] D: 3.0953  G: 11.7969  adv: 0.0133  pixel: 6.2186  perc: 5.5646  tex: 0.0004
+[Epoch   60/100] [Step   180] D: 0.0759  G: 11.9033  adv: -0.0086  pixel: 7.3139  perc: 4.5978  tex: 0.0001
+[Epoch   60/100] [Step   200] D: 2.6220  G: 10.6415  adv: -0.0064  pixel: 5.9836  perc: 4.6643  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0060.png
+[RCA-GAN] Checkpoints saved at epoch 60
+[Epoch   61/100] [Step    20] D: 0.5258  G: 10.5843  adv: -0.0811  pixel: 5.4740  perc: 5.1912  tex: 0.0001
+[Epoch   61/100] [Step    40] D: 0.6689  G: 12.2388  adv: 0.0476  pixel: 6.9006  perc: 5.2906  tex: 0.0001
+[Epoch   61/100] [Step    60] D: 1.3121  G: 10.5880  adv: 0.0641  pixel: 5.9830  perc: 4.5409  tex: 0.0000
+[Epoch   61/100] [Step    80] D: 0.0854  G: 10.1325  adv: -0.1012  pixel: 5.8932  perc: 4.3405  tex: 0.0000
+[Epoch   61/100] [Step   100] D: 4.2315  G: 8.9606  adv: 0.0236  pixel: 4.9381  perc: 3.9990  tex: 0.0000
+[Epoch   61/100] [Step   120] D: 0.0410  G: 11.8521  adv: -0.0319  pixel: 7.3468  perc: 4.5372  tex: 0.0000
+[Epoch   61/100] [Step   140] D: 0.0006  G: 13.7833  adv: -0.0606  pixel: 8.8490  perc: 4.9948  tex: 0.0001
+[Epoch   61/100] [Step   160] D: 1.3556  G: 12.8269  adv: -0.0575  pixel: 7.0723  perc: 5.8118  tex: 0.0002
+[Epoch   61/100] [Step   180] D: 0.5427  G: 11.7025  adv: -0.0386  pixel: 6.7335  perc: 5.0073  tex: 0.0002
+[Epoch   61/100] [Step   200] D: 0.2807  G: 8.9634  adv: 0.0361  pixel: 4.6995  perc: 4.2277  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0061.png
+[Epoch   43/100] [Step   100] D: 0.0409  G: 9.4688  adv: 0.0004  pixel: 5.0684  perc: 4.3999  tex: 0.0000
+[Epoch   43/100] [Step   120] D: 0.2535  G: 11.6326  adv: 0.2077  pixel: 6.8863  perc: 4.5384  tex: 0.0001
+[Epoch   43/100] [Step   140] D: 2.3482  G: 11.6425  adv: 0.0290  pixel: 6.7945  perc: 4.8189  tex: 0.0001
+[Epoch   43/100] [Step   160] D: 0.6356  G: 12.9109  adv: 0.1024  pixel: 7.8666  perc: 4.9418  tex: 0.0001
+[Epoch   43/100] [Step   180] D: 1.3922  G: 12.7234  adv: -0.0047  pixel: 8.0672  perc: 4.6609  tex: 0.0000
+[Epoch   43/100] [Step   200] D: 3.9802  G: 10.2598  adv: 0.0137  pixel: 6.0509  perc: 4.1951  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0043.png
+[Epoch   44/100] [Step    20] D: 0.1970  G: 14.7329  adv: -0.0293  pixel: 9.1910  perc: 5.5709  tex: 0.0003
+[Epoch   44/100] [Step    40] D: 21.8399  G: 16.6873  adv: 0.0475  pixel: 11.2422  perc: 5.3976  tex: 0.0001
+[Epoch   44/100] [Step    60] D: 455.3898  G: 19.2670  adv: -0.8703  pixel: 13.0185  perc: 7.1182  tex: 0.0006
+[Epoch   44/100] [Step    80] D: 0.4171  G: 18.6701  adv: -0.0860  pixel: 13.4461  perc: 5.3099  tex: 0.0001
+[Epoch   44/100] [Step   100] D: 1.4701  G: 12.9296  adv: -0.0228  pixel: 7.0896  perc: 5.8626  tex: 0.0002
+[Epoch   44/100] [Step   120] D: 13.6057  G: 12.0351  adv: 0.0216  pixel: 7.1334  perc: 4.8800  tex: 0.0000
+[Epoch   44/100] [Step   140] D: 2.0254  G: 14.2030  adv: 0.0213  pixel: 8.4258  perc: 5.7557  tex: 0.0001
+[Epoch   44/100] [Step   160] D: 2.1012  G: 12.0225  adv: 0.0324  pixel: 6.6014  perc: 5.3886  tex: 0.0001
+[Epoch   44/100] [Step   180] D: 0.6619  G: 11.7074  adv: 0.0204  pixel: 6.8503  perc: 4.8366  tex: 0.0000
+[Epoch   44/100] [Step   200] D: 0.1405  G: 16.3816  adv: -0.0622  pixel: 9.7524  perc: 6.6909  tex: 0.0004
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0044.png
+[Epoch   45/100] [Step    20] D: 0.0076  G: 10.8576  adv: 0.0229  pixel: 6.2262  perc: 4.6085  tex: 0.0000
+[Epoch   45/100] [Step    40] D: 0.3810  G: 19.4715  adv: 0.0399  pixel: 13.0344  perc: 6.3969  tex: 0.0003
+[Epoch   45/100] [Step    60] D: 0.2415  G: 19.4221  adv: 0.0150  pixel: 13.0083  perc: 6.3980  tex: 0.0008
+[Epoch   45/100] [Step    80] D: 1.4067  G: 11.8530  adv: 0.0086  pixel: 6.6917  perc: 5.1525  tex: 0.0001
+[Epoch   45/100] [Step   100] D: 1.0863  G: 14.1270  adv: 0.0227  pixel: 7.6742  perc: 6.4299  tex: 0.0002
+[Epoch   45/100] [Step   120] D: 0.0036  G: 16.9759  adv: 0.0560  pixel: 10.4454  perc: 6.4741  tex: 0.0004
+[Epoch   45/100] [Step   140] D: 0.5213  G: 11.9736  adv: 0.0036  pixel: 7.0516  perc: 4.9184  tex: 0.0001
+[Epoch   45/100] [Step   160] D: 0.3107  G: 12.3700  adv: 0.0047  pixel: 7.9284  perc: 4.4368  tex: 0.0001
+[Epoch   45/100] [Step   180] D: 0.4461  G: 12.8768  adv: -0.0167  pixel: 7.2807  perc: 5.6126  tex: 0.0002
+[Epoch   45/100] [Step   200] D: 1.3161  G: 13.3286  adv: 0.0134  pixel: 8.1708  perc: 5.1443  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0045.png
+[RCA-GAN] Checkpoints saved at epoch 45
+[Epoch   46/100] [Step    20] D: 7.5837  G: 9.0477  adv: -0.0010  pixel: 5.4452  perc: 3.6036  tex: 0.0000
+[Epoch   46/100] [Step    40] D: 0.0080  G: 14.3102  adv: 0.0517  pixel: 9.2160  perc: 5.0423  tex: 0.0001
+[Epoch   46/100] [Step    60] D: 0.0046  G: 12.3974  adv: 0.0339  pixel: 7.9001  perc: 4.4632  tex: 0.0001
+[Epoch   46/100] [Step    80] D: 0.0790  G: 11.1861  adv: 0.0198  pixel: 6.1491  perc: 5.0172  tex: 0.0001
+[Epoch   46/100] [Step   100] D: 0.0030  G: 12.9842  adv: 0.0638  pixel: 7.7725  perc: 5.1478  tex: 0.0001
+[Epoch   46/100] [Step   120] D: 0.0044  G: 21.0629  adv: 0.0547  pixel: 13.1233  perc: 7.8838  tex: 0.0010
+[Epoch   46/100] [Step   140] D: 0.0336  G: 10.5718  adv: 0.0013  pixel: 5.9255  perc: 4.6450  tex: 0.0000
+[Epoch   46/100] [Step   160] D: 0.2558  G: 12.1378  adv: -0.0017  pixel: 6.8703  perc: 5.2692  tex: 0.0001
+[Epoch   46/100] [Step   180] D: 0.0225  G: 12.2686  adv: 0.0536  pixel: 7.4655  perc: 4.7494  tex: 0.0000
+[Epoch   46/100] [Step   200] D: 0.5151  G: 13.3853  adv: 0.0187  pixel: 8.3019  perc: 5.0646  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0046.png
+[Epoch   47/100] [Step    20] D: 0.6684  G: 12.3098  adv: 0.0127  pixel: 7.4239  perc: 4.8731  tex: 0.0001
+[Epoch   47/100] [Step    40] D: 1.1814  G: 10.6950  adv: -0.0081  pixel: 6.3361  perc: 4.3670  tex: 0.0000
+[Epoch   47/100] [Step    60] D: 1.4415  G: 9.7895  adv: 0.0272  pixel: 6.0109  perc: 3.7513  tex: 0.0000
+[Epoch   47/100] [Step    80] D: 1.0235  G: 11.2365  adv: 0.0164  pixel: 6.3429  perc: 4.8772  tex: 0.0001
+[Epoch   47/100] [Step   100] D: 0.0173  G: 10.0690  adv: 0.0036  pixel: 5.7437  perc: 4.3217  tex: 0.0000
+[Epoch   47/100] [Step   120] D: 0.4555  G: 12.3396  adv: -0.0250  pixel: 6.6823  perc: 5.6822  tex: 0.0002
+[Epoch   47/100] [Step   140] D: 2.7852  G: 9.7610  adv: -0.0308  pixel: 5.8181  perc: 3.9737  tex: 0.0000
+[Epoch   47/100] [Step   160] D: 0.0034  G: 17.8937  adv: -0.0258  pixel: 11.3626  perc: 6.5562  tex: 0.0007
+[Epoch   47/100] [Step   180] D: 0.3582  G: 11.7019  adv: 0.0332  pixel: 7.1363  perc: 4.5323  tex: 0.0001
+[Epoch   47/100] [Step   200] D: 1.8947  G: 9.2785  adv: -0.0540  pixel: 5.1466  perc: 4.1859  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0047.png
+[Epoch   48/100] [Step    20] D: 0.0010  G: 10.5433  adv: -0.0282  pixel: 6.0074  perc: 4.5641  tex: 0.0001
+[Epoch   48/100] [Step    40] D: 0.4632  G: 11.2767  adv: 0.0354  pixel: 6.3549  perc: 4.8862  tex: 0.0001
+[Epoch   48/100] [Step    60] D: 2.7900  G: 12.5513  adv: 0.0035  pixel: 7.4736  perc: 5.0740  tex: 0.0002
+[Epoch   48/100] [Step    80] D: 0.1082  G: 13.1503  adv: 0.0086  pixel: 7.2080  perc: 5.9336  tex: 0.0001
+[Epoch   48/100] [Step   100] D: 0.5798  G: 15.3718  adv: 0.0084  pixel: 9.4204  perc: 5.9427  tex: 0.0002
+[Epoch   48/100] [Step   120] D: 0.2210  G: 11.3377  adv: -0.0339  pixel: 6.5594  perc: 4.8120  tex: 0.0001
+[Epoch   48/100] [Step   140] D: 0.3846  G: 14.8204  adv: -0.0277  pixel: 10.0867  perc: 4.7614  tex: 0.0000
+[Epoch   48/100] [Step   160] D: 0.9028  G: 10.5363  adv: 0.0027  pixel: 6.4249  perc: 4.1088  tex: 0.0000
+[Epoch   48/100] [Step   180] D: 0.8626  G: 14.6848  adv: -0.0067  pixel: 9.2708  perc: 5.4206  tex: 0.0001
+[Epoch   48/100] [Step   200] D: 0.0830  G: 13.5101  adv: 0.0236  pixel: 7.3603  perc: 6.1260  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0048.png
+[Epoch   49/100] [Step    20] D: 0.2380  G: 14.4329  adv: 0.0037  pixel: 8.5190  perc: 5.9099  tex: 0.0003
+[Epoch   49/100] [Step    40] D: 0.0076  G: 11.0980  adv: 0.0133  pixel: 5.9542  perc: 5.1303  tex: 0.0002
+[Epoch   49/100] [Step    60] D: 0.3317  G: 11.1231  adv: -0.0006  pixel: 6.4290  perc: 4.6947  tex: 0.0001
+[Epoch   49/100] [Step    80] D: 0.0344  G: 13.2240  adv: 0.0369  pixel: 8.4880  perc: 4.6989  tex: 0.0001
+[Epoch   49/100] [Step   100] D: 1.1736  G: 14.8147  adv: 0.0152  pixel: 9.1023  perc: 5.6969  tex: 0.0002
+[Epoch   49/100] [Step   120] D: 0.1498  G: 14.4149  adv: -0.0145  pixel: 9.3336  perc: 5.0957  tex: 0.0001
+[Epoch   49/100] [Step   140] D: 0.1888  G: 13.8290  adv: 0.0306  pixel: 7.5930  perc: 6.2052  tex: 0.0002
+[Epoch   49/100] [Step   160] D: 1.3846  G: 15.2685  adv: 0.1133  pixel: 9.7540  perc: 5.4009  tex: 0.0003
+[Epoch   49/100] [Step   180] D: 0.5207  G: 9.5802  adv: 0.0139  pixel: 5.3816  perc: 4.1846  tex: 0.0000
+[Epoch   49/100] [Step   200] D: 0.3455  G: 18.3247  adv: 0.0218  pixel: 11.7564  perc: 6.5461  tex: 0.0004
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0049.png
+[Epoch   50/100] [Step    20] D: 0.8632  G: 11.0395  adv: -0.0058  pixel: 6.0033  perc: 5.0420  tex: 0.0001
+[Epoch   50/100] [Step    40] D: 1.0616  G: 14.5594  adv: 0.0217  pixel: 8.8010  perc: 5.7366  tex: 0.0002
+[Epoch   50/100] [Step    60] D: 0.8600  G: 14.2104  adv: 0.0019  pixel: 8.7111  perc: 5.4973  tex: 0.0002
+[Epoch   50/100] [Step    80] D: 0.3586  G: 11.2186  adv: -0.0104  pixel: 6.3111  perc: 4.9178  tex: 0.0001
+[Epoch   50/100] [Step   100] D: 0.0037  G: 14.9906  adv: 0.0159  pixel: 10.0609  perc: 4.9137  tex: 0.0001
+[Epoch   50/100] [Step   120] D: 0.0175  G: 15.7544  adv: 0.0518  pixel: 10.6701  perc: 5.0324  tex: 0.0002
+[Epoch   50/100] [Step   140] D: 7.5607  G: 13.0923  adv: -0.0140  pixel: 8.3817  perc: 4.7245  tex: 0.0001
+[Epoch   50/100] [Step   160] D: 14.5676  G: 8.2406  adv: 0.0258  pixel: 4.3804  perc: 3.8343  tex: 0.0000
+[Epoch   50/100] [Step   180] D: 7.4780  G: 10.3839  adv: -0.0904  pixel: 6.1786  perc: 4.2957  tex: 0.0001
+[Epoch   50/100] [Step   200] D: 0.0434  G: 10.3232  adv: -0.0375  pixel: 5.7251  perc: 4.6354  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0050.png
+[RCA-GAN] Checkpoints saved at epoch 50
+[Epoch   51/100] [Step    20] D: 15.3160  G: 10.4221  adv: 0.0966  pixel: 6.0709  perc: 4.2545  tex: 0.0001
+[Epoch   51/100] [Step    40] D: 0.1758  G: 9.1934  adv: -0.0528  pixel: 4.8746  perc: 4.3715  tex: 0.0001
+[Epoch   51/100] [Step    60] D: 2.3855  G: 13.3900  adv: 0.0004  pixel: 8.6473  perc: 4.7422  tex: 0.0001
+[Epoch   51/100] [Step    80] D: 0.1350  G: 17.2528  adv: 0.0497  pixel: 12.3820  perc: 4.8210  tex: 0.0002
+[Epoch   51/100] [Step   100] D: 2.2369  G: 17.0645  adv: 0.1532  pixel: 10.3721  perc: 6.5381  tex: 0.0010
+[Epoch   51/100] [Step   120] D: 147.7185  G: 8.7218  adv: -1.2973  pixel: 5.2473  perc: 4.7717  tex: 0.0001
+[Epoch   51/100] [Step   140] D: 3.6694  G: 10.6765  adv: -0.0528  pixel: 5.9156  perc: 4.8137  tex: 0.0001
+[Epoch   51/100] [Step   160] D: 0.8239  G: 14.9182  adv: -0.1077  pixel: 9.0752  perc: 5.9506  tex: 0.0001
+[Epoch   51/100] [Step   180] D: 0.1380  G: 8.8943  adv: 0.0383  pixel: 5.0545  perc: 3.8014  tex: 0.0000
+[Epoch   51/100] [Step   200] D: 5.4928  G: 14.5256  adv: -0.0140  pixel: 9.2007  perc: 5.3388  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0051.png
+[Epoch   52/100] [Step    20] D: 0.4506  G: 9.9147  adv: 0.0195  pixel: 5.4195  perc: 4.4758  tex: 0.0000
+[Epoch   52/100] [Step    40] D: 0.0008  G: 11.8603  adv: 0.0199  pixel: 7.4795  perc: 4.3609  tex: 0.0001
+[Epoch   52/100] [Step    60] D: 0.2477  G: 14.8177  adv: 0.0750  pixel: 9.3652  perc: 5.3774  tex: 0.0001
+[Epoch   52/100] [Step    80] D: 0.2083  G: 11.5620  adv: 0.0378  pixel: 7.0247  perc: 4.4995  tex: 0.0000
+[Epoch   52/100] [Step   100] D: 0.0237  G: 13.4566  adv: -0.0205  pixel: 8.3596  perc: 5.1175  tex: 0.0001
+[Epoch   52/100] [Step   120] D: 0.0048  G: 13.4786  adv: 0.0392  pixel: 7.9467  perc: 5.4925  tex: 0.0002
+[Epoch   52/100] [Step   140] D: 0.2538  G: 8.5784  adv: 0.0099  pixel: 4.7404  perc: 3.8281  tex: 0.0000
+[Epoch   52/100] [Step   160] D: 2.8451  G: 12.3718  adv: 0.0146  pixel: 7.1574  perc: 5.1996  tex: 0.0001
+[Epoch   52/100] [Step   180] D: 0.0073  G: 11.5867  adv: 0.1281  pixel: 6.6482  perc: 4.8104  tex: 0.0001
+[Epoch   52/100] [Step   200] D: 12.6881  G: 13.0685  adv: -0.1962  pixel: 7.5740  perc: 5.6905  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0052.png
+[Epoch   53/100] [Step    20] D: 24.8737  G: 11.3943  adv: -0.0146  pixel: 7.2532  perc: 4.1556  tex: 0.0000
+[Epoch   53/100] [Step    40] D: 2.5827  G: 14.6455  adv: -0.0358  pixel: 8.8285  perc: 5.8527  tex: 0.0002
+[Epoch   53/100] [Step    60] D: 1.9533  G: 13.4782  adv: -0.0154  pixel: 8.4540  perc: 5.0394  tex: 0.0002
+[Epoch   53/100] [Step    80] D: 1.9521  G: 12.5717  adv: 0.0114  pixel: 8.2903  perc: 4.2700  tex: 0.0001
+[Epoch   53/100] [Step   100] D: 0.0006  G: 10.9926  adv: 0.0308  pixel: 6.1004  perc: 4.8612  tex: 0.0001
+[Epoch   53/100] [Step   120] D: 0.1014  G: 15.8870  adv: -0.0313  pixel: 9.6708  perc: 6.2470  tex: 0.0004
+[Epoch   53/100] [Step   140] D: 0.1554  G: 11.1692  adv: 0.0050  pixel: 6.6261  perc: 4.5381  tex: 0.0001
+[Epoch   53/100] [Step   160] D: 0.9822  G: 11.2566  adv: 0.0121  pixel: 6.6937  perc: 4.5507  tex: 0.0001
+[Epoch   53/100] [Step   180] D: 1180.8309  G: 11.9608  adv: -1.7136  pixel: 7.9809  perc: 5.6932  tex: 0.0002
+[Epoch   53/100] [Step   200] D: 0.8300  G: 10.8331  adv: 0.1091  pixel: 6.3207  perc: 4.4032  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0053.png
+[Epoch   54/100] [Step    20] D: 0.3373  G: 11.5503  adv: -0.0190  pixel: 6.8615  perc: 4.7078  tex: 0.0001
+[Epoch   54/100] [Step    40] D: 1.6481  G: 13.1892  adv: -0.0217  pixel: 7.8678  perc: 5.3430  tex: 0.0001
+[Epoch   54/100] [Step    60] D: 3.5474  G: 9.8831  adv: -0.0054  pixel: 5.0858  perc: 4.8026  tex: 0.0001
+[Epoch   54/100] [Step    80] D: 18.7463  G: 10.5666  adv: -0.0002  pixel: 5.6781  perc: 4.8887  tex: 0.0001
+[Epoch   54/100] [Step   100] D: 0.9111  G: 9.3228  adv: -0.0038  pixel: 5.3559  perc: 3.9706  tex: 0.0000
+[Epoch   54/100] [Step   120] D: 0.4096  G: 10.8177  adv: -0.0124  pixel: 6.2323  perc: 4.5978  tex: 0.0000
+[Epoch   54/100] [Step   140] D: 0.6195  G: 8.3841  adv: -0.0048  pixel: 4.5224  perc: 3.8665  tex: 0.0000
+[Epoch   54/100] [Step   160] D: 1.2450  G: 10.2842  adv: -0.0266  pixel: 5.4271  perc: 4.8836  tex: 0.0000
+[Epoch   54/100] [Step   180] D: 0.4854  G: 13.0980  adv: -0.0017  pixel: 7.8906  perc: 5.2089  tex: 0.0002
+[Epoch   54/100] [Step   200] D: 0.5579  G: 12.9712  adv: 0.0446  pixel: 7.0610  perc: 5.8654  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0054.png
+[Epoch   55/100] [Step    20] D: 0.0762  G: 13.5506  adv: 0.0494  pixel: 7.8732  perc: 5.6275  tex: 0.0005
+[Epoch   55/100] [Step    40] D: 15.1929  G: 13.4542  adv: 0.0008  pixel: 8.8135  perc: 4.6396  tex: 0.0003
+[Epoch   55/100] [Step    60] D: 0.4638  G: 12.2285  adv: 0.0343  pixel: 7.5916  perc: 4.6026  tex: 0.0001
+[Epoch   55/100] [Step    80] D: 1.0537  G: 9.9916  adv: -0.0171  pixel: 5.8473  perc: 4.1614  tex: 0.0000
+[Epoch   55/100] [Step   100] D: 0.1337  G: 15.8353  adv: -0.0001  pixel: 11.4247  perc: 4.4106  tex: 0.0001
+[Epoch   55/100] [Step   120] D: 0.4325  G: 10.4095  adv: -0.0046  pixel: 6.1377  perc: 4.2763  tex: 0.0000
+[Epoch   55/100] [Step   140] D: 0.0663  G: 14.9540  adv: -0.0303  pixel: 9.0108  perc: 5.9731  tex: 0.0004
+[Epoch   55/100] [Step   160] D: 1.6694  G: 13.3283  adv: -0.0081  pixel: 7.5023  perc: 5.8340  tex: 0.0002
+[Epoch   55/100] [Step   180] D: 1.0245  G: 14.7812  adv: -0.0522  pixel: 9.0095  perc: 5.8237  tex: 0.0002
+[Epoch   55/100] [Step   200] D: 0.0816  G: 12.6586  adv: 0.0775  pixel: 7.9308  perc: 4.6503  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0055.png
+[RCA-GAN] Checkpoints saved at epoch 55
+[Epoch   56/100] [Step    20] D: 0.6337  G: 10.3181  adv: -0.0321  pixel: 5.6635  perc: 4.6866  tex: 0.0000
+[Epoch   56/100] [Step    40] D: 0.6364  G: 11.1930  adv: -0.0144  pixel: 6.4738  perc: 4.7337  tex: 0.0001
+[Epoch   56/100] [Step    60] D: 0.3840  G: 9.6453  adv: 0.0024  pixel: 5.0168  perc: 4.6260  tex: 0.0001
+[Epoch   56/100] [Step    80] D: 0.0005  G: 9.4475  adv: 0.0105  pixel: 5.1230  perc: 4.3140  tex: 0.0000
+[Epoch   56/100] [Step   100] D: 0.6248  G: 12.0051  adv: -0.0269  pixel: 6.6344  perc: 5.3976  tex: 0.0001
+[Epoch   56/100] [Step   120] D: 0.0492  G: 8.4703  adv: -0.0296  pixel: 4.0175  perc: 4.4823  tex: 0.0001
+[Epoch   56/100] [Step   140] D: 1.1265  G: 11.9613  adv: 0.0281  pixel: 7.1208  perc: 4.8124  tex: 0.0000
+[Epoch   56/100] [Step   160] D: 1.2077  G: 13.2149  adv: -0.0151  pixel: 7.9973  perc: 5.2325  tex: 0.0002
+[Epoch   56/100] [Step   180] D: 0.2126  G: 12.9877  adv: -0.0243  pixel: 7.4478  perc: 5.5641  tex: 0.0001
+[Epoch   56/100] [Step   200] D: 0.0913  G: 12.2806  adv: 0.0275  pixel: 6.9546  perc: 5.2980  tex: 0.0005
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0056.png
+[Epoch   57/100] [Step    20] D: 1.2500  G: 11.5162  adv: -0.0028  pixel: 5.7814  perc: 5.7373  tex: 0.0002
+[Epoch   57/100] [Step    40] D: 2.2475  G: 10.4952  adv: -0.0296  pixel: 5.6249  perc: 4.8999  tex: 0.0001
+[Epoch   57/100] [Step    60] D: 0.4336  G: 11.1754  adv: 0.0394  pixel: 6.1259  perc: 5.0099  tex: 0.0001
+[Epoch   57/100] [Step    80] D: 0.7231  G: 12.9000  adv: 0.0095  pixel: 7.3174  perc: 5.5729  tex: 0.0001
+[Epoch   57/100] [Step   100] D: 0.1460  G: 10.3776  adv: 0.0128  pixel: 6.0763  perc: 4.2885  tex: 0.0000
+[Epoch   57/100] [Step   120] D: 0.5947  G: 10.0926  adv: 0.0073  pixel: 5.4219  perc: 4.6634  tex: 0.0001
+[Epoch   62/100] [Step    20] D: -0.0005  G: 16.7361  adv: 0.0222  pixel: 10.6841  perc: 6.0295  tex: 0.0004
+[Epoch   62/100] [Step    40] D: 1.2719  G: 8.8866  adv: 0.0051  pixel: 4.8743  perc: 4.0072  tex: 0.0000
+[Epoch   62/100] [Step    60] D: 0.1249  G: 9.9035  adv: -0.0055  pixel: 5.3981  perc: 4.5108  tex: 0.0001
+[Epoch   62/100] [Step    80] D: 0.1647  G: 12.4283  adv: 0.0179  pixel: 6.6507  perc: 5.7594  tex: 0.0002
+[Epoch   62/100] [Step   100] D: 2.5198  G: 10.4730  adv: 0.0422  pixel: 5.6605  perc: 4.7702  tex: 0.0001
+[Epoch   62/100] [Step   120] D: 0.0081  G: 9.6512  adv: 0.0046  pixel: 5.3577  perc: 4.2889  tex: 0.0001
+[Epoch   62/100] [Step   140] D: 0.0144  G: 9.1861  adv: 0.0115  pixel: 4.8884  perc: 4.2861  tex: 0.0001
+[Epoch   62/100] [Step   160] D: 0.1727  G: 11.5719  adv: 0.0001  pixel: 6.6351  perc: 4.9366  tex: 0.0002
+[Epoch   62/100] [Step   180] D: 0.2846  G: 9.0076  adv: -0.0085  pixel: 4.6507  perc: 4.3653  tex: 0.0001
+[Epoch   62/100] [Step   200] D: 0.8105  G: 10.9900  adv: 0.0079  pixel: 5.9903  perc: 4.9917  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0062.png
+[Epoch   63/100] [Step    20] D: 1.3830  G: 10.1671  adv: 0.0244  pixel: 5.7169  perc: 4.4257  tex: 0.0001
+[Epoch   63/100] [Step    40] D: 0.2706  G: 10.7326  adv: -0.0024  pixel: 6.1966  perc: 4.5383  tex: 0.0001
+[Epoch   63/100] [Step    60] D: 0.0834  G: 15.5385  adv: 0.0050  pixel: 9.1472  perc: 6.3857  tex: 0.0005
+[Epoch   63/100] [Step    80] D: 0.0142  G: 9.8918  adv: 0.0252  pixel: 5.8777  perc: 3.9889  tex: 0.0000
+[Epoch   63/100] [Step   100] D: 2.1813  G: 10.2087  adv: 0.0345  pixel: 5.0497  perc: 5.1244  tex: 0.0001
+[Epoch   63/100] [Step   120] D: 1.2194  G: 15.3748  adv: -0.0220  pixel: 9.1110  perc: 6.2855  tex: 0.0003
+[Epoch   63/100] [Step   140] D: 0.7290  G: 11.6324  adv: -0.0196  pixel: 6.8369  perc: 4.8150  tex: 0.0001
+[Epoch   63/100] [Step   160] D: 0.0025  G: 9.2161  adv: 0.0034  pixel: 4.9585  perc: 4.2541  tex: 0.0001
+[Epoch   63/100] [Step   180] D: 0.4303  G: 14.2777  adv: 0.0105  pixel: 8.7065  perc: 5.5605  tex: 0.0001
+[Epoch   63/100] [Step   200] D: 0.2302  G: 11.0241  adv: 0.0069  pixel: 6.0327  perc: 4.9844  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0063.png
+[Epoch   64/100] [Step    20] D: 0.0001  G: 11.6530  adv: 0.0043  pixel: 7.0946  perc: 4.5540  tex: 0.0001
+[Epoch   64/100] [Step    40] D: 0.0082  G: 11.9001  adv: -0.0055  pixel: 6.1664  perc: 5.7391  tex: 0.0002
+[Epoch   64/100] [Step    60] D: 0.0008  G: 12.0314  adv: 0.0064  pixel: 6.8872  perc: 5.1377  tex: 0.0001
+[Epoch   64/100] [Step    80] D: 0.6501  G: 10.4938  adv: 0.0135  pixel: 5.9756  perc: 4.5045  tex: 0.0001
+[Epoch   64/100] [Step   100] D: 0.0054  G: 8.8022  adv: -0.0060  pixel: 4.6141  perc: 4.1941  tex: 0.0000
+[Epoch   64/100] [Step   120] D: 0.0918  G: 14.6328  adv: 0.0080  pixel: 8.9140  perc: 5.7106  tex: 0.0003
+[Epoch   64/100] [Step   140] D: 0.2220  G: 12.0975  adv: 0.0000  pixel: 7.6483  perc: 4.4491  tex: 0.0001
+[Epoch   64/100] [Step   160] D: 2.0285  G: 10.9159  adv: 0.0151  pixel: 5.7155  perc: 5.1851  tex: 0.0001
+[Epoch   64/100] [Step   180] D: 0.2958  G: 11.3829  adv: 0.0170  pixel: 6.3644  perc: 5.0015  tex: 0.0001
+[Epoch   64/100] [Step   200] D: 0.5181  G: 8.4989  adv: 0.0100  pixel: 4.3714  perc: 4.1175  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0064.png
+[Epoch   65/100] [Step    20] D: 0.7049  G: 11.1139  adv: -0.0016  pixel: 6.5431  perc: 4.5723  tex: 0.0001
+[Epoch   65/100] [Step    40] D: 0.1651  G: 10.5085  adv: -0.0078  pixel: 6.0041  perc: 4.5121  tex: 0.0001
+[Epoch   65/100] [Step    60] D: 0.3427  G: 9.9950  adv: 0.0004  pixel: 4.9105  perc: 5.0839  tex: 0.0001
+[Epoch   65/100] [Step    80] D: 0.0918  G: 12.7039  adv: 0.0077  pixel: 6.8330  perc: 5.8629  tex: 0.0002
+[Epoch   65/100] [Step   100] D: 0.0340  G: 12.0398  adv: -0.0387  pixel: 7.1979  perc: 4.8805  tex: 0.0001
+[Epoch   65/100] [Step   120] D: 0.2177  G: 14.0906  adv: 0.0485  pixel: 8.4486  perc: 5.5935  tex: 0.0001
+[Epoch   65/100] [Step   140] D: 0.0387  G: 8.0891  adv: -0.0060  pixel: 4.2849  perc: 3.8102  tex: 0.0000
+[Epoch   65/100] [Step   160] D: 0.0373  G: 13.5634  adv: 0.0248  pixel: 9.0052  perc: 4.5333  tex: 0.0001
+[Epoch   65/100] [Step   180] D: 0.1107  G: 11.2081  adv: -0.0317  pixel: 6.5592  perc: 4.6804  tex: 0.0002
+[Epoch   65/100] [Step   200] D: 0.0297  G: 12.6406  adv: -0.0061  pixel: 7.3684  perc: 5.2782  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0065.png
+[RCA-GAN] Checkpoints saved at epoch 65
+[Epoch   66/100] [Step    20] D: 0.0032  G: 10.5781  adv: -0.0878  pixel: 6.3112  perc: 4.3548  tex: 0.0000
+[Epoch   66/100] [Step    40] D: 0.0196  G: 12.7999  adv: 0.0086  pixel: 7.4926  perc: 5.2985  tex: 0.0001
+[Epoch   66/100] [Step    60] D: 0.4551  G: 9.0298  adv: 0.0271  pixel: 5.0659  perc: 3.9368  tex: 0.0000
+[Epoch   66/100] [Step    80] D: 0.6320  G: 11.1923  adv: 0.0056  pixel: 6.4856  perc: 4.7010  tex: 0.0001
+[Epoch   66/100] [Step   100] D: 0.6061  G: 9.2060  adv: 0.0087  pixel: 4.2586  perc: 4.9387  tex: 0.0001
+[Epoch   66/100] [Step   120] D: 0.9890  G: 12.7375  adv: 0.0019  pixel: 7.4310  perc: 5.3045  tex: 0.0002
+[Epoch   66/100] [Step   140] D: 0.1484  G: 14.5754  adv: 0.0316  pixel: 9.0184  perc: 5.5248  tex: 0.0006
+[Epoch   66/100] [Step   160] D: 1.4771  G: 13.3060  adv: -0.0092  pixel: 8.1018  perc: 5.2132  tex: 0.0001
+[Epoch   66/100] [Step   180] D: 0.0215  G: 11.3612  adv: -0.0126  pixel: 6.0937  perc: 5.2800  tex: 0.0001
+[Epoch   66/100] [Step   200] D: 0.0406  G: 9.3433  adv: -0.0027  pixel: 5.0283  perc: 4.3177  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0066.png
+[Epoch   67/100] [Step    20] D: 0.5190  G: 11.6970  adv: -0.0245  pixel: 6.8614  perc: 4.8600  tex: 0.0001
+[Epoch   67/100] [Step    40] D: 0.1565  G: 8.7672  adv: 0.0670  pixel: 4.3689  perc: 4.3312  tex: 0.0001
+[Epoch   67/100] [Step    60] D: 0.1061  G: 9.0812  adv: -0.1788  pixel: 5.2302  perc: 4.0298  tex: 0.0000
+[Epoch   67/100] [Step    80] D: 2078.1018  G: 9.3359  adv: -0.4379  pixel: 5.7715  perc: 4.0023  tex: 0.0001
+[Epoch   67/100] [Step   100] D: 0.2493  G: 13.6297  adv: 0.0454  pixel: 7.9317  perc: 5.6522  tex: 0.0003
+[Epoch   67/100] [Step   120] D: 1.1635  G: 10.4412  adv: -0.0131  pixel: 6.1165  perc: 4.3378  tex: 0.0000
+[Epoch   67/100] [Step   140] D: 1.1798  G: 11.9318  adv: -0.0138  pixel: 6.9272  perc: 5.0183  tex: 0.0001
+[Epoch   67/100] [Step   160] D: 0.0851  G: 12.4910  adv: 0.0124  pixel: 6.8646  perc: 5.6136  tex: 0.0004
+[Epoch   67/100] [Step   180] D: 0.9244  G: 14.4252  adv: 0.0747  pixel: 8.0651  perc: 6.2850  tex: 0.0003
+[Epoch   67/100] [Step   200] D: 0.8437  G: 11.1864  adv: -0.0588  pixel: 6.7669  perc: 4.4782  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0067.png
+[Epoch   68/100] [Step    20] D: 0.0589  G: 9.6281  adv: 0.0264  pixel: 5.0217  perc: 4.5799  tex: 0.0001
+[Epoch   68/100] [Step    40] D: 1.0633  G: 8.5405  adv: 0.0415  pixel: 4.2992  perc: 4.1997  tex: 0.0000
+[Epoch   68/100] [Step    60] D: 0.3143  G: 13.3878  adv: -0.0245  pixel: 8.2716  perc: 5.1404  tex: 0.0003
+[Epoch   68/100] [Step    80] D: 0.2789  G: 9.9500  adv: 0.0333  pixel: 5.3816  perc: 4.5350  tex: 0.0001
+[Epoch   68/100] [Step   100] D: 4.5621  G: 13.5137  adv: -0.0032  pixel: 9.0774  perc: 4.4392  tex: 0.0003
+[Epoch   68/100] [Step   120] D: 0.0399  G: 8.5512  adv: 0.0112  pixel: 4.3232  perc: 4.2169  tex: 0.0000
+[Epoch   68/100] [Step   140] D: 0.1488  G: 11.9547  adv: -0.0509  pixel: 7.7705  perc: 4.2351  tex: 0.0000
+[Epoch   68/100] [Step   160] D: 0.6516  G: 8.0726  adv: 0.0176  pixel: 4.1972  perc: 3.8579  tex: 0.0000
+[Epoch   68/100] [Step   180] D: 0.7524  G: 12.7607  adv: 0.0410  pixel: 7.2117  perc: 5.5079  tex: 0.0002
+[Epoch   68/100] [Step   200] D: 0.0476  G: 12.3768  adv: -0.0071  pixel: 8.1006  perc: 4.2832  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0068.png
+[Epoch   69/100] [Step    20] D: 5.7290  G: 9.2296  adv: -0.0737  pixel: 5.2527  perc: 4.0506  tex: 0.0000
+[Epoch   69/100] [Step    40] D: 0.0067  G: 9.2015  adv: -0.0135  pixel: 5.0063  perc: 4.2086  tex: 0.0000
+[Epoch   69/100] [Step    60] D: 1.4299  G: 10.6827  adv: 0.0072  pixel: 5.8357  perc: 4.8398  tex: 0.0001
+[Epoch   69/100] [Step    80] D: 0.0012  G: 11.6897  adv: -0.0036  pixel: 6.6083  perc: 5.0849  tex: 0.0001
+[Epoch   69/100] [Step   100] D: 0.3807  G: 11.3885  adv: 0.0057  pixel: 7.3951  perc: 3.9877  tex: 0.0000
+[Epoch   69/100] [Step   120] D: 0.0188  G: 12.6449  adv: 0.0008  pixel: 7.5414  perc: 5.1025  tex: 0.0002
+[Epoch   69/100] [Step   140] D: 0.7758  G: 11.9652  adv: 0.0129  pixel: 7.6177  perc: 4.3345  tex: 0.0001
+[Epoch   69/100] [Step   160] D: 0.0090  G: 10.7434  adv: 0.0097  pixel: 6.3094  perc: 4.4242  tex: 0.0001
+[Epoch   69/100] [Step   180] D: 0.2096  G: 7.3295  adv: 0.0126  pixel: 3.4735  perc: 3.8433  tex: 0.0000
+[Epoch   69/100] [Step   200] D: 0.8523  G: 12.0584  adv: 0.0562  pixel: 6.6988  perc: 5.3033  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0069.png
+[Epoch   70/100] [Step    20] D: 1.3287  G: 8.7190  adv: -0.0172  pixel: 4.6458  perc: 4.0904  tex: 0.0000
+[Epoch   70/100] [Step    40] D: 1.4117  G: 12.5238  adv: -0.0004  pixel: 7.3638  perc: 5.1604  tex: 0.0000
+[Epoch   70/100] [Step    60] D: 2.2122  G: 10.1254  adv: 0.0077  pixel: 5.6563  perc: 4.4613  tex: 0.0000
+[Epoch   70/100] [Step    80] D: 0.1437  G: 11.6307  adv: -0.0287  pixel: 6.7940  perc: 4.8653  tex: 0.0001
+[Epoch   70/100] [Step   100] D: 0.0026  G: 11.7240  adv: 0.0185  pixel: 6.8072  perc: 4.8982  tex: 0.0001
+[Epoch   70/100] [Step   120] D: 0.0379  G: 12.5650  adv: 0.0038  pixel: 7.1398  perc: 5.4212  tex: 0.0001
+[Epoch   70/100] [Step   140] D: 0.0026  G: 9.4300  adv: -0.0034  pixel: 5.1083  perc: 4.3250  tex: 0.0000
+[Epoch   70/100] [Step   160] D: 0.1298  G: 8.7228  adv: 0.0207  pixel: 4.6700  perc: 4.0321  tex: 0.0000
+[Epoch   70/100] [Step   180] D: 0.8309  G: 8.9737  adv: 0.0266  pixel: 4.9063  perc: 4.0408  tex: 0.0000
+[Epoch   70/100] [Step   200] D: 0.1180  G: 12.5791  adv: 0.0044  pixel: 7.6395  perc: 4.9351  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0070.png
+[RCA-GAN] Checkpoints saved at epoch 70
+[Epoch   71/100] [Step    20] D: 1.1875  G: 8.8692  adv: -0.0051  pixel: 4.5687  perc: 4.3055  tex: 0.0000
+[Epoch   71/100] [Step    40] D: 0.0120  G: 12.0207  adv: 0.0013  pixel: 6.9776  perc: 5.0415  tex: 0.0003
+[Epoch   71/100] [Step    60] D: 0.0046  G: 9.8733  adv: 0.0184  pixel: 5.6481  perc: 4.2068  tex: 0.0001
+[Epoch   71/100] [Step    80] D: 0.0243  G: 11.3771  adv: 0.0136  pixel: 7.3446  perc: 4.0188  tex: 0.0000
+[Epoch   71/100] [Step   100] D: 1.7535  G: 10.3536  adv: 0.0253  pixel: 5.1677  perc: 5.1604  tex: 0.0001
+[Epoch   71/100] [Step   120] D: 0.1578  G: 11.9523  adv: -0.0071  pixel: 7.6954  perc: 4.2639  tex: 0.0001
+[Epoch   71/100] [Step   140] D: 1.0341  G: 12.5354  adv: 0.0040  pixel: 7.3417  perc: 5.1895  tex: 0.0002
+[Epoch   71/100] [Step   160] D: 0.3633  G: 7.4470  adv: 0.0007  pixel: 3.5234  perc: 3.9229  tex: 0.0000
+[Epoch   71/100] [Step   180] D: 1.1701  G: 9.9333  adv: 0.0221  pixel: 5.3820  perc: 4.5291  tex: 0.0000
+[Epoch   71/100] [Step   200] D: 0.2799  G: 10.4651  adv: 0.0032  pixel: 5.8832  perc: 4.5787  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0071.png
+[Epoch   72/100] [Step    20] D: 0.0587  G: 9.4591  adv: -0.0018  pixel: 5.0644  perc: 4.3965  tex: 0.0001
+[Epoch   72/100] [Step    40] D: 0.1494  G: 8.3479  adv: 0.0224  pixel: 3.8641  perc: 4.4613  tex: 0.0001
+[Epoch   72/100] [Step    60] D: 0.1687  G: 8.5758  adv: 0.0083  pixel: 5.0654  perc: 3.5020  tex: 0.0000
+[Epoch   72/100] [Step    80] D: 0.0083  G: 10.1438  adv: 0.0139  pixel: 6.0239  perc: 4.1060  tex: 0.0000
+[Epoch   72/100] [Step   100] D: 0.3190  G: 13.5842  adv: 0.0140  pixel: 8.1938  perc: 5.3763  tex: 0.0001
+[Epoch   72/100] [Step   120] D: 0.0029  G: 12.3868  adv: -0.0041  pixel: 6.7226  perc: 5.6681  tex: 0.0003
+[Epoch   72/100] [Step   140] D: 0.4183  G: 9.0195  adv: 0.0045  pixel: 4.9716  perc: 4.0434  tex: 0.0000
+[Epoch   72/100] [Step   160] D: 0.4100  G: 8.6927  adv: -0.0027  pixel: 5.0428  perc: 3.6526  tex: 0.0000
+[Epoch   72/100] [Step   180] D: 0.2516  G: 8.7850  adv: 0.0290  pixel: 4.8303  perc: 3.9255  tex: 0.0001
+[Epoch   72/100] [Step   200] D: 0.4557  G: 12.6519  adv: -0.0066  pixel: 7.2049  perc: 5.4534  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0072.png
+[Epoch   73/100] [Step    20] D: 0.0929  G: 8.5000  adv: -0.0086  pixel: 4.5593  perc: 3.9491  tex: 0.0000
+[Epoch   73/100] [Step    40] D: 0.0707  G: 8.7744  adv: -0.0064  pixel: 4.9428  perc: 3.8379  tex: 0.0000
+[Epoch   73/100] [Step    60] D: 0.5518  G: 12.6473  adv: 0.0119  pixel: 7.2213  perc: 5.4137  tex: 0.0004
+[Epoch   73/100] [Step    80] D: 0.1484  G: 8.5677  adv: -0.0061  pixel: 4.5000  perc: 4.0737  tex: 0.0000
+[Epoch   73/100] [Step   100] D: 0.2528  G: 9.1985  adv: 0.0021  pixel: 5.4087  perc: 3.7877  tex: 0.0000
+[Epoch   73/100] [Step   120] D: 1.1973  G: 13.1948  adv: -0.0026  pixel: 7.2211  perc: 5.9759  tex: 0.0003
+[Epoch   73/100] [Step   140] D: 0.0121  G: 12.2275  adv: -0.0062  pixel: 7.3051  perc: 4.9284  tex: 0.0003
+[Epoch   73/100] [Step   160] D: 0.0958  G: 9.7328  adv: 0.0153  pixel: 5.4981  perc: 4.2193  tex: 0.0000
+[Epoch   73/100] [Step   180] D: 0.2811  G: 7.8537  adv: 0.0102  pixel: 3.9951  perc: 3.8484  tex: 0.0000
+[Epoch   73/100] [Step   200] D: 0.3027  G: 11.0643  adv: 0.0214  pixel: 5.9802  perc: 5.0626  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0073.png
+[Epoch   74/100] [Step    20] D: 0.0251  G: 8.4398  adv: 0.0520  pixel: 4.4787  perc: 3.9091  tex: 0.0000
+[Epoch   74/100] [Step    40] D: 0.3446  G: 11.0644  adv: 0.0076  pixel: 5.7603  perc: 5.2963  tex: 0.0002
+[Epoch   74/100] [Step    60] D: 0.5622  G: 11.3033  adv: 0.0052  pixel: 6.9052  perc: 4.3929  tex: 0.0001
+[Epoch   74/100] [Step    80] D: 0.4452  G: 11.2124  adv: 0.0095  pixel: 5.9558  perc: 5.2470  tex: 0.0002
+[Epoch   74/100] [Step   100] D: 0.0900  G: 10.9915  adv: 0.0080  pixel: 6.8531  perc: 4.1304  tex: 0.0000
+[Epoch   74/100] [Step   120] D: 0.2333  G: 8.5917  adv: 0.0055  pixel: 4.7129  perc: 3.8734  tex: 0.0000
+[Epoch   74/100] [Step   140] D: 0.4078  G: 11.8718  adv: 0.0195  pixel: 6.9771  perc: 4.8751  tex: 0.0001
+[Epoch   74/100] [Step   160] D: 0.3618  G: 10.0991  adv: 0.0010  pixel: 5.4626  perc: 4.6354  tex: 0.0001
+[Epoch   74/100] [Step   180] D: 0.0643  G: 11.1992  adv: 0.0195  pixel: 6.4205  perc: 4.7592  tex: 0.0001
+[Epoch   74/100] [Step   200] D: 0.0018  G: 10.5218  adv: 0.0094  pixel: 5.9726  perc: 4.5397  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0074.png
+[Epoch   75/100] [Step    20] D: 0.1328  G: 8.9596  adv: 0.0054  pixel: 4.7882  perc: 4.1660  tex: 0.0000
+[Epoch   75/100] [Step    40] D: 0.0617  G: 9.1059  adv: 0.0054  pixel: 4.9930  perc: 4.1075  tex: 0.0000
+[Epoch   75/100] [Step    60] D: 0.6192  G: 7.8498  adv: 0.0253  pixel: 3.6288  perc: 4.1956  tex: 0.0001
+[Epoch   75/100] [Step    80] D: 0.0668  G: 8.1705  adv: 0.0015  pixel: 4.2332  perc: 3.9359  tex: 0.0000
+[Epoch   75/100] [Step   100] D: 0.0686  G: 11.7781  adv: 0.0072  pixel: 6.5548  perc: 5.2157  tex: 0.0004
+[Epoch   75/100] [Step   120] D: 0.0019  G: 13.4832  adv: -0.0214  pixel: 8.1465  perc: 5.3578  tex: 0.0003
+[Epoch   75/100] [Step   140] D: 0.7030  G: 10.5605  adv: 0.0213  pixel: 6.1405  perc: 4.3986  tex: 0.0001
+[Epoch   75/100] [Step   160] D: 0.0054  G: 10.5672  adv: -0.0002  pixel: 6.0090  perc: 4.5584  tex: 0.0000
+[Epoch   75/100] [Step   180] D: 0.5948  G: 12.0298  adv: 0.0226  pixel: 6.6797  perc: 5.3273  tex: 0.0002
+[Epoch   75/100] [Step   200] D: -0.0001  G: 12.5458  adv: 0.0454  pixel: 6.5709  perc: 5.9293  tex: 0.0002
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0075.png
+[RCA-GAN] Checkpoints saved at epoch 75
+[Epoch   76/100] [Step    20] D: 0.4735  G: 7.2755  adv: 0.0066  pixel: 3.5606  perc: 3.7083  tex: 0.0000
+[Epoch   76/100] [Step    40] D: 0.1024  G: 12.1559  adv: 0.0031  pixel: 6.6880  perc: 5.4644  tex: 0.0004
+[Epoch   76/100] [Step    60] D: 0.3588  G: 7.2123  adv: 0.0046  pixel: 3.3994  perc: 3.8082  tex: 0.0000
+[Epoch   57/100] [Step   140] D: 0.4439  G: 12.7350  adv: 0.0091  pixel: 8.1924  perc: 4.5334  tex: 0.0001
+[Epoch   57/100] [Step   160] D: 0.0029  G: 15.3144  adv: 0.0318  pixel: 8.8906  perc: 6.3917  tex: 0.0003
+[Epoch   57/100] [Step   180] D: 0.3274  G: 15.3591  adv: 0.0038  pixel: 9.1054  perc: 6.2495  tex: 0.0004
+[Epoch   57/100] [Step   200] D: 0.0666  G: 14.2077  adv: 0.0109  pixel: 8.4005  perc: 5.7960  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0057.png
+[Epoch   58/100] [Step    20] D: 0.0304  G: 9.9022  adv: 0.0347  pixel: 5.3967  perc: 4.4708  tex: 0.0000
+[Epoch   58/100] [Step    40] D: 2.8760  G: 9.2394  adv: -0.0415  pixel: 5.4032  perc: 3.8777  tex: 0.0000
+[Epoch   58/100] [Step    60] D: 0.3487  G: 13.2535  adv: -0.0142  pixel: 8.1370  perc: 5.1306  tex: 0.0001
+[Epoch   58/100] [Step    80] D: 0.0227  G: 10.2282  adv: 0.0159  pixel: 5.5132  perc: 4.6990  tex: 0.0002
+[Epoch   58/100] [Step   100] D: 0.0570  G: 11.4737  adv: 0.0040  pixel: 6.1456  perc: 5.3240  tex: 0.0001
+[Epoch   58/100] [Step   120] D: 0.0067  G: 9.6673  adv: -0.0038  pixel: 5.4399  perc: 4.2311  tex: 0.0000
+[Epoch   58/100] [Step   140] D: 0.0412  G: 13.0824  adv: 0.0019  pixel: 7.3478  perc: 5.7325  tex: 0.0002
+[Epoch   58/100] [Step   160] D: 3.4567  G: 7.3669  adv: -0.0016  pixel: 3.5117  perc: 3.8568  tex: 0.0000
+[Epoch   58/100] [Step   180] D: 1.1101  G: 11.0512  adv: 0.0296  pixel: 6.4083  perc: 4.6132  tex: 0.0001
+[Epoch   58/100] [Step   200] D: 1.1111  G: 10.2270  adv: -0.0455  pixel: 5.9659  perc: 4.3066  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0058.png
+[Epoch   59/100] [Step    20] D: 0.2412  G: 8.4144  adv: -0.0209  pixel: 4.3494  perc: 4.0859  tex: 0.0000
+[Epoch   59/100] [Step    40] D: 0.5418  G: 12.4807  adv: -0.0022  pixel: 7.3626  perc: 5.1202  tex: 0.0002
+[Epoch   59/100] [Step    60] D: 0.7904  G: 9.7954  adv: -0.0062  pixel: 5.2499  perc: 4.5516  tex: 0.0001
+[Epoch   59/100] [Step    80] D: 3.5584  G: 8.0216  adv: 0.0003  pixel: 4.2419  perc: 3.7795  tex: 0.0000
+[Epoch   59/100] [Step   100] D: 2.3117  G: 8.1314  adv: 0.0195  pixel: 4.6511  perc: 3.4609  tex: 0.0000
+[Epoch   59/100] [Step   120] D: 2.0468  G: 8.6678  adv: 0.0108  pixel: 4.5669  perc: 4.0900  tex: 0.0000
+[Epoch   59/100] [Step   140] D: 0.2987  G: 11.0030  adv: -0.0080  pixel: 6.1455  perc: 4.8654  tex: 0.0001
+[Epoch   59/100] [Step   160] D: 0.1809  G: 9.6154  adv: -0.0126  pixel: 5.3265  perc: 4.3015  tex: 0.0000
+[Epoch   59/100] [Step   180] D: 0.0035  G: 10.9546  adv: -0.0081  pixel: 6.7783  perc: 4.1843  tex: 0.0001
+[Epoch   59/100] [Step   200] D: 1.9685  G: 10.0877  adv: 0.0130  pixel: 5.0268  perc: 5.0478  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0059.png
+[Epoch   60/100] [Step    20] D: 1.3885  G: 11.0338  adv: -0.0121  pixel: 6.1339  perc: 4.9119  tex: 0.0001
+[Epoch   60/100] [Step    40] D: 0.9763  G: 13.5270  adv: -0.0357  pixel: 8.2008  perc: 5.3619  tex: 0.0001
+[Epoch   60/100] [Step    60] D: 0.5021  G: 11.6128  adv: 0.0210  pixel: 6.1750  perc: 5.4166  tex: 0.0001
+[Epoch   60/100] [Step    80] D: 0.2212  G: 11.2069  adv: 0.0284  pixel: 6.3826  perc: 4.7958  tex: 0.0002
+[Epoch   60/100] [Step   100] D: 0.0071  G: 12.1284  adv: -0.0075  pixel: 7.4029  perc: 4.7330  tex: 0.0000
+[Epoch   60/100] [Step   120] D: 0.0248  G: 11.3255  adv: -0.0145  pixel: 6.5542  perc: 4.7857  tex: 0.0001
+[Epoch   60/100] [Step   140] D: 1.4247  G: 10.7299  adv: 0.0103  pixel: 6.1031  perc: 4.6164  tex: 0.0001
+[Epoch   60/100] [Step   160] D: 1.5838  G: 10.4353  adv: -0.0004  pixel: 6.1670  perc: 4.2685  tex: 0.0001
+[Epoch   60/100] [Step   180] D: 1.0676  G: 11.6616  adv: 0.0013  pixel: 6.8863  perc: 4.7739  tex: 0.0001
+[Epoch   60/100] [Step   200] D: 0.2508  G: 9.2358  adv: -0.0057  pixel: 4.7610  perc: 4.4804  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0060.png
+[RCA-GAN] Checkpoints saved at epoch 60
+[Epoch   61/100] [Step    20] D: 0.1785  G: 9.3665  adv: 0.0074  pixel: 4.9177  perc: 4.4414  tex: 0.0000
+[Epoch   61/100] [Step    40] D: 0.2802  G: 10.7317  adv: -0.0041  pixel: 5.9730  perc: 4.7626  tex: 0.0002
+[Epoch   61/100] [Step    60] D: 0.0146  G: 11.7909  adv: -0.0287  pixel: 6.9752  perc: 4.8443  tex: 0.0001
+[Epoch   61/100] [Step    80] D: 0.0009  G: 10.6141  adv: 0.0322  pixel: 5.4808  perc: 5.1010  tex: 0.0001
+[Epoch   61/100] [Step   100] D: 0.2004  G: 9.3335  adv: 0.0181  pixel: 5.2809  perc: 4.0345  tex: 0.0000
+[Epoch   61/100] [Step   120] D: 0.9643  G: 15.9298  adv: 0.0116  pixel: 9.8653  perc: 6.0525  tex: 0.0005
+[Epoch   61/100] [Step   140] D: 0.4275  G: 10.4705  adv: 0.0107  pixel: 5.7771  perc: 4.6826  tex: 0.0001
+[Epoch   61/100] [Step   160] D: 1.2493  G: 11.0491  adv: 0.0072  pixel: 6.3749  perc: 4.6670  tex: 0.0001
+[Epoch   61/100] [Step   180] D: 1.1345  G: 12.8163  adv: 0.0101  pixel: 6.6335  perc: 6.1723  tex: 0.0004
+[Epoch   61/100] [Step   200] D: 0.3855  G: 19.1869  adv: 0.0020  pixel: 15.4835  perc: 3.7014  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0061.png
+[Epoch   62/100] [Step    20] D: 0.0769  G: 9.5958  adv: -0.0087  pixel: 5.3984  perc: 4.2060  tex: 0.0001
+[Epoch   62/100] [Step    40] D: 0.4459  G: 11.0594  adv: 0.0164  pixel: 6.2850  perc: 4.7580  tex: 0.0001
+[Epoch   62/100] [Step    60] D: 2.6704  G: 13.9683  adv: 0.0298  pixel: 8.9832  perc: 4.9552  tex: 0.0001
+[Epoch   62/100] [Step    80] D: 0.1717  G: 12.5549  adv: 0.0212  pixel: 7.0883  perc: 5.4453  tex: 0.0001
+[Epoch   62/100] [Step   100] D: 0.3085  G: 12.2869  adv: 0.0063  pixel: 7.3525  perc: 4.9280  tex: 0.0001
+[Epoch   62/100] [Step   120] D: 0.4185  G: 10.0299  adv: 0.0055  pixel: 5.5864  perc: 4.4380  tex: 0.0001
+[Epoch   62/100] [Step   140] D: 0.9778  G: 12.2593  adv: -0.0085  pixel: 6.4995  perc: 5.7681  tex: 0.0002
+[Epoch   62/100] [Step   160] D: 0.3390  G: 12.2274  adv: 0.0141  pixel: 6.7471  perc: 5.4660  tex: 0.0001
+[Epoch   62/100] [Step   180] D: 0.0783  G: 9.3275  adv: -0.0065  pixel: 4.9972  perc: 4.3368  tex: 0.0000
+[Epoch   62/100] [Step   200] D: 0.6126  G: 12.6330  adv: -0.0015  pixel: 8.2467  perc: 4.3878  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0062.png
+[Epoch   63/100] [Step    20] D: 0.5232  G: 10.3203  adv: 0.0154  pixel: 5.8860  perc: 4.4189  tex: 0.0001
+[Epoch   63/100] [Step    40] D: 0.0984  G: 12.1025  adv: 0.0310  pixel: 7.7847  perc: 4.2868  tex: 0.0000
+[Epoch   63/100] [Step    60] D: 0.5897  G: 12.6615  adv: 0.0107  pixel: 7.2887  perc: 5.3620  tex: 0.0002
+[Epoch   63/100] [Step    80] D: 0.0042  G: 9.8315  adv: -0.0089  pixel: 5.8352  perc: 4.0052  tex: 0.0000
+[Epoch   63/100] [Step   100] D: 0.1638  G: 8.0550  adv: -0.0136  pixel: 4.0463  perc: 4.0222  tex: 0.0000
+[Epoch   63/100] [Step   120] D: 0.1188  G: 10.5910  adv: -0.0080  pixel: 6.3275  perc: 4.2714  tex: 0.0001
+[Epoch   63/100] [Step   140] D: 0.0499  G: 13.1389  adv: 0.0110  pixel: 7.7013  perc: 5.4264  tex: 0.0001
+[Epoch   63/100] [Step   160] D: 0.1176  G: 12.3967  adv: 0.0222  pixel: 6.8095  perc: 5.5648  tex: 0.0002
+[Epoch   63/100] [Step   180] D: 0.4541  G: 7.7709  adv: -0.0160  pixel: 4.3480  perc: 3.4388  tex: 0.0000
+[Epoch   63/100] [Step   200] D: 0.0014  G: 10.0535  adv: 0.0367  pixel: 5.1904  perc: 4.8263  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0063.png
+[Epoch   64/100] [Step    20] D: 0.1890  G: 12.0618  adv: -0.0353  pixel: 7.5580  perc: 4.5389  tex: 0.0002
+[Epoch   64/100] [Step    40] D: 0.2563  G: 10.6746  adv: -0.0099  pixel: 6.0390  perc: 4.6454  tex: 0.0001
+[Epoch   64/100] [Step    60] D: 0.3845  G: 13.0927  adv: 0.0079  pixel: 8.4882  perc: 4.5962  tex: 0.0003
+[Epoch   64/100] [Step    80] D: 0.0066  G: 8.7381  adv: 0.0090  pixel: 4.8605  perc: 3.8686  tex: 0.0000
+[Epoch   64/100] [Step   100] D: 1.2266  G: 10.7719  adv: -0.0008  pixel: 6.3724  perc: 4.4003  tex: 0.0000
+[Epoch   64/100] [Step   120] D: 0.0986  G: 11.9978  adv: 0.0086  pixel: 6.6956  perc: 5.2934  tex: 0.0002
+[Epoch   64/100] [Step   140] D: 0.1618  G: 9.5334  adv: -0.0113  pixel: 4.7691  perc: 4.7755  tex: 0.0002
+[Epoch   64/100] [Step   160] D: 0.0608  G: 14.1980  adv: -0.0166  pixel: 8.3348  perc: 5.8794  tex: 0.0003
+[Epoch   64/100] [Step   180] D: 0.5920  G: 9.8394  adv: -0.0105  pixel: 5.5924  perc: 4.2575  tex: 0.0000
+[Epoch   64/100] [Step   200] D: 0.7199  G: 7.8739  adv: 0.0173  pixel: 3.7913  perc: 4.0652  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0064.png
+[Epoch   65/100] [Step    20] D: 0.2064  G: 15.0326  adv: 0.0154  pixel: 10.0526  perc: 4.9646  tex: 0.0001
+[Epoch   65/100] [Step    40] D: 0.1728  G: 12.5293  adv: -0.0149  pixel: 7.0512  perc: 5.4928  tex: 0.0002
+[Epoch   65/100] [Step    60] D: 0.2742  G: 8.1157  adv: 0.0012  pixel: 4.1694  perc: 3.9451  tex: 0.0000
+[Epoch   65/100] [Step    80] D: 0.3163  G: 9.4029  adv: 0.0046  pixel: 5.3127  perc: 4.0855  tex: 0.0000
+[Epoch   65/100] [Step   100] D: 0.4718  G: 12.7994  adv: 0.0084  pixel: 7.4947  perc: 5.2961  tex: 0.0002
+[Epoch   65/100] [Step   120] D: 4.6091  G: 9.6211  adv: -0.0031  pixel: 5.2875  perc: 4.3366  tex: 0.0000
+[Epoch   65/100] [Step   140] D: 0.1440  G: 8.1541  adv: 0.0271  pixel: 4.0653  perc: 4.0617  tex: 0.0000
+[Epoch   65/100] [Step   160] D: 0.3167  G: 12.3865  adv: -0.0160  pixel: 7.5460  perc: 4.8562  tex: 0.0002
+[Epoch   65/100] [Step   180] D: 0.0139  G: 10.0187  adv: 0.0593  pixel: 5.6593  perc: 4.3000  tex: 0.0000
+[Epoch   65/100] [Step   200] D: 0.4304  G: 10.6864  adv: -0.0203  pixel: 5.6554  perc: 5.0513  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0065.png
+[RCA-GAN] Checkpoints saved at epoch 65
+[Epoch   66/100] [Step    20] D: 0.3992  G: 9.8917  adv: -0.0057  pixel: 5.4117  perc: 4.4856  tex: 0.0001
+[Epoch   66/100] [Step    40] D: 0.1006  G: 8.6876  adv: 0.0220  pixel: 5.2724  perc: 3.3932  tex: 0.0000
+[Epoch   66/100] [Step    60] D: 0.0336  G: 8.9213  adv: 0.0295  pixel: 4.6830  perc: 4.2087  tex: 0.0000
+[Epoch   66/100] [Step    80] D: 0.0087  G: 10.9123  adv: -0.0175  pixel: 6.3604  perc: 4.5693  tex: 0.0001
+[Epoch   66/100] [Step   100] D: 0.0584  G: 8.8709  adv: 0.0039  pixel: 4.6899  perc: 4.1771  tex: 0.0000
+[Epoch   66/100] [Step   120] D: 0.0020  G: 8.4482  adv: 0.0046  pixel: 4.3057  perc: 4.1379  tex: 0.0000
+[Epoch   66/100] [Step   140] D: 0.0232  G: 9.0233  adv: -0.0217  pixel: 4.9703  perc: 4.0746  tex: 0.0000
+[Epoch   66/100] [Step   160] D: 0.3045  G: 11.0268  adv: 0.0057  pixel: 6.0960  perc: 4.9250  tex: 0.0001
+[Epoch   66/100] [Step   180] D: 0.1160  G: 13.4088  adv: -0.0065  pixel: 7.7258  perc: 5.6892  tex: 0.0003
+[Epoch   66/100] [Step   200] D: 0.8399  G: 13.7594  adv: 0.0016  pixel: 7.6808  perc: 6.0766  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0066.png
+[Epoch   67/100] [Step    20] D: 0.4843  G: 9.7702  adv: 0.0142  pixel: 5.4635  perc: 4.2925  tex: 0.0000
+[Epoch   67/100] [Step    40] D: 0.4336  G: 8.7365  adv: 0.0068  pixel: 4.8945  perc: 3.8352  tex: 0.0001
+[Epoch   67/100] [Step    60] D: 0.2362  G: 10.2726  adv: 0.0199  pixel: 5.2562  perc: 4.9964  tex: 0.0001
+[Epoch   67/100] [Step    80] D: 0.3106  G: 12.9727  adv: -0.0047  pixel: 7.9866  perc: 4.9906  tex: 0.0003
+[Epoch   67/100] [Step   100] D: 1.2161  G: 12.4883  adv: 0.0056  pixel: 6.8948  perc: 5.5877  tex: 0.0003
+[Epoch   67/100] [Step   120] D: 0.7321  G: 11.2049  adv: -0.0009  pixel: 6.3132  perc: 4.8925  tex: 0.0001
+[Epoch   67/100] [Step   140] D: 1.1904  G: 11.3598  adv: 0.0000  pixel: 6.2131  perc: 5.1465  tex: 0.0001
+[Epoch   67/100] [Step   160] D: 0.1078  G: 10.4858  adv: 0.0025  pixel: 5.5178  perc: 4.9655  tex: 0.0001
+[Epoch   67/100] [Step   180] D: 1.0842  G: 8.8232  adv: -0.0078  pixel: 4.6647  perc: 4.1662  tex: 0.0001
+[Epoch   67/100] [Step   200] D: 0.2459  G: 8.8257  adv: 0.0017  pixel: 5.2898  perc: 3.5342  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0067.png
+[Epoch   68/100] [Step    20] D: 0.0005  G: 10.0957  adv: -0.0026  pixel: 5.6272  perc: 4.4711  tex: 0.0000
+[Epoch   68/100] [Step    40] D: 0.0227  G: 13.5431  adv: 0.0134  pixel: 8.1797  perc: 5.3498  tex: 0.0002
+[Epoch   68/100] [Step    60] D: 0.3918  G: 11.0162  adv: -0.0224  pixel: 6.1994  perc: 4.8391  tex: 0.0001
+[Epoch   68/100] [Step    80] D: 0.0076  G: 9.9804  adv: -0.0104  pixel: 5.4011  perc: 4.5897  tex: 0.0000
+[Epoch   68/100] [Step   100] D: 0.0008  G: 8.7580  adv: 0.0051  pixel: 4.5399  perc: 4.2129  tex: 0.0001
+[Epoch   68/100] [Step   120] D: 0.0740  G: 8.0528  adv: 0.0092  pixel: 4.2062  perc: 3.8375  tex: 0.0000
+[Epoch   68/100] [Step   140] D: 2.1214  G: 10.2805  adv: -0.0011  pixel: 5.1876  perc: 5.0939  tex: 0.0001
+[Epoch   68/100] [Step   160] D: 0.4409  G: 10.2129  adv: 0.0161  pixel: 6.3458  perc: 3.8511  tex: 0.0000
+[Epoch   68/100] [Step   180] D: 0.0000  G: 9.6278  adv: -0.0097  pixel: 5.4836  perc: 4.1539  tex: 0.0000
+[Epoch   68/100] [Step   200] D: 0.1164  G: 9.3202  adv: 0.0019  pixel: 5.1820  perc: 4.1363  tex: 0.0000
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0068.png
+[Epoch   69/100] [Step    20] D: 0.0331  G: 8.9035  adv: 0.0010  pixel: 5.0566  perc: 3.8458  tex: 0.0000
+[Epoch   69/100] [Step    40] D: 0.2123  G: 9.5717  adv: 0.0018  pixel: 4.7507  perc: 4.8191  tex: 0.0001
+[Epoch   69/100] [Step    60] D: 0.2364  G: 9.7299  adv: -0.0013  pixel: 5.6510  perc: 4.0802  tex: 0.0000
+[Epoch   69/100] [Step    80] D: 0.0019  G: 9.2354  adv: 0.0403  pixel: 5.4731  perc: 3.7220  tex: 0.0000
+[Epoch   69/100] [Step   100] D: 0.8176  G: 14.3153  adv: 0.0009  pixel: 9.2176  perc: 5.0965  tex: 0.0003
+[Epoch   69/100] [Step   120] D: 0.2514  G: 9.5696  adv: 0.0098  pixel: 5.3437  perc: 4.2161  tex: 0.0000
+[Epoch   69/100] [Step   140] D: 0.0578  G: 10.2213  adv: -0.0055  pixel: 5.5734  perc: 4.6534  tex: 0.0001
+[Epoch   69/100] [Step   160] D: 0.5402  G: 8.8678  adv: -0.0071  pixel: 4.5051  perc: 4.3697  tex: 0.0001
+[Epoch   69/100] [Step   180] D: 0.1249  G: 10.4784  adv: -0.0034  pixel: 5.8479  perc: 4.6338  tex: 0.0000
+[Epoch   69/100] [Step   200] D: 1.1443  G: 9.9528  adv: -0.0099  pixel: 5.2572  perc: 4.7054  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0069.png
+[Epoch   70/100] [Step    20] D: 0.0617  G: 11.3612  adv: 0.0290  pixel: 7.2835  perc: 4.0486  tex: 0.0000
+[Epoch   70/100] [Step    40] D: 0.7057  G: 11.4441  adv: -0.0041  pixel: 6.4673  perc: 4.9808  tex: 0.0001
+[Epoch   70/100] [Step    60] D: 0.2195  G: 9.9638  adv: -0.0067  pixel: 5.8555  perc: 4.1150  tex: 0.0001
+[Epoch   70/100] [Step    80] D: 0.5909  G: 10.6152  adv: -0.0018  pixel: 5.4751  perc: 5.1417  tex: 0.0002
+[Epoch   70/100] [Step   100] D: 1.7315  G: 9.4435  adv: -0.0015  pixel: 5.1036  perc: 4.3414  tex: 0.0001
+[Epoch   70/100] [Step   120] D: 0.0179  G: 11.5036  adv: -0.0194  pixel: 6.6180  perc: 4.9049  tex: 0.0001
+[Epoch   70/100] [Step   140] D: 0.3559  G: 10.0149  adv: 0.0084  pixel: 5.2344  perc: 4.7720  tex: 0.0001
+[Epoch   70/100] [Step   160] D: 1.6542  G: 8.3526  adv: -0.0116  pixel: 4.7362  perc: 3.6280  tex: 0.0000
+[Epoch   70/100] [Step   180] D: 3.7684  G: 11.2058  adv: -0.0063  pixel: 6.8407  perc: 4.3713  tex: 0.0001
+[Epoch   70/100] [Step   200] D: 5.8837  G: 10.0622  adv: -0.0108  pixel: 6.0521  perc: 4.0208  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0070.png
+[RCA-GAN] Checkpoints saved at epoch 70
+[Epoch   71/100] [Step    20] D: 1.5010  G: 10.4881  adv: 0.0435  pixel: 5.8011  perc: 4.6435  tex: 0.0001
+[Epoch   71/100] [Step    40] D: 0.0192  G: 9.5852  adv: -0.0199  pixel: 5.1825  perc: 4.4226  tex: 0.0000
+[Epoch   71/100] [Step    60] D: 0.0688  G: 9.2868  adv: 0.0083  pixel: 5.0206  perc: 4.2578  tex: 0.0001
+[Epoch   71/100] [Step    80] D: 0.1927  G: 10.7322  adv: 0.0091  pixel: 6.1450  perc: 4.5780  tex: 0.0001
+[Epoch   71/100] [Step   100] D: 0.5373  G: 9.3942  adv: 0.0002  pixel: 4.8262  perc: 4.5677  tex: 0.0001
+[Epoch   71/100] [Step   120] D: 0.1735  G: 8.3731  adv: 0.0010  pixel: 4.3431  perc: 4.0290  tex: 0.0000
+[Epoch   71/100] [Step   140] D: 1.4056  G: 11.2021  adv: 0.0030  pixel: 6.1327  perc: 5.0663  tex: 0.0001
+[Epoch   71/100] [Step   160] D: 0.0096  G: 9.5128  adv: -0.0093  pixel: 5.3743  perc: 4.1477  tex: 0.0001
+[Epoch   71/100] [Step   180] D: 0.0016  G: 12.9123  adv: 0.0103  pixel: 7.4720  perc: 5.4297  tex: 0.0002
+[Epoch   76/100] [Step    80] D: 0.4699  G: 8.5540  adv: 0.0117  pixel: 4.3537  perc: 4.1886  tex: 0.0000
+[Epoch   76/100] [Step   100] D: 0.7703  G: 12.7406  adv: -0.0397  pixel: 6.9540  perc: 5.8259  tex: 0.0003
+[Epoch   76/100] [Step   120] D: 0.0859  G: 8.8665  adv: 0.0370  pixel: 4.8478  perc: 3.9816  tex: 0.0000
+[Epoch   76/100] [Step   140] D: 0.2008  G: 8.8712  adv: 0.0294  pixel: 4.9036  perc: 3.9383  tex: 0.0000
+[Epoch   76/100] [Step   160] D: 0.0880  G: 9.4011  adv: 0.0098  pixel: 5.0753  perc: 4.3158  tex: 0.0001
+[Epoch   76/100] [Step   180] D: 0.5883  G: 8.2542  adv: 0.0254  pixel: 4.2643  perc: 3.9645  tex: 0.0000
+[Epoch   76/100] [Step   200] D: 0.1900  G: 15.9099  adv: 0.0350  pixel: 8.8097  perc: 7.0646  tex: 0.0007
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0076.png
+[Epoch   77/100] [Step    20] D: 0.1633  G: 10.6898  adv: -0.0043  pixel: 5.8124  perc: 4.8817  tex: 0.0001
+[Epoch   77/100] [Step    40] D: 0.1323  G: 10.1147  adv: 0.0108  pixel: 5.5667  perc: 4.5371  tex: 0.0000
+[Epoch   77/100] [Step    60] D: 0.0384  G: 10.1543  adv: 0.0277  pixel: 5.5719  perc: 4.5547  tex: 0.0001
+[Epoch   77/100] [Step    80] D: 0.8182  G: 10.1741  adv: 0.0449  pixel: 5.1181  perc: 5.0110  tex: 0.0001
+[Epoch   77/100] [Step   100] D: -0.0005  G: 11.9887  adv: 0.0014  pixel: 7.0883  perc: 4.8989  tex: 0.0001
+[Epoch   77/100] [Step   120] D: 0.0600  G: 8.7803  adv: 0.0199  pixel: 4.4683  perc: 4.2921  tex: 0.0001
+[Epoch   77/100] [Step   140] D: 0.0078  G: 11.8688  adv: -0.0025  pixel: 6.3530  perc: 5.5181  tex: 0.0002
+[Epoch   77/100] [Step   160] D: 0.0849  G: 8.7508  adv: 0.0028  pixel: 4.8439  perc: 3.9042  tex: 0.0000
+[Epoch   77/100] [Step   180] D: 0.2494  G: 8.3037  adv: -0.0068  pixel: 4.1466  perc: 4.1638  tex: 0.0000
+[Epoch   77/100] [Step   200] D: 0.4613  G: 11.3810  adv: 0.0118  pixel: 6.5372  perc: 4.8318  tex: 0.0003
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0077.png
+[Epoch   78/100] [Step    20] D: 0.4200  G: 11.5716  adv: 0.0043  pixel: 6.4922  perc: 5.0750  tex: 0.0001
+[Epoch   78/100] [Step    40] D: 0.3250  G: 10.3660  adv: 0.0056  pixel: 5.5289  perc: 4.8314  tex: 0.0001
+[Epoch   78/100] [Step    60] D: 0.2593  G: 9.8829  adv: -0.0023  pixel: 5.6117  perc: 4.2735  tex: 0.0001
+[Epoch   78/100] [Step    80] D: 0.2671  G: 12.0146  adv: -0.0070  pixel: 6.5783  perc: 5.4432  tex: 0.0002
+[Epoch   78/100] [Step   100] D: 0.1626  G: 10.7043  adv: 0.0004  pixel: 5.9684  perc: 4.7355  tex: 0.0001
+[Epoch   78/100] [Step   120] D: 0.0075  G: 8.9081  adv: 0.0072  pixel: 4.7368  perc: 4.1641  tex: 0.0000
+[Epoch   78/100] [Step   140] D: 0.1052  G: 9.6068  adv: 0.0337  pixel: 5.2029  perc: 4.3702  tex: 0.0001
+[Epoch   78/100] [Step   160] D: 0.0293  G: 10.4172  adv: 0.0840  pixel: 5.1194  perc: 5.2137  tex: 0.0001
+[Epoch   78/100] [Step   180] D: 0.2283  G: 7.7043  adv: 0.0132  pixel: 4.0590  perc: 3.6321  tex: 0.0000
+[Epoch   78/100] [Step   200] D: 0.6892  G: 10.8900  adv: 0.0066  pixel: 6.3825  perc: 4.5008  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0078.png
+[Epoch   79/100] [Step    20] D: 0.2005  G: 10.1872  adv: 0.0022  pixel: 6.0368  perc: 4.1481  tex: 0.0001
+[Epoch   79/100] [Step    40] D: 0.1342  G: 8.4564  adv: -0.0001  pixel: 4.7332  perc: 3.7233  tex: 0.0000
+[Epoch   79/100] [Step    60] D: 0.4797  G: 10.2940  adv: -0.0050  pixel: 5.0296  perc: 5.2692  tex: 0.0001
+[RCA-GAN] Using device: mps
+[RCA-GAN] Validation set: 100 pairs
+[RCA-GAN] Training set : 200 pairs
+[RCA-GAN] Resumed model weights from epoch 100 (generator_epoch_0100.pth, discriminator_epoch_0100.pth). Optimizers/schedulers were reset.
+[RCA-GAN] Resume epoch (100) is already >= target epochs (100). Nothing to train.
+[Epoch   79/100] [Step    80] D: 0.9151  G: 9.6546  adv: 0.0297  pixel: 4.9803  perc: 4.6446  tex: 0.0001
+[Epoch   79/100] [Step   100] D: 0.0010  G: 8.8528  adv: -0.0300  pixel: 4.7066  perc: 4.1762  tex: 0.0000
+[Epoch   79/100] [Step   120] D: 0.0019  G: 12.9291  adv: 0.0291  pixel: 7.6489  perc: 5.2508  tex: 0.0002
+[RCA-GAN] Using device: mps
+[RCA-GAN] Validation set: 100 pairs
+[RCA-GAN] Training set : 200 pairs
+[RCA-GAN] Resumed model weights from epoch 100 (generator_epoch_0100.pth, discriminator_epoch_0100.pth). Optimizers/schedulers were reset.
+/Users/cusaple/Library/Python/3.9/lib/python/site-packages/torch/utils/data/dataloader.py:684: UserWarning: 'pin_memory' argument is set as true but not supported on MPS now, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+[Epoch   79/100] [Step   140] D: 0.2677  G: 8.0537  adv: 0.0121  pixel: 4.6874  perc: 3.3541  tex: 0.0000
+[Epoch   79/100] [Step   160] D: 0.2907  G: 7.7626  adv: 0.0018  pixel: 4.3402  perc: 3.4207  tex: 0.0000
+[Epoch  101/150] [Step    20] D: 0.6553  G: 10.3187  adv: 0.0123  pixel: 5.9051  perc: 4.4012  tex: 0.0001
+[Epoch   79/100] [Step   180] D: 0.4827  G: 10.9933  adv: 0.0058  pixel: 5.8536  perc: 5.1338  tex: 0.0001
+[Epoch  101/150] [Step    40] D: 2.3170  G: 9.2077  adv: 0.4738  pixel: 4.4818  perc: 4.2520  tex: 0.0001
+[Epoch   79/100] [Step   200] D: 0.0389  G: 10.4014  adv: -0.0244  pixel: 5.5404  perc: 4.8854  tex: 0.0001
+[RCA-GAN] Saved sample → checkpoints/samples/epoch_0079.png
+[Epoch  101/150] [Step    60] D: 0.0011  G: 10.1292  adv: -0.0272  pixel: 6.2573  perc: 3.8991  tex: 0.0000
+[Epoch  101/150] [Step    80] D: 1.1749  G: 10.7534  adv: -0.0315  pixel: 6.7621  perc: 4.0227  tex: 0.0001
+[Epoch   80/100] [Step    20] D: 0.0983  G: 9.0503  adv: -0.0189  pixel: 4.9739  perc: 4.0953  tex: 0.0000
+[Epoch  101/150] [Step   100] D: 0.0016  G: 13.2341  adv: 0.0169  pixel: 8.6641  perc: 4.5528  tex: 0.0002
+[Epoch   80/100] [Step    40] D: 0.3270  G: 10.1461  adv: -0.0016  pixel: 6.1661  perc: 3.9815  tex: 0.0001

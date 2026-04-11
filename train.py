@@ -24,6 +24,7 @@ Key options (all have sensible defaults):
 
 import argparse
 import os
+import re
 from pathlib import Path
 from typing import Optional
 
@@ -38,10 +39,6 @@ from models import Generator, Discriminator
 from utils.losses import VGGLoss, TextureLoss, gradient_penalty
 from utils.dataset import build_dataloader
 
-
-# ---------------------------------------------------------------------------
-# Argument parsing
-# ---------------------------------------------------------------------------
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -80,6 +77,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--num_workers", type=int, default=4)
     parser.add_argument("--device", type=str, default="",
                         help="Force device (cuda/cpu). Auto-detect when empty.")
+    parser.add_argument("--resume", action="store_true",
+                        help="Resume training from the latest saved checkpoint in save_dir/ckpts")
+    parser.add_argument("--resume_state", type=str, default="",
+                        help="Path to a full training state checkpoint (.pth). Overrides --resume search.")
     parser.add_argument("--auto_generate_noisy", action="store_true",
                         help="Automatically create noisy train images from clean images when pairs are missing")
     parser.add_argument("--auto_generate_val_noisy", action="store_true",
@@ -121,6 +122,30 @@ _IMG_EXTENSIONS = {".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff", ".webp"}
 
 def _is_image_file(path: Path) -> bool:
     return path.suffix.lower() in _IMG_EXTENSIONS
+
+
+def _extract_epoch_from_name(name: str) -> int:
+    match = re.search(r"epoch_(\d+)", name)
+    if match is None:
+        return -1
+    return int(match.group(1))
+
+
+def _find_latest_weights(ckpt_dir: Path) -> tuple[Optional[Path], Optional[Path], int]:
+    g_files = sorted(ckpt_dir.glob("generator_epoch_*.pth"), key=lambda p: _extract_epoch_from_name(p.name))
+    d_files = sorted(ckpt_dir.glob("discriminator_epoch_*.pth"), key=lambda p: _extract_epoch_from_name(p.name))
+
+    if not g_files or not d_files:
+        return None, None, -1
+
+    g_by_epoch = {_extract_epoch_from_name(p.name): p for p in g_files}
+    d_by_epoch = {_extract_epoch_from_name(p.name): p for p in d_files}
+    common_epochs = sorted(set(g_by_epoch.keys()) & set(d_by_epoch.keys()))
+    if not common_epochs:
+        return None, None, -1
+
+    latest_epoch = common_epochs[-1]
+    return g_by_epoch[latest_epoch], d_by_epoch[latest_epoch], latest_epoch
 
 
 def generate_noisy_from_clean(
@@ -278,9 +303,60 @@ def train(args: argparse.Namespace) -> None:
     scheduler_G = torch.optim.lr_scheduler.LambdaLR(opt_G, lr_lambda)
     scheduler_D = torch.optim.lr_scheduler.LambdaLR(opt_D, lr_lambda)
 
-    # ---- Training loop -----------------------------------------------------
+    # ---- Resume (optional) -------------------------------------------------
+    start_epoch = 1
     global_step = 0
-    for epoch in range(1, args.epochs + 1):
+    state_path = ckpt_dir / "training_state_latest.pth"
+
+    requested_resume = bool(args.resume or args.resume_state)
+    if requested_resume:
+        loaded = False
+        if args.resume_state:
+            candidate = Path(args.resume_state)
+            if not candidate.is_file():
+                raise FileNotFoundError(f"--resume_state not found: {candidate}")
+            state_path = candidate
+
+        if state_path.is_file():
+            state = torch.load(state_path, map_location=device)
+            G.load_state_dict(state["generator"])
+            D.load_state_dict(state["discriminator"])
+            opt_G.load_state_dict(state["optimizer_g"])
+            opt_D.load_state_dict(state["optimizer_d"])
+            scheduler_G.load_state_dict(state["scheduler_g"])
+            scheduler_D.load_state_dict(state["scheduler_d"])
+            last_epoch = int(state["epoch"])
+            global_step = int(state.get("global_step", 0))
+            start_epoch = last_epoch + 1
+            loaded = True
+            print(f"[RCA-GAN] Resumed full training state from {state_path} at epoch {last_epoch}")
+
+        if not loaded:
+            g_path, d_path, last_epoch = _find_latest_weights(ckpt_dir)
+            if g_path is None or d_path is None:
+                raise FileNotFoundError(
+                    f"No checkpoints found to resume in {ckpt_dir}. "
+                    f"Expected training_state_latest.pth or matching generator/discriminator_epoch_*.pth"
+                )
+            G.load_state_dict(torch.load(g_path, map_location=device))
+            D.load_state_dict(torch.load(d_path, map_location=device))
+            start_epoch = last_epoch + 1
+            global_step = max(last_epoch, 0) * len(train_loader)
+            print(
+                f"[RCA-GAN] Resumed model weights from epoch {last_epoch} "
+                f"({g_path.name}, {d_path.name}). "
+                "Optimizers/schedulers were reset."
+            )
+
+    # ---- Training loop -----------------------------------------------------
+    if start_epoch > args.epochs:
+        print(
+            f"[RCA-GAN] Resume epoch ({start_epoch - 1}) is already >= target epochs ({args.epochs}). "
+            "Nothing to train."
+        )
+        return
+
+    for epoch in range(start_epoch, args.epochs + 1):
         G.train()
         D.train()
 
@@ -368,6 +444,19 @@ def train(args: argparse.Namespace) -> None:
         if epoch % args.save_interval == 0 or epoch == args.epochs:
             torch.save(G.state_dict(), ckpt_dir / f"generator_epoch_{epoch:04d}.pth")
             torch.save(D.state_dict(), ckpt_dir / f"discriminator_epoch_{epoch:04d}.pth")
+            torch.save(
+                {
+                    "epoch": epoch,
+                    "global_step": global_step,
+                    "generator": G.state_dict(),
+                    "discriminator": D.state_dict(),
+                    "optimizer_g": opt_G.state_dict(),
+                    "optimizer_d": opt_D.state_dict(),
+                    "scheduler_g": scheduler_G.state_dict(),
+                    "scheduler_d": scheduler_D.state_dict(),
+                },
+                ckpt_dir / "training_state_latest.pth",
+            )
             print(f"[RCA-GAN] Checkpoints saved at epoch {epoch}")
 
     print("[RCA-GAN] Training complete.")
