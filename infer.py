@@ -17,7 +17,7 @@ Folder:
 
 import argparse
 from pathlib import Path
-from typing import List
+from typing import List, Optional, Tuple
 
 import torch
 from PIL import Image
@@ -41,6 +41,46 @@ def build_transform(image_size: int) -> transforms.Compose:
             transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1, 1]
         ]
     )
+
+
+def _normalize_tensor(x: torch.Tensor) -> torch.Tensor:
+    return transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))(x)
+
+
+def preprocess_keep_aspect(
+    img: Image.Image,
+    image_size: int,
+) -> Tuple[torch.Tensor, Tuple[int, int, int, int, int, int]]:
+    """
+    Resize with aspect ratio preserved, then pad to a square canvas.
+
+    Returns:
+        Tensor in model input space and metadata for unpadding/restoring size.
+    """
+    orig_w, orig_h = img.size
+    scale = min(image_size / max(orig_w, 1), image_size / max(orig_h, 1))
+    new_w = max(1, int(round(orig_w * scale)))
+    new_h = max(1, int(round(orig_h * scale)))
+
+    resized = img.resize((new_w, new_h), resample=Image.BICUBIC)
+    canvas = Image.new("RGB", (image_size, image_size))
+    left = (image_size - new_w) // 2
+    top = (image_size - new_h) // 2
+    canvas.paste(resized, (left, top))
+
+    x = transforms.ToTensor()(canvas)
+    x = _normalize_tensor(x)
+    meta = (orig_w, orig_h, new_w, new_h, left, top)
+    return x.unsqueeze(0), meta
+
+
+def restore_keep_aspect(
+    out: Image.Image,
+    meta: Tuple[int, int, int, int, int, int],
+) -> Image.Image:
+    orig_w, orig_h, new_w, new_h, left, top = meta
+    cropped = out.crop((left, top, left + new_w, top + new_h))
+    return cropped.resize((orig_w, orig_h), resample=Image.BICUBIC)
 
 
 def tensor_to_pil(x: torch.Tensor) -> Image.Image:
@@ -72,6 +112,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--checkpoint", type=str, default="", help="Path to generator .pth; if empty, use latest from checkpoints/ckpts")
     parser.add_argument("--output_dir", type=str, default="outputs/denoised", help="Where denoised images are saved")
     parser.add_argument("--image_size", type=int, default=256, help="Resize size used by model")
+    parser.add_argument("--keep_aspect", action="store_true",
+                        help="Keep aspect ratio by letterboxing to image_size and restoring original size on save")
     parser.add_argument("--base_channels", type=int, default=64)
     parser.add_argument("--num_res_blocks", type=int, default=9)
     parser.add_argument("--device", type=str, default="", help="cuda / mps / cpu (auto if empty)")
@@ -125,9 +167,19 @@ def main() -> None:
     with torch.no_grad():
         for img_path in image_paths:
             img = Image.open(img_path).convert("RGB")
-            x = tfm(img).unsqueeze(0).to(device)
+
+            meta: Optional[Tuple[int, int, int, int, int, int]] = None
+            if args.keep_aspect:
+                x, meta = preprocess_keep_aspect(img, args.image_size)
+            else:
+                x = tfm(img).unsqueeze(0)
+
+            x = x.to(device)
             y = model(x)
             out = tensor_to_pil(y)
+
+            if meta is not None:
+                out = restore_keep_aspect(out, meta)
 
             # Keep same filename for convenience
             out_path = output_dir / img_path.name
